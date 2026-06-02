@@ -53,61 +53,78 @@ const PRODUCTS_DATA = {
     slogan: "Manejo higiénico y desinfección profunda de blancos y campos quirúrgicos expuestos a fluidos biológicos.",
     products: [
       {
-        id: "sure_thing_spa",
+        id: "hldh",
         name: "HLDH",
-        tagline: "Limpiador clorado en polvo con acción oxigenante activa para textiles",
-        description: "HLDH es el detergente clorado e higienizante en polvo de alta eficiencia formulado para lavanderías hospitalarias. Su acción combinada de cloro activo y oxígeno molecular descompone manchas de sangre, fluidos orgánicos y medicamentos, garantizando la desinfección y el blanqueamiento absoluto de sábanas y campos quirúrgicos.",
+        tagline: "Detergente en polvo concentrado para desinfección terminal de textiles",
+        description: "Detergente en polvo concentrado diseñado específicamente para la limpieza profunda, blanqueo y desinfección terminal de textiles en entornos críticos.",
         benefits: [
-          "Remoción total de manchas de sangre, yodo, fluidos corporales y medicamentos difíciles.",
-          "Doble acción desinfectante por liberación controlada de cloro y oxígeno en el ciclo de lavado.",
-          "Ideal para la higiene y blanqueado de blancos clínicos y batas expuestas en salas de urgencias y cirugía.",
-          "Protege la resistencia de las fibras de algodón y poliéster frente al desgaste prematuro de cloro común."
+          "Poder Desinfectante a Base de Cloro: Integrado en la fórmula para garantizar la eliminación de patógenos comunes en sábanas, toallas y batas de pacientes.",
+          "Control de Espuma y Alta Eficiencia: Fórmula de baja espumación que protege las lavadoras industriales y optimiza el consumo de agua.",
+          "Agentes Antirredepositantes y Anticorrosivos: Previene que la suciedad disuelta se fije de nuevo en la tela y protege los componentes de acero inoxidable de los equipos.",
+          "Seguridad para Ropa Blanca y Colores Firmes: Su poder blanqueador es seguro para textiles hospitalarios que requieran desinfección sin decoloración."
         ],
-        usage: "Lavado, blanqueamiento y desinfección en un solo paso de blancos clínicos, uniformes y campos quirúrgicos.",
-        dosage: "100 a 200g por cada 10kg de ropa según la carga de suciedad y fluidos biológicos.",
-        dilution: "Adición directa a la tolva o tina de la lavadora industrial durante el ciclo de lavado principal.",
+        usage: "Limpieza profunda, blanqueo y desinfección terminal de textiles en entornos críticos.",
+        dosage: "Solo una medida dosificadora de 40 gramos es suficiente para lavar 4 kilogramos de ropa.",
+        dilution: "Funciona en agua fría, pero logra su máximo rendimiento a temperaturas entre 40° y 60°C para la activación óptima del cloro.",
         phImpact: "Alcalino clorado activo.",
         safety: "No mezclar con ácidos o productos de amonio. Almacenar en lugar seco y fresco. Usar guantes.",
-        badge: "Clorado Oxigenante",
-        image: "images/sure_thing.png"
+        badge: "Desinfección Terminal",
+        image: "images/HLDH.png"
       },
       {
-        id: "swipe_concentrado_spa",
-        name: "SWIPE original (Prelavado)",
-        tagline: "Limpiador multiusos concentrado biodegradable para prelavado y desengrase",
-        description: "SWIPE original es el aliado perfecto para el prelavado y desmanchado de textiles clínicos. Su fórmula biodegradable remueve grasas, aceites corporales y manchas orgánicas pesadas de sábanas, campos y batas médicas antes del lavado principal, previniendo que las manchas se fijen térmicamente.",
+        id: "hldh_system_3",
+        name: "HLDH System 3 Mezcla Clorada",
+        tagline: "Blanqueador líquido y desinfectante de alto poder para lavandería institucional",
+        description: "Es un blanqueador líquido y desinfectante de alto poder, formulado como un sistema de lavado enérgico para su uso exclusivo en lavanderías institucionales que manejan altos volúmenes de ropa blanca.",
         benefits: [
-          "Excelente desmanchador local para aplicar directamente por aspersión antes del lavado.",
-          "Remueve grasa orgánica y aceites de la piel sin debilitar las costuras ni decolorar textiles.",
-          "Biodegradabilidad superior al 99%, libre de fosfatos que saturen las plantas de tratamiento del hospital.",
-          "Fórmula concentrada que rinde significativamente, reduciendo el costo por kilo de ropa lavada."
+          "Eliminación Especializada de Manchas de Sangre: Diseñado específicamente para erradicar las manchas de sangre, incluyendo el 'mapa' residual que a menudo queda en los textiles clínicos, garantizando la recuperación de la prenda.",
+          "Aseguramiento de Desinfección Total: Su potente acción clorada garantiza la desinfección completa de las prendas, un requisito crítico para romper la cadena de transmisión de infecciones en hospitales.",
+          "Blanqueo de Alto Rendimiento: Restaura y mantiene la blancura de sábanas, batas y toallas, proporcionando una apariencia de limpieza impecable y profesional."
         ],
-        usage: "Desmanchado local, prelavado de textiles con fluidos pesados y lavado general de uniformes médicos.",
-        dosage: "Rociar directo en solución 1:12 en manchas difíciles | Añadir 100 ml al ciclo de remojo por carga.",
-        dilution: "Directo sobre la mancha o disuelto en agua según el tipo de mancha y lavado.",
-        phImpact: "Neutro, seguro para tejidos de algodón, poliéster y microfibras.",
-        safety: "No corrosivo, seguro al tacto en dilución. Biodegradable.",
-        badge: "Prelavado Desengrasante",
-        image: "images/swipe_concentrado.png"
+        usage: "Recomendado exclusivamente para prendas blancas.",
+        dosage: "La dosis debe ajustarse según la clasificación de la ropa y el nivel de suciedad (consulte a su representante Swipe para optimizar el programa de lavado).",
+        dilution: "Dosificación automática controlada según las necesidades específicas de la lavandería.",
+        phImpact: "Altamente alcalino (pH 11-14).",
+        safety: "Producto corrosivo. Requiere uso de guantes y gafas de seguridad para su manipulación. No combinar con otros productos químicos.",
+        badge: "Blanqueador Clorado",
+        image: "images/HLDH System 3 mezcla clorada.png"
       },
       {
-        id: "swipol_spa",
-        name: "Swipol (Enjuague Textil)",
-        tagline: "Desinfectante germicida residual para el enjuague final de blancos",
-        description: "Desinfectante bactericida y viricida formulado para dosificarse en el último ciclo de enjuague de la lavandería clínica. Deja una capa protectora microbiana residual en las sábanas y batas, previniendo la proliferación de bacterias durante el almacenamiento y el uso.",
+        id: "emulsigraz",
+        name: "Emulsigraz",
+        tagline: "Detergente reforzador líquido concentrado booster para eliminar grasas y aceites",
+        description: "Es un poderoso detergente líquido concentrado, diseñado específicamente como un refuerzo (booster) para emulsificar, dispersar y eliminar eficazmente grasas y aceites de origen vegetal, animal y mineral en textiles, evitando que la suciedad se vuelva a depositar en las prendas.",
         benefits: [
-          "Asegura la esterilidad y desinfección de los textiles hasta su uso en camillas o cunas.",
-          "Elimina bacterias causantes de malos olores en la ropa almacenada por humedad.",
-          "Crea una barrera germicida residual invisible sin irritar la piel del paciente (hipoalergénico).",
-          "100% incoloro e inoloro, no mancha la ropa blanca ni altera las texturas de las sábanas."
+          "Eliminación de Manchas Difíciles: Ideal para tratar ropa de cama, uniformes y mantelería de áreas de nutrición contaminados con aceites, pomadas, cremas medicinales u otro tipo de residuos oleosos.",
+          "Potenciador de Lavado: Incrementa significativamente la efectividad del detergente principal en cargas con suciedad pesada, asegurando una limpieza profunda desde el primer ciclo.",
+          "Alta Eficiencia Térmica: Formulado para funcionar óptimamente a altas temperaturas (80°C - 90°C), rango comúnmente utilizado en lavanderías hospitalarias para procesos de sanitización."
         ],
-        usage: "Desinfección de blancos, sábanas, toallas, batas y uniformes de personal en el ciclo final de enjuague.",
-        dosage: "Dosificar 50 ml por cada 10kg de ropa en el ciclo final de suavizante o enjuague.",
-        dilution: "Inyección automatizada o adición manual en el ciclo de enjuague de la lavadora.",
-        phImpact: "Neutro, no altera el pH textil final.",
-        safety: "No irritante en dilución recomendada. Dermatológicamente seguro.",
-        badge: "Desinfectante Residual",
-        image: "images/swipol.png"
+        usage: "Utilizar en el ciclo de lavado principal como refuerzo del detergente.",
+        dosage: "De 1.5 a 7 ml por kilogramo de ropa seca, dependiendo del nivel de grasa.",
+        dilution: "Operar a temperaturas de 80°C a 90°C por un lapso de 8 minutos para maximizar resultados.",
+        phImpact: "Detergente emulsionante.",
+        safety: "Utilizar protección básica. Consultar ficha técnica para dosificación automática.",
+        badge: "Refuerzo Emulsificante",
+        image: "images/Emulsigraz.png"
+      },
+      {
+        id: "soft",
+        name: "Soft",
+        tagline: "Suavizante líquido altamente concentrado y biodegradable para todo tipo de textiles",
+        description: "Es un suavizante líquido altamente concentrado de aspecto cremoso y agradable aroma, formulado para ser biodegradable y dar el acabado final de suavidad a todo tipo de textiles.",
+        benefits: [
+          "Confort Superior para el Paciente: Imparte tersura y una sensación suave y esponjosa a sábanas, toallas y batas, mejorando significativamente la experiencia de comodidad durante la estancia hospitalaria.",
+          "Percepción de Higiene Elevada: Deja un delicado y exquisito perfume en las prendas, reforzando la percepción de limpieza e higiene impecable tanto para pacientes como para el personal.",
+          "Eficiencia Operativa: Elimina la electricidad estática de la ropa, facilitando los procesos posteriores de planchado industrial, doblado y manipulación de blancos.",
+          "Cuidado del Equipo y Textiles: No deja residuos en la lavadora, protegiendo la maquinaria. Su fórmula fina es segura para todo tipo de fibras (algodón, poliéster, lana, seda) y ropa delicada."
+        ],
+        usage: "Agregar únicamente durante el último ciclo de enjuague.",
+        dosage: "Dosificar en el último enjuague según el tamaño de la carga.",
+        dilution: "Ideal tanto para ropa de cama y toallas estándar como para prendas finas y delicadas.",
+        phImpact: "Ligeramente ácido a neutro en dilución.",
+        safety: "Seguro en uso directo en el último enjuague.",
+        badge: "Suavidad y Confort",
+        image: "images/Soft.png"
       }
     ]
   },

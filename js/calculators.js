@@ -111,12 +111,14 @@ const CALCULATORS = {
             <div class="calc-input-group">
               <label class="calc-label">Producto a Dosificar</label>
               <select id="spa-product-type" class="calc-input calc-select" style="accent-color: var(--color-spa);">
-                <option value="hldh" selected>HLDH (Detergente Clorado Oxigenante)</option>
-                <option value="swipe">SWIPE original (Prelavado / Desmanchado)</option>
+                <option value="hldh" selected>HLDH (Detergente en Polvo)</option>
+                <option value="hldh_system_3">HLDH System 3 (Blanqueador Clorado)</option>
+                <option value="emulsigraz">Emulsigraz (Refuerzo Emulsificante)</option>
+                <option value="soft">Soft (Suavizante Líquido)</option>
               </select>
             </div>
             <div class="calc-result-box" style="border-color: rgba(5, 230, 180, 0.15)">
-              <span class="calc-result-value" id="spa-res" style="color: var(--color-spa)">450 g</span>
+              <span class="calc-result-value" id="spa-res" style="color: var(--color-spa)">300 g</span>
               <span class="calc-result-label">Cantidad Necesaria Estimada</span>
             </div>
           </div>
@@ -133,17 +135,31 @@ const CALCULATORS = {
         let unit = "g";
 
         if (prod === "hldh") {
-          // HLDH: Leve 10g/kg, Medio 15g/kg, Crítico 20g/kg
-          let factor = 15;
-          if (level === "soft") factor = 10;
-          if (level === "high") factor = 20;
+          // HLDH: 40g por 4kg de ropa (10g/kg de base). Ajustado según suciedad.
+          let factor = 10;
+          if (level === "soft") factor = 8;
+          if (level === "high") factor = 12;
           amount = weight * factor;
           unit = "g";
-        } else {
-          // SWIPE original prelavado: Leve 10ml/kg, Medio 15ml/kg, Crítico 25ml/kg
-          let factor = 15;
-          if (level === "soft") factor = 10;
-          if (level === "high") factor = 25;
+        } else if (prod === "hldh_system_3") {
+          // HLDH System 3 Mezcla Clorada: Dosis recomendada promedio de 4ml/kg
+          let factor = 4;
+          if (level === "soft") factor = 3;
+          if (level === "high") factor = 6; // Dosis más alta para eliminar manchas de sangre
+          amount = weight * factor;
+          unit = "ml";
+        } else if (prod === "emulsigraz") {
+          // Emulsigraz: 1.5 a 7 ml por kilogramo de ropa seca
+          let factor = 4;
+          if (level === "soft") factor = 1.5;
+          if (level === "high") factor = 7.0;
+          amount = weight * factor;
+          unit = "ml";
+        } else if (prod === "soft") {
+          // Soft: Suavizante concentrado, dosis promedio de 3ml/kg
+          let factor = 3;
+          if (level === "soft") factor = 2;
+          if (level === "high") factor = 4;
           amount = weight * factor;
           unit = "ml";
         }

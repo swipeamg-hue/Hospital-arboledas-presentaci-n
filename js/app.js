@@ -645,24 +645,54 @@ function updateSpaDisplay(product) {
     let featuresHtml = "";
     
     // Mapeo inteligente de características según el producto
-    if (product.id === "sure_thing_spa") {
+    if (product.id === "hldh") {
       featuresHtml = `
         <div class="spa-feature-card">
           <div class="spa-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="spa-feature-text">
-            <h4>Rendimiento y Dosificación Clínica</h4>
-            <p><strong>Fórmula en Polvo:</strong> Dosificar de 100 a 200 gramos de HLDH por cada 10 kg de ropa directamente en la tolva de la lavadora industrial durante el ciclo principal de lavado.</p>
+            <h4>Poder Desinfectante a Base de Cloro</h4>
+            <p>Integrado en la fórmula para garantizar la eliminación de patógenos comunes en sábanas, toallas y batas de pacientes.</p>
           </div>
         </div>
         <div class="spa-feature-card">
           <div class="spa-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8m-4-4v8"/></svg>
           </div>
           <div class="spa-feature-text">
-            <h4>Acción Blanqueadora y Desinfectante</h4>
-            <p><strong>Asepsia Textil Completa:</strong> Excelente capacidad de remoción de manchas orgánicas difíciles como sangre, fluidos biológicos y desinfectantes químicos en sábanas y campos quirúrgicos.</p>
+            <h4>Control de Espuma y Alta Eficiencia</h4>
+            <p>Fórmula de baja espumación que protege las lavadoras industriales y optimiza el consumo de agua.</p>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Agentes Antirredepositantes y Anticorrosivos</h4>
+            <p>Previene que la suciedad disuelta se fije de nuevo en la tela y protege los componentes de acero inoxidable de los equipos.</p>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82zM7 7h.01"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Seguridad para Ropa Blanca y Colores Firmes</h4>
+            <p>Su poder blanqueador es seguro para textiles hospitalarios que requieran desinfección sin decoloración.</p>
+          </div>
+        </div>
+      `;
+    } else if (product.id === "hldh_system_3") {
+      featuresHtml = `
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Eliminación Especializada de Manchas de Sangre</h4>
+            <p>Diseñado específicamente para erradicar las manchas de sangre, incluyendo el "mapa" residual en textiles clínicos, garantizando la recuperación de la prenda.</p>
           </div>
         </div>
         <div class="spa-feature-card">
@@ -670,8 +700,17 @@ function updateSpaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="spa-feature-text">
-            <h4>Doble Poder de Oxígeno y Cloro</h4>
-            <p><strong>Descomposición Orgánica:</strong> La acción combinada de liberación de cloro activo y oxígeno disuelve la suciedad biológica sin cuartear ni debilitar las fibras de algodón o poliéster.</p>
+            <h4>Aseguramiento de Desinfección Total</h4>
+            <p>Su potente acción clorada garantiza la desinfección completa de las prendas, clave para romper la cadena de transmisión infecciosa en hospitales.</p>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Blanqueo de Alto Rendimiento</h4>
+            <p>Restaura y mantiene la blancura de sábanas, batas y toallas, proporcionando una apariencia de limpieza impecable y profesional.</p>
           </div>
         </div>
         <div class="spa-feature-card">
@@ -679,47 +718,86 @@ function updateSpaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="spa-feature-text">
-            <h4>Cuidado de Blancos Hospitalarios</h4>
-            <p><strong>Higiene sin Desgaste:</strong> Fórmula balanceada que prolonga la vida útil del inventario textil clínico. Almacenar el producto en seco y utilizar guantes de protección durante su dosificación manual.</p>
+            <h4>Guía de Uso Rápido</h4>
+            <p><strong>Uso:</strong> Exclusivo para prendas blancas. Ajustar dosis según clasificación. <strong>Precaución:</strong> Producto corrosivo (pH 11-14). No mezclar.</p>
           </div>
         </div>
       `;
-    } else if (product.id === "swipe_concentrado_spa") {
+    } else if (product.id === "emulsigraz") {
       featuresHtml = `
         <div class="spa-feature-card">
           <div class="spa-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 1 8a9 9 0 0 1-9 10z"/><path d="M9 22v-6"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1.5-3-1 1-1.5 1.62-1.5 3a2.5 2.5 0 0 0 .5 2.5zM12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="spa-feature-text">
-            <h4>Biodegradabilidad >99% y Respeto Ecológico</h4>
-            <p>Fórmula ecológica de alta concentración, libre de fosfatos. Totalmente biodegradable y segura para los sistemas de drenaje y plantas de tratamiento de agua residual del hospital.</p>
+            <h4>Eliminación de Manchas Grasas Difíciles</h4>
+            <p>Ideal para tratar ropa de cama, uniformes y mantelería de áreas de nutrición contaminados con aceites, pomadas o cremas medicinales.</p>
           </div>
         </div>
         <div class="spa-feature-card">
           <div class="spa-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 11l2 2 4-4"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="spa-feature-text">
-            <h4>pH Neutro: Seguro en Fibras y Uniformes</h4>
-            <p>Su pH neutro es ideal para realizar el prelavado y desmanchado local de batas, uniformes clínicos y sábanas sin debilitar las costuras ni causar decoloraciones en los tejidos.</p>
+            <h4>Detergente Potenciador (Booster)</h4>
+            <p>Refuerzo concentrado para emulsificar y dispersar grasas y aceites de origen vegetal, animal y mineral, previniendo la redeposición.</p>
           </div>
         </div>
         <div class="spa-feature-card">
           <div class="spa-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="spa-feature-text">
-            <h4>Diluciones para Lavandería</h4>
-            <p>Mantenimiento general de textiles (1:100) en remojo. Rociado directo localizado (1:12) para desmanchar cuellos, puños y zonas críticas con grasas corporales o medicamentos.</p>
+            <h4>Alta Eficiencia Térmica</h4>
+            <p>Formulado para funcionar óptimamente a altas temperaturas (80°C - 90°C), rango estándar utilizado en sanitización hospitalaria.</p>
           </div>
         </div>
         <div class="spa-feature-card">
           <div class="spa-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="spa-feature-text">
-            <h4>Fórmula Libre de Cáusticos</h4>
-            <p>No reseca las manos del personal de lavandería, no es corrosiva para la maquinaria y no es inflamable, garantizando la seguridad en el entorno de trabajo.</p>
+            <h4>Guía de Uso Rápido</h4>
+            <p><strong>Uso:</strong> Añadir en el ciclo principal. <strong>Dosis:</strong> 1.5 a 7 ml/kg de ropa seca. Operar a 80°C - 90°C por 8 minutos.</p>
+          </div>
+        </div>
+      `;
+    } else if (product.id === "soft") {
+      featuresHtml = `
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Confort Superior para el Paciente</h4>
+            <p>Imparte tersura y sensación esponjosa a sábanas, toallas y batas, mejorando la comodidad durante su estancia.</p>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Percepción de Higiene Elevada</h4>
+            <p>Deja un perfume delicado y persistente en las prendas, reforzando la sensación de limpieza e higiene impecable.</p>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Eficiencia Operativa</h4>
+            <p>Elimina la electricidad estática facilitando los procesos de planchado industrial, doblado y manipulación de blancos.</p>
+          </div>
+        </div>
+        <div class="spa-feature-card">
+          <div class="spa-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="spa-feature-text">
+            <h4>Cuidado del Equipo y Textiles</h4>
+            <p>Fórmula biodegradable que no deja residuos en la maquinaria. Seguro para algodón, poliéster, lana, seda y ropa delicada.</p>
           </div>
         </div>
       `;
