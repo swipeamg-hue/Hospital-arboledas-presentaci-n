@@ -1,6 +1,6 @@
 /**
  * Lógica de interacción principal y flujos de usuario (SPA)
- * para la presentación de químicos de Club de Golf Las Lomas.
+ * para la presentación de químicos de Hospital Arboledas.
  */
 
 // Estado global de la aplicación
@@ -652,8 +652,8 @@ function updateSpaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="spa-feature-text">
-            <h4>Rendimiento y Dosificación en el Spa</h4>
-            <p><strong>Fórmula Ultra Concentrada:</strong> Unas pocas gotas puras aplicadas directamente bastan para desodorizar espacios pequeños. Para atomización ambiental en cabinas o salas de masaje, diluir de 30 a 60 gotas en medio litro de agua en atomizador.</p>
+            <h4>Rendimiento y Dosificación Clínica</h4>
+            <p><strong>Fórmula en Polvo:</strong> Dosificar de 100 a 200 gramos de HLDH por cada 10 kg de ropa directamente en la tolva de la lavadora industrial durante el ciclo principal de lavado.</p>
           </div>
         </div>
         <div class="spa-feature-card">
@@ -661,8 +661,8 @@ function updateSpaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="spa-feature-text">
-            <h4>Atmósfera Sensorial de Lujo</h4>
-            <p><strong>Aromaterapia Premium:</strong> Disponible en aromas exclusivos (menta, floral, vainilla y canela), ideal para diseñar la firma aromática distintiva del Spa en cabinas, saunas, vestidores y áreas de recepción.</p>
+            <h4>Acción Blanqueadora y Desinfectante</h4>
+            <p><strong>Asepsia Textil Completa:</strong> Excelente capacidad de remoción de manchas orgánicas difíciles como sangre, fluidos biológicos y desinfectantes químicos en sábanas y campos quirúrgicos.</p>
           </div>
         </div>
         <div class="spa-feature-card">
@@ -670,8 +670,8 @@ function updateSpaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="spa-feature-text">
-            <h4>Neutralización Real de Olores</h4>
-            <p><strong>Destrucción de Olores de Raíz:</strong> No disfraza el mal olor con perfumes fuertes. Su fórmula biodegradable descompone activamente las moléculas orgánicas causantes de la humedad, sudor o encierro, asegurando una pureza ambiental real.</p>
+            <h4>Doble Poder de Oxígeno y Cloro</h4>
+            <p><strong>Descomposición Orgánica:</strong> La acción combinada de liberación de cloro activo y oxígeno disuelve la suciedad biológica sin cuartear ni debilitar las fibras de algodón o poliéster.</p>
           </div>
         </div>
         <div class="spa-feature-card">
@@ -679,8 +679,8 @@ function updateSpaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="spa-feature-text">
-            <h4>Sinergia con Swipol y Seguridad</h4>
-            <p><strong>Aromatización y Desinfección en 1 Paso:</strong> Es el único aromatizante químicamente compatible con el desinfectante quirúrgico **Swipol**, permitiendo preparar cabinas desinfectadas y deliciosamente ambientadas de forma simultánea. Mantener alejado de fuentes de calor directo.</p>
+            <h4>Cuidado de Blancos Hospitalarios</h4>
+            <p><strong>Higiene sin Desgaste:</strong> Fórmula balanceada que prolonga la vida útil del inventario textil clínico. Almacenar el producto en seco y utilizar guantes de protección durante su dosificación manual.</p>
           </div>
         </div>
       `;
@@ -692,7 +692,7 @@ function updateSpaDisplay(product) {
           </div>
           <div class="spa-feature-text">
             <h4>Biodegradabilidad >99% y Respeto Ecológico</h4>
-            <p>Fórmula ultra concentrada con biodegradabilidad superior al 99%, libre de fosfatos. Completamente segura para los sistemas de drenaje y plantas tratadoras del Spa, garantizando el máximo cuidado ambiental en cada limpieza.</p>
+            <p>Fórmula ecológica de alta concentración, libre de fosfatos. Totalmente biodegradable y segura para los sistemas de drenaje y plantas de tratamiento de agua residual del hospital.</p>
           </div>
         </div>
         <div class="spa-feature-card">
@@ -700,8 +700,8 @@ function updateSpaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 11l2 2 4-4"/></svg>
           </div>
           <div class="spa-feature-text">
-            <h4>pH Neutro: Seguro en Maderas, Mármol y Camillas</h4>
-            <p>Su versión de pH Neutro (pH 7) es ideal para limpiar sin dañar las maderas finas de saunas, recubrimientos de mármol, camillas de masaje, tapizados de vinilo y acabados premium del Spa, preservando su apariencia e integridad.</p>
+            <h4>pH Neutro: Seguro en Fibras y Uniformes</h4>
+            <p>Su pH neutro es ideal para realizar el prelavado y desmanchado local de batas, uniformes clínicos y sábanas sin debilitar las costuras ni causar decoloraciones en los tejidos.</p>
           </div>
         </div>
         <div class="spa-feature-card">
@@ -709,8 +709,8 @@ function updateSpaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
           <div class="spa-feature-text">
-            <h4>Diluciones Adaptadas al Spa</h4>
-            <p>Estética diaria (1:100) para espejos, cromos y superficies brillantes de la recepción del Spa. Lavado de pisos y vestidores (1:12) para higiene profunda sin dejar residuos que alteren los aromas de la aromaterapia.</p>
+            <h4>Diluciones para Lavandería</h4>
+            <p>Mantenimiento general de textiles (1:100) en remojo. Rociado directo localizado (1:12) para desmanchar cuellos, puños y zonas críticas con grasas corporales o medicamentos.</p>
           </div>
         </div>
         <div class="spa-feature-card">
@@ -718,86 +718,8 @@ function updateSpaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
           </div>
           <div class="spa-feature-text">
-            <h4>Sin Cáusticos: Seguro para Socios y Personal</h4>
-            <p>Fórmula sin cáusticos libres que no reseca ni irrita las manos del personal de limpieza, no es inflamable y no corroe metales ni superficies delicadas. Cero incompatibilidades con la atmósfera sensorial del Spa.</p>
-          </div>
-        </div>
-      `;
-    } else if (product.id === "swipe_brite_spa") {
-      featuresHtml = `
-        <div class="spa-feature-card">
-          <div class="spa-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="spa-feature-text">
-            <h4>Uso en el Club (Sanitarios y Vestidores)</h4>
-            <p>Limpiador líquido de tipo ácido y biodegradable, diseñado específicamente para desincrustar, desinfectar y desodorizar los inodoros. Elimina eficazmente las manchas y el sarro formados por los residuos calcáreos del agua depositados en la porcelana.</p>
-          </div>
-        </div>
-        <div class="spa-feature-card">
-          <div class="spa-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="spa-feature-text">
-            <h4>Rendimiento y Dosificación</h4>
-            <p><strong>Uso Concentrado (Restauración Profunda):</strong> Se aplica de forma directa, sin diluir, cuando existe un problema serio de sarro incrustado en los inodoros.</p>
-          </div>
-        </div>
-        <div class="spa-feature-card">
-          <div class="spa-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="spa-feature-text">
-            <h4>Ventaja Operativa (Eliminación de Olores)</h4>
-            <p>Inhibe el desarrollo de bacterias provenientes del agua y las materias fecales, impidiendo la formación de los olores desagradables generados por estos microorganismos. Es seguro para cualquier color de porcelana y totalmente inofensivo para las tuberías y fosas sépticas.</p>
-          </div>
-        </div>
-        <div class="spa-feature-card">
-          <div class="spa-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="spa-feature-text">
-            <h4>Precauciones Críticas</h4>
-            <p style="color: #ff5a5a; font-weight: 600;">Debido a su naturaleza ácida y nivel de corrosividad, NUNCA debe mezclarse con cloro o cualquier otro producto. Si su uso es continuo por parte del personal de limpieza, se recomienda estrictamente el uso de guantes.</p>
-          </div>
-        </div>
-      `;
-    } else if (product.id === "blue_genie_spa") {
-      featuresHtml = `
-        <div class="spa-feature-card">
-          <div class="spa-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="spa-feature-text">
-            <h4>Uso en el Club (Mantenimiento Automático)</h4>
-            <p>Es un limpiador enzimático y biodegradable perfecto para los inodoros de la Casa Club y áreas de vestidores. Actúa de forma continua tanto en el tanque como en la taza, inhibiendo eficazmente el crecimiento bacteriano, desinfectando y desodorizando el sanitario, al tiempo que evita depósitos de sarro.</p>
-          </div>
-        </div>
-        <div class="spa-feature-card">
-          <div class="spa-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="spa-feature-text">
-            <h4>Rendimiento Prolongado (Descargas)</h4>
-            <p>Su envase inteligente dosifica automáticamente la cantidad exacta necesaria de producto en cada descarga. Una sola unidad concentrada de 250 gramos mantiene el inodoro en óptimas condiciones por un periodo de <strong>2 a 3 meses</strong>, rindiendo aproximadamente **900 descargas**.</p>
-          </div>
-        </div>
-        <div class="spa-feature-card">
-          <div class="spa-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="spa-feature-text">
-            <h4>Ventaja Operativa Visual</h4>
-            <p>Facilita drásticamente la labor del personal de limpieza mediante su indicador visual activo, que tiñe el agua de un color azul claro. El producto solo requiere reemplazo cuando el agua de la descarga vuelve a ser transparente, garantizando no manchar la porcelana.</p>
-          </div>
-        </div>
-        <div class="spa-feature-card">
-          <div class="spa-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 1 8a9 9 0 0 1-9 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 22v-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="spa-feature-text">
-            <h4>Fórmula Biodegradable y Ecología</h4>
-            <p>Compuesto enzimático 100% biodegradable de liberación controlada. Es completamente inocuo para tuberías de drenaje, cañerías y sistemas de fosas sépticas, protegiendo las plantas tratadoras del club.</p>
+            <h4>Fórmula Libre de Cáusticos</h4>
+            <p>No reseca las manos del personal de lavandería, no es corrosiva para la maquinaria y no es inflamable, garantizando la seguridad en el entorno de trabajo.</p>
           </div>
         </div>
       `;
@@ -925,50 +847,43 @@ function updateGymDisplay(product) {
         svgInner.style.width = "120px";
         svgInner.style.height = "120px";
         svgInner.style.strokeWidth = "1.2";
-      }
-      svgContainer.style.display = "block";
-    }
-
-    // 2. Generar las características técnicas dinámicas
-    let featuresHtml = "";
-    
-    // Mapeo de características según el producto de Gimnasio
+         // Mapeo de características según el producto de Gimnasio
     if (product.id === "swipe_concentrado_gym") {
       featuresHtml = `
         <div class="gym-feature-card">
           <div class="gym-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v3M10 9V5a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v7"/><path d="M4 15a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3z"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gym-feature-text">
-            <h4>Eliminación de Sudor y Grasa Corporal</h4>
-            <p>Formulado con tensoactivos de alta potencia, remueve con rapidez el sudor, aceites bronceadores y grasas corporales acumuladas en empuñaduras, asientos, mancuernas y caminadoras, dejando los equipos en condiciones sanitarias impecables.</p>
+            <h4>Poder Antiséptico Clínico</h4>
+            <p>Elimina el 99.999% de bacterias, hongos y virus en 30 segundos de lavado. Es indispensable para el lavado de manos clínico del personal de enfermería y médicos.</p>
           </div>
         </div>
         <div class="gym-feature-card">
           <div class="gym-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 11l2 2 4-4"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gym-feature-text">
-            <h4>Protección de Tapizados y Equipos Premium</h4>
-            <p>Cero cáusticos libres: no reseca, no cuartea ni daña el vinilo de asientos, el cuero sintético de equipos ni los plásticos de caminadoras y elípticas. Preserva el aspecto premium del equipamiento de fitness del club.</p>
+            <h4>Cuidado y Humectación de la Piel</h4>
+            <p>Fórmula con pH balanceado (5.0 a 6.0) enriquecida con emolientes avanzados. Evita la resequedad, irritación y el agrietamiento cutáneo por el lavado altamente frecuente.</p>
           </div>
         </div>
         <div class="gym-feature-card">
           <div class="gym-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gym-feature-text">
-            <h4>Diluciones para el Gimnasio</h4>
-            <p>Estética diaria (1:100) para limpieza rápida de equipos entre usuarios. Lavado normal (1:12) para desengrase periódico de estructuras metálicas, pisos deportivos y mats de ejercicio. Rinde hasta 100 litros de solución útil.</p>
+            <h4>Aplicación Directa y Concentrada</h4>
+            <p>Uso concentrado directo sin diluir. Se dosifica 1.5 ml por descarga mediante dispensador Swipe en accesos a habitaciones, consultorios y estaciones de lavado.</p>
           </div>
         </div>
         <div class="gym-feature-card">
           <div class="gym-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 1 8a9 9 0 0 1-9 10z"/><path d="M9 22v-6"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gym-feature-text">
-            <h4>Biodegradable >99% y Seguro para Drenajes</h4>
-            <p>Fórmula ecológica libre de fosfatos, biodegradable en más del 99%. No es tóxico, no es inflamable y no corroe metales. Completamente seguro para el personal de limpieza, socios que entrenan y el medio ambiente.</p>
+            <h4>Libre de Fragancias y Colorantes</h4>
+            <p>Ideal para el entorno hospitalario, minimiza el riesgo de sensibilidades y alergias en pacientes vulnerables y personal en áreas de cuidado crítico.</p>
           </div>
         </div>
       `;
@@ -979,17 +894,17 @@ function updateGymDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gym-feature-text">
-            <h4>Seguridad e Inocuidad (Cero Irritación)</h4>
-            <p>Seguridad absoluta para los socios del club: formulado con cuaternarios de amonio de quinta generación que garantizan cero irritación cutánea. Al ser completamente incoloro e inoloro, mantiene intacta la pureza visual y sensorial del área.</p>
+            <h4>Desinfección Instantánea en 15 Segundos</h4>
+            <p>Alcohol de grado USP al 70% v/v que garantiza la desnaturalización de proteínas de patógenos y desinfección inmediata de manos por fricción.</p>
           </div>
         </div>
         <div class="gym-feature-card">
           <div class="gym-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22 4 12 14.01 9 11.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gym-feature-text">
-            <h4>Desinfección de Grado Quirúrgico</h4>
-            <p>Alguicida, fungicida y viricida de amplio espectro, ideal para la desinfección perimetral total. Previene e inhibe eficazmente el crecimiento de hongos y bacterias en vestidores, baños de vapor, regaderas, tapizados de equipos y tapetes sanitarios.</p>
+            <h4>Emolientes y Glicerina Protectora</h4>
+            <p>Enriquecido con glicerina pura y agentes emolientes que cuidan e hidratan la piel de médicos y enfermeras tras usos altamente repetitivos en consultorios.</p>
           </div>
         </div>
         <div class="gym-feature-card">
@@ -997,8 +912,8 @@ function updateGymDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gym-feature-text">
-            <h4>Rendimiento Estabilizado</h4>
-            <p>Máxima estabilidad química y tolerancia total frente a aguas duras. Mantiene su eficiencia desinfectante en una amplia gama de temperaturas, lo que lo hace idóneo para áreas húmedas de alta exigencia operacional.</p>
+            <h4>Uso Directo y Secado Rápido</h4>
+            <p>Se dosifica de 2 a 3 ml en la palma y se frota firmemente por toda la superficie de las manos hasta secar por evaporación. No requiere enjuague ni toallas.</p>
           </div>
         </div>
         <div class="gym-feature-card">
@@ -1006,8 +921,12 @@ function updateGymDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gym-feature-text">
-            <h4>Manejo Seguro y pH Neutro</h4>
-            <p>Es seguro al tacto y no corrosivo para el equipamiento premium de ejercicio (estructuras de metal, tapizados, pantallas de caminadoras). Fórmula de pH neutro, estable y amigable con el personal de limpieza y el entorno.</p>
+            <h4>Fórmula Hipoalergénica de Seguridad</h4>
+            <p>Libre de colorantes y fragancias artificiales, totalmente incoloro e inoloro. Mantener el envase cerrado y alejado de fuentes de calor por ser inflamable.</p>
+          </div>
+        </div>
+      `;
+    }s de metal, tapizados, pantallas de caminadoras). Fórmula de pH neutro, estable y amigable con el personal de limpieza y el entorno.</p>
           </div>
         </div>
       `;
@@ -1109,8 +1028,8 @@ function updateGastronomiaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>Certificación Grado Alimenticio NSF A1 y SAGARPA</h4>
-            <p>Avalado oficialmente por el registro NSF (Categoría A1) y SAGARPA como desengrasante de grado alimenticio. Completamente seguro para usarse en áreas de preparación de alimentos, mesas de trabajo, superficies de contacto directo y comedores del club.</p>
+            <h4>Certificación Grado Alimenticio NSF A1</h4>
+            <p>Avalado oficialmente por el registro NSF (Categoría A1) como desengrasante seguro para usarse en áreas de preparación de alimentos, mesas de trabajo, charolas y cocinas del hospital.</p>
           </div>
         </div>
         <div class="gastronomia-feature-card">
@@ -1118,8 +1037,8 @@ function updateGastronomiaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1.5-3-1 1-1.5 1.62-1.5 3a2.5 2.5 0 0 0 .5 2.5z" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z" stroke-linecap="round"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>Desengrase de Campanas, Parrillas y Freidoras</h4>
-            <p>Su dilución pesada (1:4) elimina de raíz las grasas pesadas y cochambre carbonizado acumulado en campanas extractoras, parrillas de hierro, freidoras y superficies de acero inoxidable de las cocinas industriales del club.</p>
+            <h4>Desengrase de Campanas y Parrillas</h4>
+            <p>Su dilución pesada (1:4) elimina de raíz las grasas quemadas y el cochambre acumulado en campanas extractoras, parrillas y superficies de acero inoxidable en la cocina hospitalaria.</p>
           </div>
         </div>
         <div class="gastronomia-feature-card">
@@ -1127,8 +1046,8 @@ function updateGastronomiaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>Diluciones para Cocinas y Comedores</h4>
-            <p>Mantenimiento diario de comedores y mesas (1:100). Limpieza operativa de pisos de cocina y área de lavado (1:12). Desengrase profundo de campanas, salamandras y áreas de fritura (1:4). 1 litro rinde hasta 100 litros de solución útil.</p>
+            <h4>Diluciones Versátiles y Rendimiento</h4>
+            <p>Mantenimiento diario de mesas y áreas generales (1:100). Limpieza de pisos y azulejos (1:12). Remoción de cochambre pesado (1:4). Rinde hasta 100 litros de solución útil por litro.</p>
           </div>
         </div>
         <div class="gastronomia-feature-card">
@@ -1137,46 +1056,7 @@ function updateGastronomiaDisplay(product) {
           </div>
           <div class="gastronomia-feature-text">
             <h4>Seguridad Total en Zonas de Alimentos</h4>
-            <p>Sin cáusticos libres, no tóxico, no inflamable y no corrosivo. No daña ni despinta el acero inoxidable, granito ni equipos de cocina. Disponible en versión Low Foam para restregadoras automáticas de pisos en la cocina.</p>
-          </div>
-        </div>
-      `;
-    } else if (product.id === "swipol_gastronomia") {
-      featuresHtml = `
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Seguridad e Inocuidad (Cero Irritación)</h4>
-            <p>Seguridad absoluta para los socios del club: formulado con cuaternarios de amonio de quinta generación que garantizan cero irritación cutánea. Al ser completamente incoloro e inoloro, mantiene intacta la pureza visual y sensorial del área.</p>
-          </div>
-        </div>
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22 4 12 14.01 9 11.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Desinfección de Grado Quirúrgico</h4>
-            <p>Alguicida, fungicida y viricida de amplio espectro, ideal para la desinfección perimetral total. Previene e inhibe eficazmente el crecimiento de hongos y bacterias en vestidores, baños de vapor, regaderas, tapizados de equipos y tapetes sanitarios.</p>
-          </div>
-        </div>
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Rendimiento Estabilizado</h4>
-            <p>Máxima estabilidad química y tolerancia total frente a aguas duras. Mantiene su eficiencia desinfectante en una amplia gama de temperaturas, lo que lo hace idóneo para áreas húmedas de alta exigencia operacional.</p>
-          </div>
-        </div>
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Manejo Seguro y pH Neutro</h4>
-            <p>Es seguro al tacto y no corrosivo para el equipamiento premium y superficies de acero inoxidable (estructuras de metal, cubiertas, campanas). Fórmula de pH neutro, estable y amigable con el personal de limpieza y el entorno.</p>
+            <p>Sin cáusticos libres, no inflamable y no corrosivo. No daña el acero inoxidable ni libera vapores tóxicos, protegiendo al personal y garantizando la inocuidad.</p>
           </div>
         </div>
       `;
@@ -1187,8 +1067,8 @@ function updateGastronomiaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>Rendimiento y Dosificación (Dilución 1:100)</h4>
-            <p>Es un producto altamente concentrado; se requiere mezclar únicamente 10 ml de concentrado por cada litro de agua. Gracias a esta formulación, 1 litro de producto rinde hasta 100 litros de solución limpiadora, brindando una economía sorprendente. Para lograr una desinfección efectiva, se recomienda un tiempo de contacto de 1 minuto.</p>
+            <h4>Rendimiento Altamente Concentrado</h4>
+            <p>Gran economía operativa: se diluye en proporción 1:100 (10 ml de producto por cada litro de agua). Un solo litro de concentrado rinde hasta 100 litros de solución sanitizante.</p>
           </div>
         </div>
         <div class="gastronomia-feature-card">
@@ -1196,8 +1076,8 @@ function updateGastronomiaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>Uso en el Club (Cocinas y Área de Alimentos)</h4>
-            <p>Es un jabón líquido biodegradable y de grado alimenticio, diseñado específicamente para lavar y desinfectar todo tipo de frutas, verduras y hierbas (como cilantro, lechugas, jitomates, papas, etc.). Para procesar los alimentos, las hierbas pueden lavarse por inmersión agitándolas enérgicamente tras enjuagarles la tierra, mientras que las verduras de hoja grande se pueden tallar hoja por hoja con un cepillo de cerdas suaves.</p>
+            <h4>Lavado y Sanitización de Dietas</h4>
+            <p>Jabón líquido biodegradable de grado alimenticio formulado para lavar y desinfectar frutas, verduras y vegetales que integran el plan de nutrición de los pacientes.</p>
           </div>
         </div>
         <div class="gastronomia-feature-card">
@@ -1205,125 +1085,8 @@ function updateGastronomiaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22 4 12 14.01 9 11.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>Ventaja Operativa (Cero Alteración y Cuidado del Personal)</h4>
-            <p>A nivel culinario, una de sus mayores virtudes es que es completamente libre de aroma, por lo que no altera el sabor ni el olor natural de los ingredientes. A nivel operativo, su pH neutro (6 a 8) garantiza que no maltrata ni irrita las manos del personal en el uso diario, y tiene la gran ventaja de no dejar residuos acumulados en las tarjas de acero inoxidable.</p>
-          </div>
-        </div>
-      `;
-    } else if (product.id === "freezer_cleaner") {
-      featuresHtml = `
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12h-4M4 12H8M12 4v4M12 20v-4M18.36 5.64l-2.82 2.83M8.46 15.54l-2.82 2.83M18.36 18.36l-2.82-2.82M8.46 8.46l-2.82-2.82" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Uso Concentrado (-55 °C)</h4>
-            <p>Aplicación directa. En el Club: Limpieza profunda de cámaras de congelación extrema. Permite desengrasar sin apagar equipos, evitando romper la cadena de frío.</p>
-          </div>
-        </div>
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Solución 1:1 (-20 °C)</h4>
-            <p>1 parte de producto por 1 de agua. En el Club: Ideal para el mantenimiento regular de cuartos fríos de almacenamiento general y bodegas de cárnicos.</p>
-          </div>
-        </div>
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8" stroke-linecap="round"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Solución 1:5 (-6 °C)</h4>
-            <p>1 parte de producto por 5 de agua. En el Club: Higiene continua de refrigeradores comerciales y vitrinas en snack bars, garantizando limpieza sin interrumpir el servicio.</p>
-          </div>
-        </div>
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Ventaja Operativa e Inocuidad</h4>
-            <p>Fórmula de evaporación controlada que evita la cristalización de la solución sobre evaporadores. Remueve grasas duras y suciedad sin dejar vapores tóxicos.</p>
-          </div>
-        </div>
-      `;
-    } else if (product.id === "crystal") {
-      featuresHtml = `
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Crystal: Rendimiento y Diluciones</h4>
-            <p>1 litro rinde hasta 100L. Normal: 10 ml/L para limpieza diaria. Grasa Pesada: 15 ml/L para sartenes y residuos difíciles.</p>
-          </div>
-        </div>
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Uso en el Club (Eventos y Cocinas)</h4>
-            <p>Elimina el efecto de gota en cristalería y loza fina, asegurando un acabado impecable de alta transparencia en áreas de alta exigencia.</p>
-          </div>
-        </div>
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Seguridad y Grado Alimenticio</h4>
-            <p>Su pH neutro y certificación garantizan la eliminación de bacterias y hongos sin maltratar ni resecar las manos del personal de limpieza.</p>
-          </div>
-        </div>
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Fórmula Biodegradable</h4>
-            <p>Compuesto 100% biodegradable de enjuague rápido y escurrimiento acelerado que reduce las horas-hombre invertidas en el secado manual de la vajilla.</p>
-          </div>
-        </div>
-      `;
-    } else if (product.id === "grease") {
-      featuresHtml = `
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v3M10 9V5a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Grease: Aplicación en Gel (Directo)</h4>
-            <p>Se aplica directo con brocha. Su formato en gel garantiza adherencia máxima, prolongando el tiempo de acción sin escurrimientos ni desperdicio.</p>
-          </div>
-        </div>
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1.5-3-1 1-1.5 1.62-1.5 3a2.5 2.5 0 0 0 .5 2.5z" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Uso en Cocinas y Banquetes</h4>
-            <p>Quitacochambre definitivo para hornos, planchas y parrillas de hierro/acero inoxidable. Remueve simultáneamente capas superiores y profundas de grasa carbonizada.</p>
-          </div>
-        </div>
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Protocolo y Seguridad</h4>
-            <p style="color: #ff5a5a; font-weight: 600;">Actúa de 5 a 30 min. Nota de seguridad: Obligatorio el uso de guantes de hule. No aplicar sobre superficies calientes ni sobre aluminio.</p>
-          </div>
-        </div>
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Enjuague Sin Residuos</h4>
-            <p>Su fórmula soluble en agua emulsiona el cochambre quemado de modo que se remueve con un simple trapo húmedo, sin dejar residuos alcalinos en los equipos de cocción.</p>
+            <h4>Cero Alteración de Sabor o Aroma</h4>
+            <p>Fórmula inodora e incolora que no altera el sabor, frescura ni color natural de los alimentos. Su pH neutro evita resequedad en las manos del personal de dietología.</p>
           </div>
         </div>
       `;
@@ -1334,8 +1097,8 @@ function updateGastronomiaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>Crystal DWM: Rendimiento y Dosificación</h4>
-            <p>Altamente concentrado. Permite utilizar únicamente de 8 ml a 12 ml de producto por cada ciclo de lavado en equipos modernos de alta eficiencia.</p>
+            <h4>Dosificación Automática Controlada</h4>
+            <p>Dosificación exacta por inyector de 8 ml a 12 ml de producto por ciclo de lavado. Ahorro extraordinario de insumos en equipos automáticos de alta eficiencia.</p>
           </div>
         </div>
         <div class="gastronomia-feature-card">
@@ -1343,8 +1106,8 @@ function updateGastronomiaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="4" y1="10" x2="20" y2="10"/><circle cx="8" cy="7" r="1"/><circle cx="12" cy="7" r="1"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>Uso en Lavado Automático</h4>
-            <p>Detergente de espuma controlada diseñado para máquinas lavaloza. Garantiza limpieza impecable de cristalería, vajillas y cubiertos en banquetes y restaurantes.</p>
+            <h4>Lavado de Charolas y Vajillas</h4>
+            <p>Detergente líquido de espuma controlada ideal para lavavajillas industriales. Garantiza el brillo y la asepsia absoluta de loza, charolas de pacientes y cubiertos.</p>
           </div>
         </div>
         <div class="gastronomia-feature-card">
@@ -1352,8 +1115,8 @@ function updateGastronomiaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>Ventaja Operativa y Mantenimiento</h4>
-            <p>Limpia la loza y desincrusta el interior de la máquina (elimina calcificaciones). Actúa perfectamente a &lt;50 °C, evitando el uso forzoso de calderas y reduciendo el consumo energético.</p>
+            <h4>Acción Desincrustante e Higiene</h4>
+            <p>Limpia la loza y previene la formación de sarro en el interior del equipo. Funciona de manera excelente a &lt;50 °C, reduciendo significativamente el consumo de gas.</p>
           </div>
         </div>
         <div class="gastronomia-feature-card">
@@ -1361,8 +1124,8 @@ function updateGastronomiaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>Protección Térmica y de Boquillas</h4>
-            <p>Evita el taponamiento de las boquillas de aspersión al inhibir la precipitación de calcio en el agua dura de lavado, protegiendo las bombas recirculadoras.</p>
+            <h4>Protección de Boquillas y Tuberías</h4>
+            <p>Evita incrustaciones calcáreas en las boquillas de aspersión y líneas de agua dura, protegiendo las bombas recirculadoras del lavavajillas.</p>
           </div>
         </div>
       `;
@@ -1374,7 +1137,7 @@ function updateGastronomiaDisplay(product) {
           </div>
           <div class="gastronomia-feature-text">
             <h4>Inocuidad Alimentaria Total</h4>
-            <p>Fórmula 100% libre de fragancias y colorantes. Al ser incoloro e inoloro, garantiza cero riesgo de contaminación cruzada o transferencia de aromas a los alimentos preparados para los socios del club.</p>
+            <p>Fórmula 100% inodora y libre de colorantes. Elimina por completo el riesgo de contaminación cruzada o transferencia de aromas a las dietas clínicas.</p>
           </div>
         </div>
         <div class="gastronomia-feature-card">
@@ -1382,8 +1145,8 @@ function updateGastronomiaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22 4 12 14.01 9 11.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>Poderoso Efecto Germicida</h4>
-            <p>Elimina al instante bacterias patógenas típicas en ambientes de alimentos como Salmonella, E. coli y S. aureus, asegurando el cumplimiento de los más altos estándares de bioseguridad en cocinas.</p>
+            <h4>Poderoso Germicida de Amplio Espectro</h4>
+            <p>Elimina eficazmente bacterias patógenas típicas como Salmonella, E. coli y S. aureus en las manos de chefs, dietistas y personal manipulador de alimentos.</p>
           </div>
         </div>
         <div class="gastronomia-feature-card">
@@ -1391,8 +1154,8 @@ function updateGastronomiaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>Protección e Hidratación de la Piel</h4>
-            <p>Fórmula con pH balanceado (5.0 a 6.0) idóneo para la piel humana. Previene la resequedad, descamación e irritación de las manos del personal expuesto al lavado continuo en cocinas.</p>
+            <h4>pH Balanceado y Protección Dérmica</h4>
+            <p>pH balanceado (5.0 a 6.0) enriquecido con humectantes. Protege las manos del personal de cocina contra la resequedad provocada por el lavado repetitivo.</p>
           </div>
         </div>
         <div class="gastronomia-feature-card">
@@ -1400,8 +1163,8 @@ function updateGastronomiaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>Higiene Rigurosa y Rendimiento</h4>
-            <p>Listo para despachadores automáticos o de bomba. Requiere solo una dosis (1.5 ml) frotando firmemente palmas, dedos, uñas y antebrazos durante 40-60 segundos antes de enjuagar.</p>
+            <h4>Higiene Controlada y Dosificación</h4>
+            <p>Para uso directo en dispensadores Swipe. Dosificar 1.5 ml, frotar firmemente uñas, dedos y antebrazo durante 40-60 segundos antes de enjuagar.</p>
           </div>
         </div>
       `;
@@ -1493,51 +1256,42 @@ function updateMantenimientoDisplay(product) {
       svgContainer.style.display = "block";
     }
 
-    // 2. Actualizar botón de cotización
-    if (quoteBtn) {
-      quoteBtn.setAttribute("onclick", `addToQuoteCart('${product.id}', 'mantenimiento')`);
-    }
-
-    // 3. Generar las características técnicas dinámicas
-    let featuresHtml = "";
-    
-    // Mapeo inteligente de características según el producto
-    if (product.id === "swipe_concentrate") {
+    // 2    if (product.id === "swipe_concentrate") {
       featuresHtml = `
         <div class="mantenimiento-feature-card">
           <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Desengrase de Alta Potencia</h4>
-            <p>Remueve con máxima rapidez grasas pesadas, aceites, hollín, polvo y cochambre en vialidades, motores, maquinaria pesada y talleres de mantenimiento del club.</p>
+            <h4>Desincrustación Ácida Instantánea (Brite)</h4>
+            <p>Poderoso desincrustante ácido que elimina de raíz los carbonatos de calcio y magnesio (sarro) y las manchas de óxido en inodoros y mingitorios.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
           <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Rendimiento y Dosificación</h4>
-            <p>Versatilidad total: Solución Liviana (1:100) para vidrios y Casa Club; Solución Normal (1:12) para vialidades y mantenimiento general de pasillos; Solución Pesada (1:4) para motores y talleres.</p>
+            <h4>Dosificación y Métodos de Uso</h4>
+            <p>Aplicar concentrado de forma directa sobre sarro incrustado en porcelana. Dejar actuar 3-5 minutos y tallar. Diluir hasta 1:5 en azulejos.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
           <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Seguridad y Cuidado Ambiental</h4>
-            <p>Fórmula biodegradable en más del 99%, libre de fosfatos. No es tóxica, no es inflamable y no daña ni despinta las superficies del complejo.</p>
+            <h4>Acción Desinfectante y Antiolor</h4>
+            <p>Elimina las bacterias provenientes del agua y materia orgánica, suprimiendo los malos olores. Seguro para porcelana y tuberías de drenaje.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
           <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Versatilidad y pH Neutro</h4>
-            <p>Versión Low Foam disponible para restregadoras automáticas de pisos y versión pH Neutro (pH 7) para proteger el funcionamiento de las plantas tratadoras del club.</p>
+            <h4>Precauciones Críticas de Seguridad</h4>
+            <p style="color: #ff5a5a; font-weight: 600;">Por su naturaleza ácida, NUNCA debe mezclarse con cloro u otros químicos. Utilizar guantes de hule y gafas protectoras durante su aplicación.</p>
           </div>
         </div>
       `;
@@ -1548,8 +1302,8 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Bioseguridad Total Multiusos</h4>
-            <p>Formulado con cuaternarios de amonio de quinta generación que garantizan cero irritación cutánea. Elimina al 99.999% bacterias, virus y hongos en lobbys, pasillos, salones de eventos, mostradores y áreas de atención al socio del club.</p>
+            <h4>Bioseguridad en Sanitarios Públicos</h4>
+            <p>Formulado con cuaternarios de amonio de quinta generación. Sanitiza en profundidad pisos, paredes, lavabos, grifos y cambiadores de bebés en baños.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
@@ -1557,8 +1311,8 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22 4 12 14.01 9 11.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Discreción Absoluta (Incoloro e Inodoro)</h4>
-            <p>Su fórmula 100% incolora e inodora garantiza que la desinfección profunda de oficinas de administración, salones y áreas de recepción se realice sin dejar olores químicos que alteren la experiencia premium de los socios.</p>
+            <h4>Fórmula Incolora e Inodora</h4>
+            <p>Elimina virus y bacterias causantes de gastroenteritis e infecciones cutáneas de manera discreta y sin aromas invasivos o molestos en áreas comunes.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
@@ -1566,8 +1320,8 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Rendimiento y Dosificación</h4>
-            <p>Limpieza de rutina (1:200) para superficies de alto tráfico como pasillos y lobbys. Desinfección profunda (1:100) para baños generales y zonas de atención médica del club. No requiere enjuague en diluciones de mantenimiento.</p>
+            <h4>Rendimiento y Dosificación Hospitalaria</h4>
+            <p>Trapeado diario de pisos (dilución 1:200). Desinfección de mamparas y grifos de alto contacto (1:100). No requiere enjuague en dilución común.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
@@ -1575,125 +1329,8 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Manejo Seguro y pH Neutro</h4>
-            <p>Completamente neutro (pH 7.0), no deja residuos ni altera los acabados de pisos finos, muebles y superficies premium del club. Dermatológicamente seguro y sin vapores irritantes para el personal de limpieza.</p>
-          </div>
-        </div>
-      `;
-    } else if (product.id === "rust_off") {
-      featuresHtml = `
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Rendimiento y Dosificación</h4>
-            <p><strong>Mantenimiento Normal (1:10):</strong> Se diluye 1 parte de producto por 10 partes de agua, lo que le otorga una gran economía a nivel industrial.<br><strong>Uso Pesado:</strong> Para incrustaciones de óxido muy gruesas, se puede aplicar en una dilución más fuerte o incluso concentrado. Su aplicación correcta consiste en rociar, dejar actuar de 10 a 15 minutos y después enjuagar (apoyándose con una fibra verde SWIPE si es necesario).</p>
-          </div>
-        </div>
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8M8 12h8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Uso en el Club (Infraestructura y Tuberías)</h4>
-            <p>Es un poderoso desincrustante industrial de tipo ácido, totalmente biodegradable. Está diseñado para eliminar de manera efectiva los carbonatos de calcio y magnesio (sarro) adheridos a calderas, tuberías y maquinaria pesada del club. Además, remueve concreto sobre diversas superficies y grasa animal o vegetal incrustada en equipos de cocina industrial.</p>
-          </div>
-        </div>
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Ventaja Operativa (Protección de Activos)</h4>
-            <p>A diferencia de los ácidos tradicionales que corroen los metales, su fórmula incluye agentes inhibidores de corrosión que protegen las piezas metálicas mientras están siendo desincrustadas. Contiene agentes antioxidantes que ayudan a evitar que las piezas tratadas vuelvan a oxidarse rápidamente.</p>
-          </div>
-        </div>
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Protocolo de Seguridad Estricto</h4>
-            <p style="color: #ff5a5a; font-weight: 600;">Químico de nivel industrial y de naturaleza ácida: NUNCA mezclarse con cloro ni con ningún otro producto. Requisito indispensable que el personal de mantenimiento utilice guantes de hule y goggles de protección al manipularlo, en áreas ventiladas.</p>
-          </div>
-        </div>
-      `;
-    } else if (product.id === "alubrite") {
-      featuresHtml = `
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Rendimiento y Aplicación</h4>
-            <p><strong>Dilución 1:10 a 1:20:</strong> Se diluye 1 parte de producto por 10 a 20 partes de agua, dependiendo de qué tan severas sean las incrustaciones en el metal. La técnica correcta exige aplicarlo de abajo hacia arriba, dejarlo actuar entre 3 y 5 minutos, y enjuagar inmediatamente con abundante agua para que el producto no se seque y deje marcas de escurrimiento.</p>
-          </div>
-        </div>
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-1.1 0-2 .9-2 2v7c0 .6.4 1 1 1h2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="21" r="2"/><circle cx="17" cy="21" r="2"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Uso en el Club (Estructuras, Ventanales y Vehículos)</h4>
-            <p>Limpiador y abrillantador altamente eficiente diseñado para superficies de aluminio y acero inoxidable. Es la herramienta perfecta para el mantenimiento de cancelerías, puertas de aluminio, escaleras de albercas y para dejar relucientes los rines de los automóviles o carritos de golf de las flotas del club.</p>
-          </div>
-        </div>
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Ventaja Operativa (Restauración del Brillo)</h4>
-            <p>Su fórmula crea una capa de espuma fina y densa que penetra el metal para eliminar esos molestos "óxidos blancos" que opacan el aluminio con el tiempo, así como la suciedad adherida, devolviéndole su brillo original de fábrica. Un gran plus es que no daña la pintura ni las calcomanías de los vehículos o flotillas.</p>
-          </div>
-        </div>
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Precauciones Críticas de Seguridad</h4>
-            <p style="color: #ff5a5a; font-weight: 600;">Químico industrial TÓXICO y ALTAMENTE CORROSIVO (contiene Ácido Fluorhídrico). Obligatorio el uso de goggles, guantes de neopreno y mandil especial para ácidos. Se recomienda NO utilizar en aluminio anodizado ni en otros metales que no sean aluminio. NUNCA mezclar con cloro.</p>
-          </div>
-        </div>
-      `;
-    } else if (product.id === "steelbrite") {
-      featuresHtml = `
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Rendimiento y Dosificación</h4>
-            <p><strong>Dilución 1:5 a 1:10:</strong> Se utiliza diluido en una proporción de 1 parte de producto por 5 a 10 partes de agua, dependiendo de qué tan severas sean las incrustaciones de sarro o grasas sobre el acero.</p>
-          </div>
-        </div>
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Uso en el Club (Cocinas y Áreas de Alimentos)</h4>
-            <p>Poderosa fórmula de grado alimenticio diseñada específicamente para eliminar incrustaciones de sales minerales (sarro) y grasas pesadas en todas las superficies de acero inoxidable del club. Ideal para mesas de trabajo, campanas, ollas de cocimiento, herramientas de cocina, cuartos fríos y equipos en general en el procesamiento de alimentos.</p>
-          </div>
-        </div>
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Técnica Segura y Protección de Equipos</h4>
-            <p><strong>Técnica de Aplicación:</strong> Para lograr el acabado brillante sin dañar el mobiliario, debe aplicarse con una fibra blanca (suave), evitando estrictamente fibras verdes o negras que rayen permanentemente el acero.<br><strong>Protección del Equipo:</strong> Formulado con inhibidores de corrosión activos que protegen las valiosas piezas metálicas de la acción ácida durante la desincrustación.</p>
-          </div>
-        </div>
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Precauciones y Manejo</h4>
-            <p style="color: #ff5a5a; font-weight: 600;">NUNCA mezclar con cloro bajo ninguna circunstancia. El personal debe utilizar obligatoriamente guantes de hule y lentes de seguridad durante su manejo en áreas bien ventiladas.</p>
+            <h4>pH Neutro Seguro en Cerámicas</h4>
+            <p>Completamente neutro (pH 7.0) que protege las juntas de azulejos, recubrimientos finos y grifería de la corrosión. Dermatológicamente seguro.</p>
           </div>
         </div>
       `;
@@ -1704,8 +1341,8 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Rendimiento y Dosificación</h4>
-            <p><strong>Concentración Extrema:</strong> Líquido altamente concentrado con rendimiento sobresaliente.<br><strong>Uso Directo:</strong> Unas cuantas gotas puras en ceniceros/botes de basura, o simplemente destapar y regular inserto para desodorizar espacios pequeños.<br><strong>Aspersión (Rendimiento Máximo):</strong> Diluir de 30 a 60 gotas en medio litro de agua en atomizador para áreas grandes o malos olores impregnados.</p>
+            <h4>Dosificación y Máximo Rendimiento</h4>
+            <p>Líquido concentrado de alta eficiencia. Gotas puras en botes de basura o diluir 30 a 60 gotas en atomizador con medio litro de agua para esparcir en áreas amplias.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
@@ -1713,8 +1350,8 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Uso en el Club (Recepción, Oficinas y Salones)</h4>
-            <p>Desodorante y desinfectante de ambiente biodegradable que actúa neutralizando los aromas de raíz. Disponible en aromas premium (menta, floral, canela y vainilla), es perfecto para mantener una atmósfera fresca en áreas sociales, salas de juntas, baños y oficinas de la Casa Club.</p>
+            <h4>Uso Hospitalario (Sanitarios y Espera)</h4>
+            <p>Desodorante y neutralizador biodegradable. Ideal para sanitarios públicos, áreas de vestidores, oficinas y salas de espera, liberando un aroma premium persistente.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
@@ -1722,8 +1359,8 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Ventaja Operativa (Neutralización Real)</h4>
-            <p>No solo enmascara el olor con perfume; contiene agentes germicidas y degradadores de materia orgánica que eliminan del medio ambiente los olores desagradables de raíz (como humo de tabaco o vapores de cocinas).</p>
+            <h4>Neutralización Real de Olores de Raíz</h4>
+            <p>Contiene agentes degradadores que rompen químicamente las moléculas causantes de la humedad y el sudor en vez de solo enmascararlos con perfume.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
@@ -1731,47 +1368,8 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Sinergia Swipol y Seguridad</h4>
-            <p><strong>Dato Estratégico de Sinergia:</strong> Compatible y combinable con el desinfectante **Swipol** sin que este último pierda sus propiedades germicidas. Esto permite limpiar, desinfectar y aromatizar en un solo paso.<br><strong style="color: #ff5a5a;">Nota de Seguridad:</strong> A pesar de su baja toxicidad, este producto es FLAMABLE, por lo que debe almacenarse adecuadamente alejado de fuentes de calor.</p>
-          </div>
-        </div>
-      `;
-    } else if (product.id === "biodegreaser") {
-      featuresHtml = `
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Rendimiento y Dosificación</h4>
-            <p><strong>Dosificación Diaria:</strong> Se dosifican 200 ml diarios para tratar líneas de drenaje y trampas de grasa con una capacidad de hasta 500 litros.<br><strong>Dosificación Automática:</strong> Para facilitar esta labor y asegurar la dosificación exacta en el club, se recomienda utilizar el dosificador automático BIODEGREASER.</p>
-          </div>
-        </div>
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Usos y Aplicación (Cocinas y Restaurantes)</h4>
-            <p>Es una mezcla de microorganismos, natural, no tóxica y no corrosiva. Diseñado específicamente para desintegar almidones, carbohidratos, grasas y aceites. Tratamiento preventivo ideal para trampas de grasa de cocinas y restaurantes del club, ya que degrada los desechos orgánicos y reduce significativamente los malos olores.</p>
-          </div>
-        </div>
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Regla Operativa</h4>
-            <p>Para que los microorganismos actúen correctamente, el producto debe aplicarse de noche o en un horario en donde la línea de drenaje o la trampa de grasa no se encuentre en uso, permitiendo tiempo de reposo para el cultivo biológico.</p>
-          </div>
-        </div>
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Nota Técnica Crítica</h4>
-            <p style="color: #ff5a5a; font-weight: 600;">Debido a que es un cultivo biológico vivo, NO debe mezclarse con desinfectantes ni con productos alcalinos o ácidos, ya que neutralizarían la acción de los microorganismos benéficos.</p>
+            <h4>Sinergia con Swipol y Seguridad</h4>
+            <p>Compatible para mezclarse en la misma dilución con el desinfectante Swipol (limpieza y aromatización en un paso). Líquido flamable, alejar del calor.</p>
           </div>
         </div>
       `;
@@ -1782,8 +1380,8 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Rendimiento y Aplicación</h4>
-            <p><strong>Uso Concentrado:</strong> Diseñado para usarse directo en estado concentrado para una desinfección efectiva. Se aplica en las manos frotando firmemente por un minuto y luego se enjuaga.<br><strong>Optimización de Insumos:</strong> Para evitar desperdicios y maximizar el rendimiento, se recomienda el uso de los despachadores automáticos o manuales de jabón para manos de SWIPE.</p>
+            <h4>Dosificación y Rendimiento Óptimo</h4>
+            <p>Uso directo concentrado sin dilución. Se dosifica 1.5 ml en las manos mediante dispensadores Swipe rellenables para evitar el desperdicio de insumos.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
@@ -1791,8 +1389,8 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Uso en el Club (Comedores, Baños y Áreas Médicas)</h4>
-            <p>Jabón líquido germicida y de grado alimenticio formulado para eliminar una amplia gama de bacterias, hongos y levaduras (como <em>S. aureus, E. coli, Salmonella</em>). Es indispensable para la higiene rigurosa en cocinas del club (personal que prepara alimentos), baños generales, consultorios médicos o guarderías, previniendo infecciones cruzadas.</p>
+            <h4>Higiene y Asepsia Pública</h4>
+            <p>Jabón antiséptico líquido de manos con agradable aroma. Limpia y elimina bacterias patógenas, previniendo infecciones de transmisión cruzada en sanitarios.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
@@ -1800,8 +1398,8 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Ventaja Operativa (Cuidado de la Piel)</h4>
-            <p>Cuenta con un pH balanceado (de 5 a 6) que está en perfecta armonía con la química natural de la piel, asegurando que no irrite ni reseque las manos, incluso con el lavado altamente frecuente exigido al personal operativo y médico del club.</p>
+            <h4>Protección Cutánea Avanzada</h4>
+            <p>pH balanceado de 5.0 a 6.0 enriquecido con glicerina. Protege la barrera lipídica de la piel, evitando la resequedad provocada por lavados frecuentes.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
@@ -1809,8 +1407,8 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Versatilidad y Normativas Alimentarias</h4>
-            <p>Además de los aromas premium a almendras o frutas idóneos para baños generales, está disponible en una versión sin fragancia y sin color especialmente diseñada para cocinas y áreas de preparación de alimentos, cumpliendo estrictamente con las normativas sanitarias y de inocuidad alimentaria.</p>
+            <h4>Seguridad de Uso y Aplicación</h4>
+            <p>Exclusivamente para uso externo. Evitar el contacto con los ojos. Frotar enérgicamente por 40-60 segundos cubriendo uñas y dedos antes de enjuagar.</p>
           </div>
         </div>
       `;
@@ -1849,6 +1447,14 @@ function updateMantenimientoDisplay(product) {
         <div class="mantenimiento-feature-card">
           <div class="mantenimiento-feature-icon-container">
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Seguridad e Impacto Ambiental</h4>
+            <p><strong>Manejo Seguro:</strong> ${product.safety}<br><strong>Impacto en pH:</strong> ${product.phImpact || 'Neutro.'}</p>
+          </div>
+        </div>
+      `;
+    }th d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
             <h4>Seguridad e Impacto Ambiental</h4>

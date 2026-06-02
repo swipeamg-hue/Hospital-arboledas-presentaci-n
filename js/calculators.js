@@ -1,44 +1,43 @@
 /**
  * Lógica matemática de las calculadoras y simuladores interactivos
- * para cada una de las 5 áreas del Club de Golf Las Lomas.
+ * para cada una de las 5 áreas del Hospital Arboledas.
  */
 
 const CALCULATORS = {
-  // 1. ALBERCA - Calculadora de Dosificación de Químicos
+  // 1. QUIRÓFANOS & UCI - Calculadora de Dosificación de Desinfectantes (historically col-alberca)
   alberca: {
     render: (containerId) => {
       const html = `
         <div class="calculator-card" style="border-color: var(--color-alberca)">
           <div class="calc-title-group" style="color: var(--color-alberca)">
-            <svg class="calc-icon" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <h3 class="calc-title">Dosificación de Químicos</h3>
+            <svg class="calc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3 class="calc-title">Dosificación de Desinfectantes</h3>
           </div>
           <div class="calc-form">
             <div class="calc-input-group">
-              <label class="calc-label">Volumen de Alberca</label>
+              <label class="calc-label">Superficie a Desinfectar</label>
               <div class="calc-input-container">
                 <input type="number" id="alb-vol" class="calc-input" value="50" min="1" max="5000">
-                <span class="calc-unit">m³ (Lts × 1000)</span>
+                <span class="calc-unit">m² de área quirúrgica</span>
               </div>
             </div>
             <div class="calc-input-group">
-              <label class="calc-label">Producto Químico</label>
+              <label class="calc-label">Desinfectante Clínico</label>
               <select id="alb-prod" class="calc-input calc-select">
-                <option value="shock">Cloro Shock Premium (Sanitizante)</option>
-                <option value="alguicida">Alguicida Concentrado (Anti-Algas)</option>
-                <option value="clarificador">Clarificador Floculante (Brillo)</option>
+                <option value="swipol">Swipol (Desinfección de Superficies)</option>
+                <option value="peracetic">Peracetic (Esterilización y Alto Nivel)</option>
               </select>
             </div>
             <div class="calc-input-group">
-              <label class="calc-label">Estado del Agua</label>
+              <label class="calc-label">Nivel de Carga Biológica</label>
               <select id="alb-state" class="calc-input calc-select">
-                <option value="maint">Mantenimiento (Rutina Semanal)</option>
-                <option value="corrective">Correctivo (Agua Turbia / Algas)</option>
+                <option value="maint">Rutina / Sanitización Diaria (Baja Carga)</option>
+                <option value="corrective">Quirófano Post-Cirugía / UCI (Alta Carga)</option>
               </select>
             </div>
             <div class="calc-result-box" style="border-color: rgba(0, 242, 254, 0.15)">
-              <span class="calc-result-value" id="alb-res" style="color: var(--color-alberca)">750 g</span>
-              <span class="calc-result-label">Cantidad Recomendada</span>
+              <span class="calc-result-value" id="alb-res" style="color: var(--color-alberca)">25 ml</span>
+              <span class="calc-result-label">Cantidad de Producto Swipe</span>
             </div>
           </div>
         </div>
@@ -47,27 +46,108 @@ const CALCULATORS = {
 
       // Event Listeners
       const update = () => {
-        const vol = parseFloat(document.getElementById("alb-vol").value) || 0;
+        const area = parseFloat(document.getElementById("alb-vol").value) || 0;
         const prod = document.getElementById("alb-prod").value;
         const state = document.getElementById("alb-state").value;
+        
+        // Asumimos 100 ml de solución diluida por m² de superficie
+        const solutionNeededMl = area * 100;
         let amount = 0;
-        let unit = "g";
+        let unit = "ml";
 
-        if (prod === "shock") {
-          // Shock: Mantenimiento = 15g/m3, Choque = 30g/m3
-          amount = state === "maint" ? vol * 15 : vol * 30;
-          unit = "g";
-        } else if (prod === "alguicida") {
-          // Alguicida: Maint = 10ml/m3, Corrective = 30ml/m3
-          amount = state === "maint" ? vol * 10 : vol * 30;
-          unit = "ml";
-        } else if (prod === "clarificador") {
-          // Clarificador: Maint = 5ml/m3, Corrective = 15ml/m3
-          amount = state === "maint" ? vol * 5 : vol * 15;
-          unit = "ml";
+        if (prod === "swipol") {
+          // Swipol: Rutina 1:200 (5 ml/L), Alta carga 1:100 (10 ml/L)
+          const dilutionRatio = state === "maint" ? 200 : 100;
+          amount = solutionNeededMl / dilutionRatio;
+        } else if (prod === "peracetic") {
+          // Peracetic: Rutina 1:100 (10 ml/L), Alta carga 1:50 (20 ml/L)
+          const dilutionRatio = state === "maint" ? 100 : 50;
+          amount = solutionNeededMl / dilutionRatio;
         }
 
         // Formatear salida
+        let output = "";
+        if (amount >= 1000) {
+          output = `${(amount / 1000).toFixed(2)} L`;
+        } else {
+          output = `${Math.round(amount)} ml`;
+        }
+
+        document.getElementById("alb-res").innerText = output;
+      };
+
+      document.getElementById("alb-vol").addEventListener("input", update);
+      document.getElementById("alb-prod").addEventListener("change", update);
+      document.getElementById("alb-state").addEventListener("change", update);
+      update();
+    }
+  },
+
+  // 2. LAVANDERÍA CLÍNICA - Carga de Lavandería Clínica (historically col-spa)
+  spa: {
+    render: (containerId) => {
+      const html = `
+        <div class="calculator-card" style="border-color: var(--color-spa)">
+          <div class="calc-title-group" style="color: var(--color-spa)">
+            <svg class="calc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3 class="calc-title">Dosificación Lavandería</h3>
+          </div>
+          <div class="calc-form">
+            <div class="calc-input-group">
+              <label class="calc-label">Peso Estimado de Carga Textil</label>
+              <div class="calc-input-container">
+                <input type="number" id="spa-vol" class="calc-input" value="30" min="1" max="500">
+                <span class="calc-unit">kilogramos (kg) de blancos</span>
+              </div>
+            </div>
+            <div class="calc-input-group">
+              <label class="calc-label">Tipo de Suciedad / Fluidos</label>
+              <select id="spa-intensity" class="calc-input calc-select">
+                <option value="soft">Suciedad Leve (Consultorios / Lobbies)</option>
+                <option value="medium" selected>Fluidos Corporales Leves (Habitaciones)</option>
+                <option value="high">Fluidos Críticos / Sangre (Quirófano / Urgencias)</option>
+              </select>
+            </div>
+            <div class="calc-input-group">
+              <label class="calc-label">Producto a Dosificar</label>
+              <select id="spa-product-type" class="calc-input calc-select" style="accent-color: var(--color-spa);">
+                <option value="hldh" selected>HLDH (Detergente Clorado Oxigenante)</option>
+                <option value="swipe">SWIPE original (Prelavado / Desmanchado)</option>
+              </select>
+            </div>
+            <div class="calc-result-box" style="border-color: rgba(5, 230, 180, 0.15)">
+              <span class="calc-result-value" id="spa-res" style="color: var(--color-spa)">450 g</span>
+              <span class="calc-result-label">Cantidad Necesaria Estimada</span>
+            </div>
+          </div>
+        </div>
+      `;
+      document.getElementById(containerId).innerHTML = html;
+
+      const update = () => {
+        const weight = parseFloat(document.getElementById("spa-vol").value) || 0;
+        const level = document.getElementById("spa-intensity").value;
+        const prod = document.getElementById("spa-product-type").value;
+        
+        let amount = 0;
+        let unit = "g";
+
+        if (prod === "hldh") {
+          // HLDH: Leve 10g/kg, Medio 15g/kg, Crítico 20g/kg
+          let factor = 15;
+          if (level === "soft") factor = 10;
+          if (level === "high") factor = 20;
+          amount = weight * factor;
+          unit = "g";
+        } else {
+          // SWIPE original prelavado: Leve 10ml/kg, Medio 15ml/kg, Crítico 25ml/kg
+          let factor = 15;
+          if (level === "soft") factor = 10;
+          if (level === "high") factor = 25;
+          amount = weight * factor;
+          unit = "ml";
+        }
+
         let output = "";
         if (unit === "g") {
           if (amount >= 1000) {
@@ -83,122 +163,57 @@ const CALCULATORS = {
           }
         }
 
-        document.getElementById("alb-res").innerText = output;
-      };
-
-      document.getElementById("alb-vol").addEventListener("input", update);
-      document.getElementById("alb-prod").addEventListener("change", update);
-      document.getElementById("alb-state").addEventListener("change", update);
-      update();
-    }
-  },
-
-  // 2. SPA - Simulador de Aromaterapia de Vapor
-  spa: {
-    render: (containerId) => {
-      const html = `
-        <div class="calculator-card" style="border-color: var(--color-spa)">
-          <div class="calc-title-group" style="color: var(--color-spa)">
-            <svg class="calc-icon" viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <h3 class="calc-title">Aromaterapia & Vapor</h3>
-          </div>
-          <div class="calc-form">
-            <div class="calc-input-group">
-              <label class="calc-label">Volumen del Cuarto de Vapor</label>
-              <div class="calc-input-container">
-                <input type="number" id="spa-vol" class="calc-input" value="15" min="1" max="200">
-                <span class="calc-unit">m³ (L × A × H)</span>
-              </div>
-            </div>
-            <div class="calc-input-group">
-              <label class="calc-label">Intensidad Aromática</label>
-              <select id="spa-intensity" class="calc-input calc-select">
-                <option value="soft">Intensidad Suave (Relajante)</option>
-                <option value="medium" selected>Intensidad Media (Balanceada)</option>
-                <option value="high">Intensidad Alta (Vías Respiratorias)</option>
-              </select>
-            </div>
-            <div class="calc-input-group">
-              <label class="calc-label">Horas de Operación Diaria</label>
-              <input type="range" id="spa-hours" min="1" max="24" value="12" style="accent-color: var(--color-spa); cursor:pointer;">
-              <div style="display:flex; justify-content:space-between; font-size:0.75rem; color:var(--color-text-muted); margin-top:0.2rem;">
-                <span>1 hora</span>
-                <span id="spa-hours-val" style="color: var(--color-spa); font-weight:700">12 horas</span>
-                <span>24 horas</span>
-              </div>
-            </div>
-            <div class="calc-result-box" style="border-color: rgba(5, 230, 180, 0.15)">
-              <span class="calc-result-value" id="spa-res" style="color: var(--color-spa)">180 ml</span>
-              <span class="calc-result-label">Consumo diario de Esencia (Eucalipto)</span>
-            </div>
-          </div>
-        </div>
-      `;
-      document.getElementById(containerId).innerHTML = html;
-
-      const update = () => {
-        const vol = parseFloat(document.getElementById("spa-vol").value) || 0;
-        const intensity = document.getElementById("spa-intensity").value;
-        const hours = parseInt(document.getElementById("spa-hours").value);
-        
-        document.getElementById("spa-hours-val").innerText = `${hours} horas`;
-
-        // Coeficientes por m3 por hora
-        let coef = 0.5; // soft
-        if (intensity === "medium") coef = 1.0;
-        if (intensity === "high") coef = 1.8;
-
-        const totalMl = vol * coef * hours;
-        let output = "";
-        if (totalMl >= 1000) {
-          output = `${(totalMl / 1000).toFixed(2)} L`;
-        } else {
-          output = `${Math.round(totalMl)} ml`;
-        }
-
         document.getElementById("spa-res").innerText = output;
       };
 
       document.getElementById("spa-vol").addEventListener("input", update);
       document.getElementById("spa-intensity").addEventListener("change", update);
-      document.getElementById("spa-hours").addEventListener("input", update);
+      document.getElementById("spa-product-type").addEventListener("change", update);
       update();
     }
   },
 
-  // 3. GIMNASIO - Ahorro por Dilución Concentrada
+  // 3. HABITACIONES DE PACIENTES - Estaciones de Higiene de Manos (historically col-gimnasio)
   gimnasio: {
     render: (containerId) => {
       const html = `
         <div class="calculator-card" style="border-color: var(--color-gimnasio)">
           <div class="calc-title-group" style="color: var(--color-gimnasio)">
-            <svg class="calc-icon" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16zM3.27 6.96L12 12.01l8.73-5.05M12 22.08V12" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <h3 class="calc-title">Ahorro por Concentrado</h3>
+            <svg class="calc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3 class="calc-title">Estaciones de Higiene</h3>
           </div>
           <div class="calc-form">
             <div class="calc-input-group">
-              <label class="calc-label">Cantidad de Producto Concentrado</label>
+              <label class="calc-label">Número de Estaciones / Dispensadores</label>
               <select id="gym-concentrate" class="calc-input calc-select">
-                <option value="1">Garrafa de 1 Litro</option>
-                <option value="4" selected>Galón de 4 Litros</option>
-                <option value="20">Porrón de 20 Litros</option>
+                <option value="5">5 Estaciones</option>
+                <option value="10" selected>10 Estaciones</option>
+                <option value="20">20 Estaciones</option>
+                <option value="50">50 Estaciones</option>
               </select>
             </div>
             <div class="calc-input-group">
-              <label class="calc-label">Línea de Limpieza Deportiva</label>
+              <label class="calc-label">Insumo de Higiene de Manos</label>
               <select id="gym-type" class="calc-input calc-select">
-                <option value="spray">Swipe Gym Spray (Desinfectante Equipos - Dil. 1:20)</option>
-                <option value="floor">Floor-Active Sanitizer (Limpiador Pisos - Dil. 1:200)</option>
+                <option value="soap">Hand Soap Germicida (Dosis 1.5 ml)</option>
+                <option value="gel">Sani-Gel (Alcohol al 70% - Dosis 2.0 ml)</option>
+              </select>
+            </div>
+            <div class="calc-input-group">
+              <label class="calc-label">Frecuencia de Uso Diario (Por Estación)</label>
+              <select id="gym-usage-frequency" class="calc-input calc-select">
+                <option value="50" selected>Moderado (50 sanitizaciones/día)</option>
+                <option value="150">Intensivo (150 sanitizaciones/día)</option>
               </select>
             </div>
             <div class="calc-result-box" style="border-color: rgba(255, 77, 45, 0.15); display: grid; grid-template-columns: 50% 50%; gap: 1rem; align-items: center;">
               <div>
-                <span class="calc-result-value" id="gym-res-qty" style="color: var(--color-gimnasio)">80 L</span>
-                <span class="calc-result-label" style="font-size:0.65rem">Producto Listo para Usar</span>
+                <span class="calc-result-value" id="gym-res-qty" style="color: var(--color-gimnasio)">750 ml</span>
+                <span class="calc-result-label" style="font-size:0.65rem">Consumo Diario Estimado</span>
               </div>
               <div style="border-left: 1px solid rgba(255,255,255,0.08)">
-                <span class="calc-result-value" id="gym-res-save" style="color: #10b981">$2,400</span>
-                <span class="calc-result-label" style="font-size:0.65rem">Ahorro Económico Est.</span>
+                <span class="calc-result-value" id="gym-res-save" style="color: #10b981">5.3 días</span>
+                <span class="calc-result-label" style="font-size:0.65rem">Durabilidad de Garrafa 4L</span>
               </div>
             </div>
           </div>
@@ -207,39 +222,34 @@ const CALCULATORS = {
       document.getElementById(containerId).innerHTML = html;
 
       const update = () => {
-        const liters = parseFloat(document.getElementById("gym-concentrate").value);
+        const stations = parseFloat(document.getElementById("gym-concentrate").value);
         const type = document.getElementById("gym-type").value;
+        const usage = parseFloat(document.getElementById("gym-usage-frequency").value);
         
-        let dilutedLiters = 0;
-        let savings = 0;
+        const dose = type === "soap" ? 1.5 : 2.0;
+        const dailyConsumptionMl = stations * usage * dose;
+        const bottleCapacityMl = 4000;
+        const daysDuration = bottleCapacityMl / dailyConsumptionMl;
 
-        if (type === "spray") {
-          // Dilución 1:20 (1L de concentrado hace 20L de producto listo para usar)
-          dilutedLiters = liters * 20;
-          // Ahorro estimado: un sanitizante comercial de gimnasio de marca cuesta unos $65 MXN el litro.
-          // Rociador Swipe diluido cuesta aprox $6.50 pesos el litro.
-          // Ahorro es de $58.50 por litro diluido!
-          savings = dilutedLiters * 58.50;
+        let consumptionOutput = "";
+        if (dailyConsumptionMl >= 1000) {
+          consumptionOutput = `${(dailyConsumptionMl / 1000).toFixed(2)} Litros`;
         } else {
-          // Dilución 1:200 (1L concentrado hace 200L / aprox 20 cubetas de trapeado)
-          dilutedLiters = liters * 200;
-          // Un limpiador de pisos normal cuesta $25 pesos el litro.
-          // Solución Swipe rinde de forma increíble, costo por litro diluido es de aprox $0.80 centavos.
-          // Ahorro es de $24.20 por litro!
-          savings = dilutedLiters * 24.20;
+          consumptionOutput = `${Math.round(dailyConsumptionMl)} ml`;
         }
 
-        document.getElementById("gym-res-qty").innerText = `${dilutedLiters} Litros`;
-        document.getElementById("gym-res-save").innerText = `$${Math.round(savings).toLocaleString("es-MX")} MXN`;
+        document.getElementById("gym-res-qty").innerText = consumptionOutput;
+        document.getElementById("gym-res-save").innerText = `${daysDuration.toFixed(1)} días`;
       };
 
       document.getElementById("gym-concentrate").addEventListener("change", update);
       document.getElementById("gym-type").addEventListener("change", update);
+      document.getElementById("gym-usage-frequency").addEventListener("change", update);
       update();
     }
   },
 
-  // 4. GASTRONOMÍA - Protocolos de Higiene del Restaurante
+  // 4. DIETOLOGÍA & COCINA - Protocolos de Inocuidad Alimentaria (historically col-gastronomia)
   gastronomia: {
     render: (containerId) => {
       const html = `
@@ -250,12 +260,12 @@ const CALCULATORS = {
           </div>
           <div class="calc-form">
             <div class="calc-input-group">
-              <label class="calc-label">Seleccionar Área de Cocina</label>
+              <label class="calc-label">Seleccionar Tarea en Dietología/Cocina</label>
               <select id="gas-area" class="calc-input calc-select">
                 <option value="grease">Campanas, Parrillas y Hornos (Cochambre)</option>
-                <option value="dish">Lavavajillas y Cristalería Automatizada</option>
-                <option value="fruits">Desinfección de Ensaladas y Frutas</option>
-                <option value="surfaces">Mesas de Trabajo, Rebanadoras y Tablas</option>
+                <option value="dish">Lavado de Charolas y Vajillas de Pacientes</option>
+                <option value="fruits">Desinfección de Ensaladas, Frutas y Verduras</option>
+                <option value="surfaces">Mesas de Trabajo, Rebanadoras y Utensilios</option>
               </select>
             </div>
             
@@ -269,43 +279,43 @@ const CALCULATORS = {
 
       const protocols = {
         grease: {
-          product: "Super Degreaser Plus",
-          dilution: "1:3 (Extremo) a 1:10 (Diario)",
+          product: "SWIPE original (Desengrasante)",
+          dilution: "1:4 (Cochambre Pesado) a 1:12 (Limpieza)",
           steps: [
-            "Apagar equipos y raspar depósitos gruesos de cochambre.",
-            "Rociar uniformemente con espumador Swipe.",
-            "Dejar reposar entre 5 y 10 minutos (sin dejar secar).",
-            "Tallar ligeramente con fibra abrasiva y enjuagar con agua caliente."
+            "Apagar y dejar enfriar planchas, campanas o parrillas.",
+            "Rociar la solución SWIPE 1:4 uniformemente sobre la grasa.",
+            "Dejar reposar entre 5 y 10 minutos (sin que se seque).",
+            "Tallar ligeramente con fibra verde y enjuagar con agua potable."
           ]
         },
         dish: {
-          product: "Auto-Dish Liquid Premium",
-          dilution: "2 a 4 ml por litro de agua (Automatizado)",
+          product: "Crystal DWM (Lavavajillas Mecánico)",
+          dilution: "8 a 12 ml por ciclo (Inyección automática)",
           steps: [
-            "Escamochar vajilla eliminando residuos de comida grandes.",
-            "Colocar en canastillas sin encimar platos.",
-            "El sistema dosifica electrónicamente al ciclo de lavado.",
-            "Retirar del rack al secarse. No requiere secado manual con trapo."
+            "Escamochar charolas retirando los residuos de comida gruesos.",
+            "Colocar vajilla y charolas térmicas en racks sin encimar.",
+            "El sistema inyectará la dosis exacta de Crystal DWM.",
+            "Retirar del rack al secarse. Escurrimiento acelerado automático."
           ]
         },
         fruits: {
-          product: "Fruit & Veggie Sanitizer",
-          dilution: "1:500 (10 ml en 5 litros de agua)",
+          product: "Veggiefruit Wash (Sanitizante Alimentos)",
+          dilution: "1:100 (10 ml por litro de agua purificada)",
           steps: [
-            "Lavar los vegetales con agua corriente para quitar tierra.",
-            "Sumergir completamente en la solución desinfectante.",
-            "Dejar actuar por 2 minutos exactos.",
-            "Escurrir bien. No requiere enjuagarse con agua potable."
+            "Lavar las verduras con agua potable para remover suciedad de tierra.",
+            "Sumergir totalmente en solución Veggiefruit Wash 1:100.",
+            "Mantener sumergido durante 1 minuto completo para desinfectar.",
+            "Escurrir y enjuagar con agua purificada antes de servir."
           ]
         },
         surfaces: {
-          product: "Swipe Surface Sanitizer RTU",
-          dilution: "Listo para usar (Sin diluir)",
+          product: "SWIPE original (Mesas y Charolas)",
+          dilution: "1:100 (Mantenimiento) a 1:12 (Contacto)",
           steps: [
-            "Limpiar y lavar la superficie previamente con detergente.",
-            "Rociar Swipe Surface de forma directa.",
-            "Pasar un paño seco o dejar secar por evaporación.",
-            "El área queda desinfectada y lista para uso inmediato."
+            "Limpiar restos sólidos e impurezas de las mesas de trabajo.",
+            "Rociar la solución de SWIPE directamente en la superficie.",
+            "Frotar firmemente con paño limpio y seco para retirar aceites.",
+            "Garantiza una superficie libre de bacterias de transmisión alimenticia."
           ]
         }
       };
@@ -338,14 +348,14 @@ const CALCULATORS = {
     }
   },
 
-  // 5. MANTENIMIENTO - Diluciones del Multiusos Swipe
+  // 5. SANITARIOS & BAÑOS - Dosificación de Sanitarios y Baños (historically col-mantenimiento)
   mantenimiento: {
     render: (containerId) => {
       const html = `
         <div class="calculator-card" style="border-color: var(--color-mantenimiento)">
           <div class="calc-title-group" style="color: var(--color-mantenimiento)">
             <svg class="calc-icon" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <h3 class="calc-title">Dosificación Multiusos</h3>
+            <h3 class="calc-title">Dosificación en Sanitarios</h3>
           </div>
           <div class="calc-form">
             <div class="calc-input-group">
@@ -356,21 +366,21 @@ const CALCULATORS = {
               </div>
             </div>
             <div class="calc-input-group">
-              <label class="calc-label">Tipo de Limpieza (Dilución Swipe)</label>
+              <label class="calc-label">Producto a Diluir</label>
               <select id="maint-dil" class="calc-input calc-select">
-                <option value="light">Liviana (1:100) - Cristales, Espejos, Pantallas</option>
-                <option value="normal" selected>Normal (1:10) - Paredes, Vinilos, Muebles</option>
-                <option value="heavy">Pesada (1:4) - Motores, Grasas, Golf Carts Lodos</option>
+                <option value="brite">Brite (Desincrustante Ácido - Dil. 1:5)</option>
+                <option value="swipol">Swipol (Sanitización Pisos/Lavabos - Dil. 1:100)</option>
+                <option value="surething">Sure Thing (Neutralizador Olores - Dil. 1:15)</option>
               </select>
             </div>
             
             <div class="calc-result-box" style="border-color: rgba(138, 63, 252, 0.15); display: grid; grid-template-columns: 50% 50%; gap: 1rem; align-items: center;">
               <div>
-                <span class="calc-result-value" id="maint-res-swipe" style="color: var(--color-mantenimiento)">45 ml</span>
-                <span class="calc-result-label" style="font-size:0.65rem">Swipe Concentrado</span>
+                <span class="calc-result-value" id="maint-res-swipe" style="color: var(--color-mantenimiento)">83 ml</span>
+                <span class="calc-result-label" style="font-size:0.65rem">Producto Swipe</span>
               </div>
               <div style="border-left: 1px solid rgba(255,255,255,0.08)">
-                <span class="calc-result-value" id="maint-res-water" style="color: var(--color-glass-text)">455 ml</span>
+                <span class="calc-result-value" id="maint-res-water" style="color: var(--color-glass-text)">417 ml</span>
                 <span class="calc-result-label" style="font-size:0.65rem">Agua limpia</span>
               </div>
             </div>
@@ -381,11 +391,11 @@ const CALCULATORS = {
 
       const update = () => {
         const vol = parseFloat(document.getElementById("maint-vol").value) || 0;
-        const dil = document.getElementById("maint-dil").value;
+        const prod = document.getElementById("maint-dil").value;
         
-        let ratio = 10; // normal (1:10 means 1 part Swipe, 10 parts water, total 11 parts)
-        if (dil === "light") ratio = 100;
-        if (dil === "heavy") ratio = 4;
+        let ratio = 5; // brite (1:5)
+        if (prod === "swipol") ratio = 100;
+        if (prod === "surething") ratio = 15;
 
         const totalParts = ratio + 1;
         const swipeMl = vol / totalParts;
@@ -454,7 +464,7 @@ const CALCULATORS = {
             </div>
             
             <div style="background: rgba(255,255,255,0.02); padding: 0.8rem 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.04); font-size: 0.75rem; text-align: center;">
-              🌱 <strong>Impacto Ecológico Anual:</strong> <span id="eco-res-bottles" style="color: var(--color-ahorro); font-weight: bold;">1,800</span> envases plásticos de 1L menos en el medio ambiente gracias a las diluciones Swipe.
+              🌱 <strong>Impacto Ecológico Anual:</strong> <span id="eco-res-bottles" style="color: var(--color-ahorro); font-weight: bold;">1,800</span> envases plásticos de 1L menos en el medio ambiente gracias a las diluciones Swipe en el hospital.
             </div>
           </div>
         </div>
@@ -492,13 +502,13 @@ const CALCULATORS = {
           </div>
           <form class="calc-form" id="demo-booking-form">
             <div class="calc-input-group">
-              <label class="calc-label">Área del Club a Probar</label>
+              <label class="calc-label">Área del Hospital a Probar</label>
               <select id="demo-area" class="calc-input calc-select" required>
-                <option value="Alberca & Acuáticos">Alberca: Desinfección Total</option>
-                <option value="Spa & Wellness">Spa: Higiene Sensorial y Aromas</option>
-                <option value="Gimnasio & Fitness">Gimnasio: Sanitización de Equipos</option>
-                <option value="Gastronomía & Cocinas">Gastronomía: Desengrase de Cochambre</option>
-                <option value="Mantenimiento General">Mantenimiento: Pisos y Multiusos</option>
+                <option value="Quirófanos & UCI">Quirófanos & UCI: Desinfección Crítica</option>
+                <option value="Lavandería Clínica">Lavandería Clínica: Asepsia Textil</option>
+                <option value="Habitaciones de Pacientes">Habitaciones de Pacientes: Estaciones de Higiene</option>
+                <option value="Dietología & Cocina">Dietología & Cocina: Inocuidad Alimentaria</option>
+                <option value="Sanitarios & Baños">Sanitarios & Baños: Control de Sarro y Olores</option>
               </select>
             </div>
             <div class="calc-input-group">
@@ -545,7 +555,7 @@ const CALCULATORS = {
         const formattedDate = `${dateParts[2]}/${dateParts[1]}/${dateParts[0]}`;
 
         // Redirección a WhatsApp
-        const textMessage = `¡Hola! Me gustaría agendar una demostración de productos Swipe en el Club de Golf Las Lomas para el área de *${areaSelected}*.\n\n📅 *Fecha propuesta:* ${formattedDate}\n⏰ *Horario:* ${timeVal}`;
+        const textMessage = `¡Hola! Me gustaría agendar una demostración de productos Swipe en el Hospital Arboledas para el área de *${areaSelected}*.\n\n📅 *Fecha propuesta:* ${formattedDate}\n⏰ *Horario:* ${timeVal}`;
         const whatsappUrl = `https://wa.me/523321918862?text=${encodeURIComponent(textMessage)}`;
         window.open(whatsappUrl, '_blank');
 
