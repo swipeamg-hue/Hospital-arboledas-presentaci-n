@@ -129,7 +129,7 @@ const PRODUCTS_DATA = {
     ]
   },
   gimnasio: {
-    title: "Habitaciones de Pacientes",
+    title: "Habitaciones de Pacientes y Áreas Comunes",
     accentColor: "var(--color-gimnasio)",
     slogan: "Asepsia y desinfección de puntos de alto contacto y estaciones de higiene para el personal y visitantes.",
     products: [

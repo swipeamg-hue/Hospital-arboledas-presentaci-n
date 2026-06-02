@@ -522,7 +522,7 @@ const CALCULATORS = {
               <select id="demo-area" class="calc-input calc-select" required>
                 <option value="Quirófanos & UCI">Quirófanos & UCI: Desinfección Crítica</option>
                 <option value="Lavandería Clínica">Lavandería Clínica: Asepsia Textil</option>
-                <option value="Habitaciones de Pacientes">Habitaciones de Pacientes: Estaciones de Higiene</option>
+                <option value="Habitaciones de Pacientes y Áreas Comunes">Habitaciones de Pacientes y Áreas Comunes: Estaciones de Higiene</option>
                 <option value="Dietología & Cocina">Dietología & Cocina: Inocuidad Alimentaria</option>
                 <option value="Sanitarios & Baños">Sanitarios & Baños: Control de Sarro y Olores</option>
               </select>
