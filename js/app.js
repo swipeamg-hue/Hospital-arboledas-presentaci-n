@@ -847,7 +847,14 @@ function updateGymDisplay(product) {
         svgInner.style.width = "120px";
         svgInner.style.height = "120px";
         svgInner.style.strokeWidth = "1.2";
-         // Mapeo de características según el producto de Gimnasio
+      }
+      svgContainer.style.display = "block";
+    }
+
+    // 2. Generar las características técnicas dinámicas
+    let featuresHtml = "";
+
+    // Mapeo de características según el producto de Gimnasio
     if (product.id === "swipe_concentrado_gym") {
       featuresHtml = `
         <div class="gym-feature-card">
@@ -923,10 +930,6 @@ function updateGymDisplay(product) {
           <div class="gym-feature-text">
             <h4>Fórmula Hipoalergénica de Seguridad</h4>
             <p>Libre de colorantes y fragancias artificiales, totalmente incoloro e inoloro. Mantener el envase cerrado y alejado de fuentes de calor por ser inflamable.</p>
-          </div>
-        </div>
-      `;
-    }s de metal, tapizados, pantallas de caminadoras). Fórmula de pH neutro, estable y amigable con el personal de limpieza y el entorno.</p>
           </div>
         </div>
       `;
@@ -1255,8 +1258,15 @@ function updateMantenimientoDisplay(product) {
       }
       svgContainer.style.display = "block";
     }
+    // 2. Actualizar botón de cotización
+    if (quoteBtn) {
+      quoteBtn.setAttribute("onclick", `addToQuoteCart('${product.id}', 'mantenimiento')`);
+    }
 
-    // 2    if (product.id === "swipe_concentrate") {
+    // 3. Generar las características técnicas dinámicas
+    let featuresHtml = "";
+
+    if (product.id === "swipe_concentrate") {
       featuresHtml = `
         <div class="mantenimiento-feature-card">
           <div class="mantenimiento-feature-icon-container">
@@ -1447,14 +1457,6 @@ function updateMantenimientoDisplay(product) {
         <div class="mantenimiento-feature-card">
           <div class="mantenimiento-feature-icon-container">
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Seguridad e Impacto Ambiental</h4>
-            <p><strong>Manejo Seguro:</strong> ${product.safety}<br><strong>Impacto en pH:</strong> ${product.phImpact || 'Neutro.'}</p>
-          </div>
-        </div>
-      `;
-    }th d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
             <h4>Seguridad e Impacto Ambiental</h4>
