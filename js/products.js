@@ -131,45 +131,79 @@ const PRODUCTS_DATA = {
   gimnasio: {
     title: "Habitaciones de Pacientes y Áreas Comunes",
     accentColor: "var(--color-gimnasio)",
-    slogan: "Asepsia y desinfección de puntos de alto contacto y estaciones de higiene para el personal y visitantes.",
+    slogan: "Higiene, desinfección profunda de superficies y control ambiental en habitaciones de pacientes, pasillos y áreas comunes.",
     products: [
       {
-        id: "swipe_concentrado_gym",
-        name: "Hand Soap Germicida",
-        tagline: "Jabón líquido germicida y antiséptico para el lavado clínico de manos",
-        description: "Jabón antiséptico líquido de alto desempeño, formulado específicamente para la higiene clínica de manos en el personal hospitalario y visitantes. Su poder germicida elimina bacterias, hongos y virus en 30 segundos de lavado, mientras sus agentes humectantes protegen la piel del agrietamiento.",
+        id: "swipol_gym",
+        name: "Swipol",
+        tagline: "Desinfectante germicida y limpiador líquido concentrado biodegradable",
+        description: "SWIPOL es un desinfectante germicida y limpiador líquido concentrado, clasificado con grado alimenticio y quirúrgico. Su avanzada formulación a base de cuaternario de amonio de última generación está diseñada para eliminar bacterias, hongos y levaduras, manteniendo una alta efectividad incluso ante la presencia de tierra orgánica. Además, es un producto certificado como biodegradable con un 95.70% de eficiencia, alineándose con los más altos estándares de sustentabilidad clínica.",
         benefits: [
-          "Poder antiséptico de amplio espectro para el control de la microbiota transitoria en manos.",
-          "pH balanceado de 5.0 a 6.0 con humectantes avanzados para evitar la resequedad por lavado frecuente.",
-          "Fórmula libre de fragancias y colorantes, evitando sensibilidad cutánea en pacientes y médicos.",
-          "Apto para dispensadores automáticos por sensor en la entrada de las habitaciones."
+          "Seguridad Hospitalaria de Amplio Espectro: Rigurosamente probado contra patógenos críticos como E. coli, Staphylococcus spp y Pseudomona aeroginosa, asegurando la desinfección total de los cuartos de enfermos (camas, pisos, persianas, gabinetes, teléfonos, almohadas y sábanas).",
+          "Confort Absoluto para el Paciente: Líquido incoloro e inodoro, permitiendo cumplir con las más estrictas normas de higiene internacional sin generar molestias respiratorias en áreas de recuperación y siendo totalmente seguro al no ser irritante para la piel.",
+          "Alta Rentabilidad Operativa: Su alta tolerancia a las cargas de proteínas y su nivel de concentración permiten tasas de dilución sumamente altas, lo que se traduce directamente en importantes ahorros financieros y eficiencia logística de limpieza diaria."
         ],
-        usage: "Higiene y lavado clínico de manos del personal de enfermería, médicos, pacientes y visitas.",
-        dosage: "Dosificar 1.5 ml por descarga mediante dispensador de jabón SWIPE.",
-        dilution: "Uso concentrado directo sin diluir. Frotar manos y antebrazos durante 40-60 segundos y enjuagar.",
-        phImpact: "pH balanceado (5.0 a 6.0) idóneo para la piel humana.",
-        safety: "Uso externo exclusivamente. Evitar contacto con los ojos.",
-        badge: "Jabón Antiséptico",
-        image: "images/hand_soap.png"
+        usage: "Desinfección de superficies de alto contacto, trapeado de pisos y nebulización ambiental profunda.",
+        dosage: "Superficies 1:20 (25 ml en medio litro de agua) | Pisos 1:120 (83.3 ml en 10 litros de agua) | Nebulización 1:60.",
+        dilution: "Dilución en agua. Para superficies rociar y dejar actuar 30 segundos sin enjuagar. Trapear pisos regularmente.",
+        phImpact: "Estable y no corrosivo.",
+        safety: "Biodegradable (95.70% de eficiencia). No es irritante para la piel. Almacenar en lugar fresco.",
+        badge: "Desinfectante Germicida",
+        image: "images/swipol.png"
       },
       {
-        id: "swipol_gym",
-        name: "Sani-Gel",
-        tagline: "Gel antiséptico sanitizante a base de alcohol al 70% con glicerina",
-        description: "Gel sanitizante antibacterial e hipoalergénico formulado con alcohol etílico al 70% v/v y enriquecido con glicerina. Diseñado para la desinfección instantánea de las manos en habitaciones de pacientes y consultorios sin necesidad de agua o toallas, secando rápidamente sin dejar residuos pegajosos.",
+        id: "magic_gym",
+        name: "Swipe Magic",
+        tagline: "Limpiador, aromatizante y desinfectante de pisos biodegradable",
+        description: "SWIPE Magic es un versátil limpiador, aromatizante y desinfectante altamente concentrado y de fórmula biodegradable. Ha sido diseñado específicamente para el cuidado integral de los pisos, logrando eliminar la grasa, el polvo y la suciedad sin dejar residuos opacos. Su acción triple renueva la apariencia de las superficies, dándoles vida mientras desinfecta el área tratada.",
         benefits: [
-          "Eliminación inmediata de bacterias y virus mediante fricción de manos en 15 segundos.",
-          "Alcohol de grado USP al 70% que garantiza la desnaturalización de proteínas de patógenos.",
-          "Enriquecido con glicerina y emolientes que cuidan e hidratan la piel con el uso continuo.",
-          "Hipoalergénico, libre de colorantes y fragancias artificiales, seguro para áreas críticas y pediátricas."
+          "Ambiente Confortable y Acogedor: Con propiedades de aromatización en 5 opciones (Lavender, Ocean Breeze, Lemon Lime, Flower Garden y Green Apple), ideal para mejorar la percepción de limpieza en recepciones, pasillos y salas de espera.",
+          "Higiene Confiable y Sustentable: Su coeficiente fenólico le otorga propiedades germicidas, asegurando la desinfección efectiva de los pisos en las áreas de tránsito y recuperación, apoyando a la vez las normativas ecológicas del hospital.",
+          "Máxima Eficiencia y Ahorro Financiero: Su alta eficiencia de dilución optimiza drásticamente los recursos materiales del hospital, garantizando ahorros financieros de entre el 35% y el 50% en el presupuesto de mantenimiento de pisos."
         ],
-        usage: "Desinfección rápida de manos en habitaciones de pacientes, áreas de examen y accesos clínicos.",
-        dosage: "Dosificar de 2 a 3 ml en la palma de la mano y frotar firmemente hasta secar.",
-        dilution: "Uso directo concentrado. No requiere agua ni enjuague.",
-        phImpact: "Neutro y compatible con la piel.",
-        safety: "Líquido inflamable. Mantener alejado de fuentes de calor o fuego. Uso externo.",
-        badge: "Sanitizante de Manos",
-        image: "images/swipol.png"
+        usage: "Limpieza diaria, desinfección y aromatización de pisos clínicos en áreas de tránsito y recuperación.",
+        dosage: "Mantenimiento Diario 60 a 80 ml en 10 litros de agua | Limpieza Profunda Localizada directo.",
+        dilution: "Diluir para trapeado regular. Para zonas de suciedad pesada, rociar concentrado directo y trapear con agua limpia.",
+        phImpact: "Neutro, libre de residuos opacos.",
+        safety: "Biodegradable. Evitar el contacto directo. Mantener cerrado en lugar fresco.",
+        badge: "Limpiador y Aromatizante",
+        image: "images/Magic.png"
+      },
+      {
+        id: "swipe_gym",
+        name: "Swipe",
+        tagline: "Limpiador y desengrasante líquido de uso general biodegradable",
+        description: "SWIPE es un limpiador y desengrasante líquido de uso general, formulado para ser altamente concentrado y versátil. Cuenta con una biodegradabilidad superior al 99% (avalada por la U.A.N.L.) y posee registro ante la NSF como producto grado alimenticio. Es el limpiador base ideal para la clínica, ya que no contiene cáusticos libres, no es tóxico, no es corrosivo y no es inflamable, garantizando la máxima seguridad para el usuario y el medio ambiente.",
+        benefits: [
+          "Limpieza Segura Multisuperficie: Emulsiona rápidamente la mugre y grasa corporal sin dañar, rayar ni decolorar materiales. Es perfectamente seguro para camillas o sillas de vinil, plásticos, paredes, vidrios, espejos y cromo.",
+          "Preparación Óptima para Desinfección: Actúa como el primer paso esencial en el protocolo de higiene hospitalaria, removiendo la capa de suciedad para permitir que los desinfectantes posteriores actúen con el 100% de eficacia.",
+          "Sustentabilidad y Ahorro Financiero: Su extrema concentración permite diluciones muy altas con agua, lo que se traduce en ahorros financieros tangibles de entre un 35% y un 50% en el presupuesto de insumos de limpieza del hospital."
+        ],
+        usage: "Limpieza de polvo, grasa corporal y mugre en camillas, mobiliario, pisos, paredes, vidrios y espejos.",
+        dosage: "Mantenimiento General (Solución Liviana 1:100) | Limpieza de polvo y suciedad ligera en superficies.",
+        dilution: "Dilución 1:100 (1 parte de producto por 100 partes de agua). Se recomienda aplicar con la Pistola Rociadora SWIPE para optimizar la aplicación.",
+        phImpact: "Neutro y libre de cáusticos libres.",
+        safety: "Biodegradabilidad superior al 99% (U.A.N.L.). Registro NSF grado alimenticio. No es tóxico, corrosivo ni inflamable.",
+        badge: "Limpiador Multiusos",
+        image: "images/swipe_concentrado.png"
+      },
+      {
+        id: "sure_thing_gym",
+        name: "Swipe Sure Thing",
+        tagline: "Neutralizador químico de olores y desodorante biodegradable",
+        description: "SWIPE Sure Thing es un avanzado neutralizador de aromas, desodorante y desinfectante de ambiente en formato líquido, con una fórmula biodegradable y altamente concentrada. Su composición integra agentes degradadores de materia orgánica y emulsificantes con poder germicida, diseñados no solo para enmascarar, sino para eliminar de raíz los olores del medio ambiente.",
+        benefits: [
+          "Confort Olfativo y Ambiente de Recuperación: Hace desaparecer olores clínicos, biológicos o de alimentos en cuartos de enfermos, baños, pasillos y salas de espera, generando una atmósfera más cálida y reconfortante.",
+          "Acción Dual de Higiene y Aroma: Aporta un coeficiente levemente germicida al entorno mientras aromatiza, adaptándose a las preferencias del hospital gracias a sus distintas notas olfativas (floral, menta, canela, vainilla).",
+          "Rendimiento Sorprendente: Su formulación de ultra-concentración permite una dilución por gotas, logrando ahorros financieros de entre el 35% y el 50% frente a los típicos aerosoles comerciales de bajo rendimiento."
+        ],
+        usage: "Aromatización de áreas grandes, tratamiento de botes de basura y desodorización continua de espacios pequeños.",
+        dosage: "Áreas grandes (30 a 60 gotas en 1/2 litro de agua) | Puntos críticos directo (unas cuantas gotas) | Espacios pequeños destapado.",
+        dilution: "Dilución en agua para atomizador, uso directo por goteo o exposición permanente del envase destapado.",
+        phImpact: "Compatible con desinfectantes como Swipol.",
+        safety: "Fórmula biodegradable con poder germicida. Evitar la ingestión. Mantener cerrado en lugar fresco.",
+        badge: "Neutralizador de Olores",
+        image: "images/sure_thing.png"
       }
     ]
   },

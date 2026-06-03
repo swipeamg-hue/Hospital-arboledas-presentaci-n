@@ -933,63 +933,102 @@ function updateGymDisplay(product) {
     let featuresHtml = "";
 
     // Mapeo de características según el producto de Gimnasio
-    if (product.id === "swipe_concentrado_gym") {
+    if (product.id === "swipol_gym") {
       featuresHtml = `
         <div class="gym-feature-card">
           <div class="gym-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 11l2 2 4-4"/></svg>
           </div>
           <div class="gym-feature-text">
-            <h4>Poder Antiséptico Clínico</h4>
-            <p>Elimina el 99.999% de bacterias, hongos y virus en 30 segundos de lavado. Es indispensable para el lavado de manos clínico del personal de enfermería y médicos.</p>
+            <h4>Seguridad Hospitalaria de Amplio Espectro</h4>
+            <p>Rigurosamente probado contra patógenos críticos como E. coli, Staphylococcus spp y Pseudomona aeroginosa, asegurando la desinfección total de los cuartos de enfermos (camas, pisos, persianas, gabinetes, sábanas).</p>
           </div>
         </div>
         <div class="gym-feature-card">
           <div class="gym-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
           </div>
           <div class="gym-feature-text">
-            <h4>Cuidado y Humectación de la Piel</h4>
-            <p>Fórmula con pH balanceado (5.0 a 6.0) enriquecida con emolientes avanzados. Evita la resequedad, irritación y el agrietamiento cutáneo por el lavado altamente frecuente.</p>
+            <h4>Confort Absoluto para el Paciente</h4>
+            <p>Líquido incoloro e inodoro, permitiendo cumplir con las más estrictas normas de higiene internacional sin generar molestias respiratorias en áreas de recuperación. Seguro para la piel y no irritante.</p>
           </div>
         </div>
         <div class="gym-feature-card">
           <div class="gym-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
           <div class="gym-feature-text">
-            <h4>Aplicación Directa y Concentrada</h4>
-            <p>Uso concentrado directo sin diluir. Se dosifica 1.5 ml por descarga mediante dispensador Swipe en accesos a habitaciones, consultorios y estaciones de lavado.</p>
+            <h4>Sustentabilidad Certificada</h4>
+            <p>Biodegradable con un 95.70% de eficiencia, cumpliendo con los estándares de sustentabilidad clínica y mitigación de huella ecológica.</p>
           </div>
         </div>
         <div class="gym-feature-card">
           <div class="gym-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
           </div>
           <div class="gym-feature-text">
-            <h4>Libre de Fragancias y Colorantes</h4>
-            <p>Ideal para el entorno hospitalario, minimiza el riesgo de sensibilidades y alergias en pacientes vulnerables y personal en áreas de cuidado crítico.</p>
+            <h4>Guía de Uso Rápido</h4>
+            <p><strong>Superficies:</strong> Dilución 1:20 (25 ml en 500 ml de agua). Rociar y actuar por 30s. Sin enjuague. <strong>Pisos:</strong> Dilución 1:120 (83.3 ml en 10L de agua). <strong>Nebulización:</strong> Dilución 1:60.</p>
           </div>
         </div>
       `;
-    } else if (product.id === "swipol_gym") {
+    } else if (product.id === "magic_gym") {
       featuresHtml = `
+        <div class="gym-feature-card">
+          <div class="gym-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <div class="gym-feature-text">
+            <h4>Ambiente Confortable y Acogedor</h4>
+            <p>Aromatizante premium en 5 fragancias (Lavender, Ocean Breeze, Lemon Lime, Flower Garden y Green Apple), ideal para mejorar la percepción de limpieza en pasillos, salas de espera y recepciones.</p>
+          </div>
+        </div>
+        <div class="gym-feature-card">
+          <div class="gym-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 11l2 2 4-4"/></svg>
+          </div>
+          <div class="gym-feature-text">
+            <h4>Higiene Confiable y Sustentable</h4>
+            <p>Su coeficiente fenólico le otorga propiedades germicidas para una desinfección efectiva de los pisos clínicos. Fórmula totalmente biodegradable que apoya normativas ecológicas.</p>
+          </div>
+        </div>
+        <div class="gym-feature-card">
+          <div class="gym-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="gym-feature-text">
+            <h4>Eficiencia y Ahorro Financiero</h4>
+            <p>Su alta capacidad de dilución optimiza drásticamente los recursos de mantenimiento del hospital, garantizando ahorros de entre el 35% y el 50% en el presupuesto de pisos.</p>
+          </div>
+        </div>
+        <div class="gym-feature-card">
+          <div class="gym-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div class="gym-feature-text">
+            <h4>Guía de Uso Rápido</h4>
+            <p><strong>Mantenimiento Diario:</strong> Diluir de 60 a 80 ml de SWIPE Magic en una cubeta con 10 litros de agua y trapear. <strong>Limpieza Profunda:</strong> Aplicar concentrado en la zona y trapear con agua.</p>
+          </div>
+        </div>
+      `;
+    } else if (product.id === "swipe_gym") {
+      featuresHtml = `
+        <div class="gym-feature-card">
+          <div class="gym-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/><path d="M9 12L11 14L15 10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gym-feature-text">
+            <h4>Limpieza Segura Multisuperficie</h4>
+            <p>Emulsiona rápidamente grasa corporal y mugre sin dañar materiales. Seguro para camillas, sillas de vinil, plásticos, paredes, vidrios, espejos y artículos cromados.</p>
+          </div>
+        </div>
         <div class="gym-feature-card">
           <div class="gym-feature-icon-container">
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gym-feature-text">
-            <h4>Desinfección Instantánea en 15 Segundos</h4>
-            <p>Alcohol de grado USP al 70% v/v que garantiza la desnaturalización de proteínas de patógenos y desinfección inmediata de manos por fricción.</p>
-          </div>
-        </div>
-        <div class="gym-feature-card">
-          <div class="gym-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="gym-feature-text">
-            <h4>Emolientes y Glicerina Protectora</h4>
-            <p>Enriquecido con glicerina pura y agentes emolientes que cuidan e hidratan la piel de médicos y enfermeras tras usos altamente repetitivos en consultorios.</p>
+            <h4>Preparación Óptima para Desinfección</h4>
+            <p>Primer paso esencial en el protocolo de higiene hospitalaria. Remueve la capa de suciedad para permitir que los desinfectantes posteriores actúen con el 100% de eficacia.</p>
           </div>
         </div>
         <div class="gym-feature-card">
@@ -997,8 +1036,8 @@ function updateGymDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gym-feature-text">
-            <h4>Uso Directo y Secado Rápido</h4>
-            <p>Se dosifica de 2 a 3 ml en la palma y se frota firmemente por toda la superficie de las manos hasta secar por evaporación. No requiere enjuague ni toallas.</p>
+            <h4>Biodegradabilidad y Alto Rendimiento</h4>
+            <p>Biodegradabilidad superior al 99% (avalada por la U.A.N.L.) con registro NSF grado alimenticio. No contiene cáusticos libres ni es tóxico, logrando ahorros del 35% al 50% por su alta concentración.</p>
           </div>
         </div>
         <div class="gym-feature-card">
@@ -1006,8 +1045,47 @@ function updateGymDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gym-feature-text">
-            <h4>Fórmula Hipoalergénica de Seguridad</h4>
-            <p>Libre de colorantes y fragancias artificiales, totalmente incoloro e inoloro. Mantener el envase cerrado y alejado de fuentes de calor por ser inflamable.</p>
+            <h4>Guía de Uso Rápido</h4>
+            <p><strong>Mantenimiento General:</strong> Dilución liviana 1:100 (1 parte de Swipe por 100 de agua) para la limpieza diaria de polvo y suciedad en pisos, paredes y vidrios. Aplicar preferentemente con la Pistola Rociadora SWIPE.</p>
+          </div>
+        </div>
+      `;
+    } else if (product.id === "sure_thing_gym") {
+      featuresHtml = `
+        <div class="gym-feature-card">
+          <div class="gym-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gym-feature-text">
+            <h4>Confort Olfativo Absoluto</h4>
+            <p>Elimina de raíz los olores clínicos, biológicos o de alimentos en cuartos de enfermos, baños y salas de espera. Crea una atmósfera cálida y reconfortante para pacientes y familiares.</p>
+          </div>
+        </div>
+        <div class="gym-feature-card">
+          <div class="gym-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gym-feature-text">
+            <h4>Acción Dual (Higiene y Aroma)</h4>
+            <p>Aporta un coeficiente levemente germicida al ambiente mientras aromatiza. Adaptable a las preferencias del hospital con notas olfativas disponibles como floral, menta, canela y vainilla.</p>
+          </div>
+        </div>
+        <div class="gym-feature-card">
+          <div class="gym-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gym-feature-text">
+            <h4>Rendimiento Sorprendente</h4>
+            <p>Fórmula biodegradable y ultra-concentrada de dilución por gotas. Brinda ahorros del 35% al 50% en comparación con aerosoles comerciales de bajo rendimiento.</p>
+          </div>
+        </div>
+        <div class="gym-feature-card">
+          <div class="gym-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gym-feature-text">
+            <h4>Guía de Uso Rápido</h4>
+            <p><strong>Áreas Grandes:</strong> Diluir 30 a 60 gotas en 500 ml de agua en rociador y atomizar. <strong>Botes de Basura:</strong> Aplicar gotas directas al fondo. <strong>Baños/Espacios Chicos:</strong> Dejar el envase destapado.</p>
           </div>
         </div>
       `;
