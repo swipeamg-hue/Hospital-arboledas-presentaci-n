@@ -204,6 +204,24 @@ const PRODUCTS_DATA = {
         safety: "Fórmula biodegradable con poder germicida. Evitar la ingestión. Mantener cerrado en lugar fresco.",
         badge: "Neutralizador de Olores",
         image: "images/sure_thing.png"
+      },
+      {
+        id: "hand_soap_foam_gym",
+        name: "Swipe Hand Soap Foam",
+        tagline: "Jabón líquido antimicrobial en espuma para higiene de manos",
+        description: "SWIPE Hand Soap Foam es un avanzado jabón líquido antimicrobial diseñado para transformarse en una espuma suave y ligera a través de su dosificador especializado. Destaca por su composición totalmente biodegradable y por contar con un pH balanceado (5.5 a 6.5) que respeta la química natural de la piel, garantizando una higiene profunda sin causar irritación.",
+        benefits: [
+          "Protección Hospitalaria Prolongada: Fórmula germicida altamente efectiva contra bacterias, levaduras y hongos. El efecto antimicrobial permanece activo durante aproximadamente 2 horas tras su aplicación.",
+          "Confort en el Uso Frecuente: Su textura en espuma deja sensación de suavidad con fragancia a almendras. Disponible también en versión sin fragancia y sin color para pacientes hipersensibles.",
+          "Rendimiento y Control de Presupuesto: Dispensado mediante la jabonera SWIPE FOAMER, reduce drásticamente el consumo, garantizando ahorros financieros de entre el 35% y el 50% en insumos de higiene."
+        ],
+        usage: "Higiene y lavado antimicrobial de manos para personal médico, pacientes y visitas.",
+        dosage: "Dosificar mediante jabonera SWIPE FOAMER para obtener espuma instantánea.",
+        dilution: "Uso concentrado directo a través del dispensador espumador. Frotar 1 minuto y enjuagar.",
+        phImpact: "pH balanceado (5.5 a 6.5) respetuoso de la piel.",
+        safety: "Biodegradable. Versión con y sin fragancia. Almacenar en envase original cerrado.",
+        badge: "Jabón Antimicrobial",
+        image: "images/Hand Soap Foam.png"
       }
     ]
   },

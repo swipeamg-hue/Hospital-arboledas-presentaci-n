@@ -1089,6 +1089,45 @@ function updateGymDisplay(product) {
           </div>
         </div>
       `;
+    } else if (product.id === "hand_soap_foam_gym") {
+      featuresHtml = `
+        <div class="gym-feature-card">
+          <div class="gym-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 11l2 2 4-4"/></svg>
+          </div>
+          <div class="gym-feature-text">
+            <h4>Protección Hospitalaria Prolongada</h4>
+            <p>Su fórmula germicida es altamente efectiva contra bacterias, levaduras y hongos. Mantiene un efecto antimicrobial activo durante aproximadamente 2 horas después de su aplicación.</p>
+          </div>
+        </div>
+        <div class="gym-feature-card">
+          <div class="gym-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+          </div>
+          <div class="gym-feature-text">
+            <h4>Confort en el Uso Frecuente</h4>
+            <p>Su textura en espuma ligera deja una sensación de suavidad e incluye una agradable fragancia a almendras. También disponible en versión sin fragancia y sin color para pieles ultrasensibles.</p>
+          </div>
+        </div>
+        <div class="gym-feature-card">
+          <div class="gym-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="gym-feature-text">
+            <h4>Rendimiento y Ahorro en Presupuesto</h4>
+            <p>Al dosificarse exclusivamente como espuma mediante la jabonera SWIPE FOAMER, reduce drásticamente el consumo y garantiza ahorros financieros de entre el 35% y el 50% en consumibles.</p>
+          </div>
+        </div>
+        <div class="gym-feature-card">
+          <div class="gym-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gym-feature-text">
+            <h4>Guía de Uso Rápido</h4>
+            <p><strong>Lavado:</strong> Dispensar espuma con dosificador SWIPE FOAMER, frotar vigorosamente las manos durante 1 minuto y enjuagar. Repetir si el protocolo médico exige desinfección más estricta.</p>
+          </div>
+        </div>
+      `;
     }
 
     featuresColumn.innerHTML = featuresHtml;
