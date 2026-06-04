@@ -294,6 +294,10 @@ const PRODUCTS_DATA = {
         description: "Detergente líquido de espuma controlada diseñado para lavadoras automáticas de charolas y loza hospitalaria. Asegura un lavado impecable a temperaturas reguladas, desincrustando al mismo tiempo el interior del equipo.",
         benefits: [
           "Limpieza profunda y abrillantado de vajillas, vasos y charolas de pacientes en un solo ciclo.",
+          "Fórmula de baja espuma que optimiza la presión mecánica de lavado de la máquina.",
+          "Doble acción: limpia la vajilla y desincrusta tuberías y resistencias de la lavadora.",
+          "Actúa eficazmente a menos de 50 °C, reduciendo el consumo de energía en calderas."
+        ],
         usage: "Lavado mecánico de vajillas, charolas térmicas, cubiertos e instrumental de comedor en lavavajillas automáticas.",
         dosage: "Dosificación automática de 8 ml a 12 ml por ciclo de lavado mediante inyector.",
         dilution: "Inyección automática directa al ciclo de lavado de la máquina.",
