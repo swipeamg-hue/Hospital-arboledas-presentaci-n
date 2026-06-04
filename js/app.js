@@ -762,6 +762,45 @@ function updateAlbercaDisplay(product) {
           </div>
         </div>
       `;
+    } else if (product.id === "hand_soap_foam_quirofanos") {
+      featuresHtml = `
+        <div class="alberca-feature-card">
+          <div class="alberca-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="alberca-feature-text">
+            <h4>Barrera Antimicrobiana Prolongada</h4>
+            <p>Altamente efectivo en la eliminación de una amplia gama de bacterias, hongos y levaduras. Tras el lavado, su efecto permanece activo por 2 horas, protegiendo al personal médico en terapia intensiva.</p>
+          </div>
+        </div>
+        <div class="alberca-feature-card">
+          <div class="alberca-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+          </div>
+          <div class="alberca-feature-text">
+            <h4>Protección Dermatológica</h4>
+            <p>Su pH balanceado (5.5 a 6.5) cuida la piel de las manos ante lavados frecuentes sin causar irritación. Para quirófanos se recomienda usar su versión sin fragancia ni color para evitar cualquier reactividad.</p>
+          </div>
+        </div>
+        <div class="alberca-feature-card">
+          <div class="alberca-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round"/></svg>
+          </div>
+          <div class="alberca-feature-text">
+            <h4>Control de Dosificación y Ahorro</h4>
+            <p>Al dosificarse en espuma mediante el sistema SWIPE FOAMER, reduce el desperdicio y optimiza el consumo volumétrico, asegurando ahorros de entre el 35% y el 50% en insumos de higiene.</p>
+          </div>
+        </div>
+        <div class="alberca-feature-card">
+          <div class="alberca-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="alberca-feature-text">
+            <h4>Guía de Uso Rápido</h4>
+            <p><strong>Lavado Clínico:</strong> Aplicar espuma, frotar vigorosamente durante 1 minuto completo y enjuagar con agua. <br><strong>Asepsia Quirúrgica Estricta:</strong> Repetir la operación para una desinfección de nivel quirúrgico superior.</p>
+          </div>
+        </div>
+      `;
     } else {
       // Fallback dinámico genérico
       featuresHtml = `

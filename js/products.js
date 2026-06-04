@@ -63,6 +63,24 @@ const PRODUCTS_DATA = {
         safety: "Biodegradabilidad superior al 99% (U.A.N.L.). Registro NSF grado alimenticio. No es tóxico, corrosivo ni inflamable.",
         badge: "Paso 1: Limpieza",
         image: "images/swipe_concentrado.png"
+      },
+      {
+        id: "hand_soap_foam_quirofanos",
+        name: "Swipe Hand Soap Foam",
+        tagline: "Jabón líquido antimicrobial en espuma para higiene de manos",
+        description: "SWIPE Hand Soap Foam es un avanzado jabón líquido antimicrobial formulado específicamente para la desinfección estricta de las manos en entornos hospitalarios críticos. Destaca por su composición totalmente biodegradable y por su diseño tecnológico para transformarse en una espuma suave y ligera al dispensarse a través de la jabonera especializada SWIPE FOAMER.",
+        benefits: [
+          "Barrera Antimicrobiana Prolongada: Es altamente efectivo en la desinfección y eliminación de una amplia gama de bacterias, hongos y levaduras. Su principal ventaja clínica es que, tras el lavado, su efecto antimicrobial permanece activo durante aproximadamente 2 horas. Esto proporciona una ventana de bioseguridad crucial para el personal médico y de enfermería que interactúa constantemente con pacientes vulnerables en terapia intensiva.",
+          "Protección Dermatológica en Lavados Frecuentes: Los lavados quirúrgicos constantes suelen lastimar la piel, pero este producto cuenta con un pH balanceado de 5.5 a 6.5 que armoniza perfectamente con la química natural de las manos. Es sumamente seguro, no irrita y deja una sensación de suavidad tras su uso. Para las áreas de restricción máxima como los quirófanos, se recomienda utilizar su presentación disponible sin fragancia y sin color para evitar cualquier reactividad.",
+          "Control de Dosificación y Rentabilidad Financiera: Al dispensarse exclusivamente en forma de espuma mediante el SWIPE FOAMER, se evita el desperdicio de líquido que suele ocurrir con los jabones tradicionales. Este estricto control volumétrico por cada aplicación es la clave operativa para asegurar los ahorros financieros garantizados del 35% al 50% en los consumibles de higiene para el personal médico."
+        ],
+        usage: "Higiene y lavado antimicrobial de manos para personal médico en áreas críticas y de restricción máxima.",
+        dosage: "Protocolo de Lavado Clínico | Asepsia Quirúrgica Estricta.",
+        dilution: "Protocolo de Lavado Clínico: Aplicar con el dosificador SWIPE FOAMER una cantidad suficiente de espuma en las manos, frotar vigorosamente durante 1 minuto completo y proceder a enjuagar con agua. Asepsia Quirúrgica Estricta: Si los protocolos de ingreso a quirófano o las intervenciones exigen una desinfección de un nivel más estricto, la operación de lavado puede y debe repetirse para garantizar la máxima seguridad libre de patógenos.",
+        phImpact: "pH balanceado de 5.5 a 6.5 respetuoso de la piel.",
+        safety: "Biodegradable. Versión sin fragancia y sin color para quirófanos y UCI. Almacenar en envase cerrado.",
+        badge: "Efecto por 2 horas",
+        image: "images/Hand Soap Foam.png"
       }
     ]
   },
