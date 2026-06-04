@@ -232,79 +232,93 @@ const PRODUCTS_DATA = {
     products: [
       {
         id: "swipe_concentrado_gastronomia",
-        name: "SWIPE original (Grado Alimenticio)",
-        tagline: "Desengrasante industrial de grado alimenticio certificado por NSF A1",
-        description: "SWIPE original es el limpiador desengrasante multiusos de grado alimenticio definitivo para cocinas hospitalarias y servicios de dietología. Certificado por NSF (Categoría A1), remueve con eficacia aceites, grasas y residuos biológicos en campanas, mesas de preparación, charolas de distribución y pisos, manteniendo los estándares del Distintivo H.",
+        name: "Swipe",
+        tagline: "Desengrasante y limpiador líquido de uso general concentrado",
+        description: "SWIPE es un desengrasante y limpiador líquido de uso general, altamente concentrado y formulado con un nivel de biodegradabilidad superior al 99%. Se distingue en el entorno clínico por contar con el registro internacional de la NSF (Categoría A1) y la aprobación de SAGARPA, avalándolo como un producto de grado alimenticio estrictamente seguro para ser utilizado en áreas de proceso, preparación y manejo de dietas hospitalarias.",
         benefits: [
-          "Certificación NSF A1: Seguro para usar en superficies de contacto con alimentos sin riesgo químico.",
-          "Desengrase profundo de campanas extractoras, planchas, freidoras y superficies de acero inoxidable.",
-          "Fórmula biodegradable, libre de cáusticos libres y humos tóxicos (segura para el personal).",
-          "Alta economía: dilución liviana (1:100) para mesas y vidrios, y pesada (1:4) para grasa carbonizada."
+          "Poder Desengrasante Integral: Emulsiona de manera rápida y efectiva aceites y grasas tanto animales como vegetales acumulados en la cocina, sin dañar, manchar o corroer equipos de acero inoxidable, plásticos o superficies metálicas.",
+          "Seguridad Sanitaria Absoluta: Su fórmula no contiene cáusticos libres, no es tóxica ni inflamable. Al ser categoría A1, garantiza que la limpieza profunda de áreas de alimentos y cuartos limpios se realice sin riesgo de contaminación química, requiriendo únicamente un enjuague final con agua potable.",
+          "Rendimiento y Ahorro Financiero: Su extrema concentración permite trabajar con amplias tasas de dilución en agua. Esta versatilidad para abarcar desde la limpieza ligera de pisos hasta la remoción de grasa pesada con un solo producto es la base para asegurar ahorros operativos del 35% al 50% en el presupuesto de intendencia del área de nutrición."
         ],
-        usage: "Lavado y desengrase de planchas, campanas, mesas de trabajo, pisos de cocina, charolas y azulejos.",
-        dosage: "Diario (1:100) para mesas y áreas generales | Pesado (1:4) para cochambre y campanas extractoras.",
-        dilution: "Diluir en agua según la carga de suciedad. Aplicar, tallar y enjuagar con agua potable.",
-        phImpact: "pH Neutro (pH 7.0) disponible para salvaguardar drenajes.",
-        safety: "Grado alimenticio. No inflamable, biodegradable, libre de fosfatos.",
-        badge: "Certificación NSF A1",
+        usage: "Limpieza y desengrase general en áreas de proceso, preparación y manejo de alimentos.",
+        dosage: "Limpieza General (Dilución 1:100) | Limpieza de Acero Inoxidable (Dilución 1:12) | Remoción de Grasa Pesada (Dilución 1:4).",
+        dilution: "Limpieza General (1:100): Mezclar 1 parte de producto por 100 de agua. Acero Inoxidable (1:12): Lavado de equipos y mesas de trabajo. Grasa Pesada (1:4): Remover grasas espesas y adheridas (aplicar en superficie tibia para óptimo resultado).",
+        phImpact: "Alcalino suave biodegradable.",
+        safety: "Fórmula no tóxica y no inflamable, libre de cáusticos libres. Se requiere enjuague con agua potable.",
+        badge: "NSF A1 / SAGARPA",
         image: "images/swipe_concentrado.png"
       },
       {
-        id: "veggiefruit_wash",
-        name: "Veggiefruit Wash",
-        tagline: "Jabón sanitizante biodegradable para lavado y desinfección de dietas",
-        description: "Jabón líquido desinfectante biodegradable de grado alimenticio altamente concentrado, diseñado específicamente para lavar y sanitizar frutas, verduras y vegetales que componen las dietas de pacientes. Asegura la eliminación de bacterias y parásitos sin alterar las propiedades de los alimentos.",
+        id: "swipe_grease",
+        name: "Grease",
+        tagline: "Quitacochambre y desengrasante pesado en gel biodegradable DWM",
+        description: "SWIPE GREASE es un poderoso quitacochambre y removedor de grasa formulado con una consistencia en gel totalmente biodegradable. Está compuesto por agentes cáusticos, humectantes y desengrasantes de alto impacto, diseñados específicamente para remover residuos de alimentos carbonizados en equipos de hierro y acero inoxidable propios de cocinas y comedores institucionales.",
         benefits: [
-          "Desinfección garantizada de dietas para pacientes inmunodeprimidos o pediátricos.",
-          "Libre de aroma y sabor: no altera el sabor, color ni frescura natural de las verduras y frutas.",
-          "Gran economía de uso: dilución 1:100 (10 ml por litro de agua), rindiendo hasta 100 litros de solución.",
-          "Fórmula dermatológicamente segura para el personal operativo, no mancha fregaderos de acero inoxidable."
+          "Poder Desengrasante de Impacto Profundo: Su gran capacidad humectante le permite penetrar y eliminar rápidamente la capa superior del cochambre carbonizado, actuando de forma simultánea en las diferentes capas de grasa acumulada. Es la herramienta definitiva para la restauración de parrillas, hornos, quemadores, planchas y sartenes en el área de preparación de dietas.",
+          "Máxima Adherencia y Rentabilidad: Su composición física en gel proporciona una adherencia altamente efectiva sobre las superficies, evitando escurrimientos. Esto prolonga el tiempo de acción química e incrementa en gran medida el rendimiento del producto. Esta nula pérdida de químico por escurrimiento es vital para garantizar los ahorros financieros del 35% al 50% proyectados para el mantenimiento pesado de la cocina.",
+          "Cumplimiento Ecológico: A pesar de su fuerza industrial, mantiene un perfil biodegradable que respalda los objetivos de sustentabilidad del hospital."
         ],
-        usage: "Lavado y desinfección de lechugas, verduras de hoja, tubérculos, frutas y hortalizas en dietología.",
-        dosage: "Mezclar 10 ml de producto por cada litro de agua. Tiempo de contacto de 1 minuto.",
-        dilution: "Inmersión para verduras de hoja y hierbas, o cepillado suave con la solución para frutas de cáscara dura.",
-        phImpact: "pH Neutro (6.0 a 8.0) seguro y estable.",
-        safety: "Grado alimenticio y biodegradable. Enjuagar con agua purificada después de lavar.",
-        badge: "Desinfección de Alimentos",
-        image: "images/veggiefruit_wash.png"
+        usage: "Eliminación de cochambre y grasa carbonizada en parrillas, hornos, quemadores, planchas y sartenes.",
+        dosage: "Protocolo de Aplicación Segura (Concentrado en gel).",
+        dilution: "Aplicar una cantidad suficiente con brocha de cerdas plásticas sobre superficies tibias o frías (nunca calientes). Dejar actuar de 5 a 30 minutos según la severidad del cochambre. Tallar con fibra suave y enjuagar con agua abundante.",
+        phImpact: "Fuertemente alcalino activo.",
+        safety: "Obligatorio usar guantes de hule. No aplicar sobre aluminio, cromo o superficies pintadas/esmaltadas sin prueba previa. No usar en caliente para evitar vapores tóxicos.",
+        badge: "DWM / Gel Quitacochambre",
+        image: "images/grease.png"
       },
       {
-        id: "hand_soap_gastronomia",
-        name: "Swipe Hand Soap (Inodoro)",
-        tagline: "Jabón líquido germicida y antibacterial inodoro para cocinas",
-        description: "Jabón antiséptico de manos 100% libre de fragancias y colorantes, formulado especialmente para el personal de dietología y cocinas hospitalarias. Garantiza la eliminación de patógenos sin transferir olores a los alimentos preparados.",
+        id: "swipe_crystal",
+        name: "Crystal",
+        tagline: "Detergente líquido concentrado lavaloza de grado alimenticio",
+        description: "SWIPE CRYSTAL es un detergente líquido lavaloza formulado bajo estrictos estándares de grado alimenticio y con una composición totalmente biodegradable. Destaca por su enérgico poder para remover las grasas más difíciles de la cocina institucional, garantizando al mismo tiempo un cuidado dermatológico excepcional gracias a su pH neutro (7) que no maltrata la piel en el uso continuo.",
         benefits: [
-          "Inocuidad alimentaria total: libre de perfumes que alteren el sabor de las dietas de los pacientes.",
-          "Elimina eficazmente Salmonella, E. coli y S. aureus de las manos del personal manipulador.",
-          "pH balanceado con emolientes que previenen la resequedad por lavado frecuente en cocina.",
-          "Compatible con dispensadores manuales y automáticos para un lavado aséptico controlado."
+          "Higiene Alimentaria y Cero Residuos: Corta la grasa pesada en utensilios de cocina, loza, cristalería, sartenes y cubiertos, eliminando el opaco 'efecto de gota' en los vasos y dejando las tarjas completamente libres de residuos. Además, su fórmula va más allá de la limpieza al eliminar una amplia gama de bacterias, hongos y levaduras.",
+          "Protección al Personal Médico-Dietético: A diferencia de los detergentes industriales agresivos, su fórmula suave, recomendada por dermatólogos, mantiene las manos del personal suaves y con un agradable aroma a limón tras las rutinas intensivas de lavado manual.",
+          "Máximo Rendimiento Financiero: Su característica más sobresaliente es la economía sorprendente que brinda al hospital. La altísima concentración del químico permite que un solo litro de SWIPE CRYSTAL rinda hasta 100 litros de detergente lavaloza. Esta asombrosa tasa de dilución es el factor central para garantizar que se cumpla la meta de ahorro financiero del 35% al 50% en los consumibles diarios de la cocina."
         ],
-        usage: "Lavado y desinfección de manos de chefs, dietistas, meseros y personal en contacto con alimentos.",
-        dosage: "Dosificar 1.5 ml por lavado directo en las manos, frotar y enjuagar con agua potable.",
-        dilution: "Uso concentrado directo sin diluir. Frotar uñas, dedos y antebrazo durante 40-60 segundos.",
-        phImpact: "pH balanceado de 5.0 a 6.0 compatible con la piel.",
-        safety: "Dermatológicamente seguro. Evitar contacto con los ojos. Uso externo.",
-        badge: "Inodoro / Grado Alimenticio",
-        image: "images/hand_soap.png"
+        usage: "Lavado manual de vajillas, vasos, cristalería, ollas, sartenes y utensilios de cocina.",
+        dosage: "Lavado Regular (10 ml por litro) | Grasa Severa (15 ml por litro).",
+        dilution: "Lavado Regular: Diluir 10 ml de Crystal por litro de agua. Grasa Severa e Incrustada: Incrementar la dosis a 15 ml por litro de agua para preparar la solución lavaloza.",
+        phImpact: "pH Neutro (7.0) no corrosivo.",
+        safety: "Fórmula biodegradable suave para las manos, dermatológicamente recomendada. Evitar contacto directo con los ojos.",
+        badge: "pH Neutro / 1L rinde 100L",
+        image: "images/crystal.png"
       },
       {
-        id: "crystal_dwm",
-        name: "Crystal DWM",
-        tagline: "Detergente de baja espuma desincrustante para lavavajillas industriales",
-        description: "Detergente líquido de espuma controlada diseñado para lavadoras automáticas de charolas y loza hospitalaria. Asegura un lavado impecable a temperaturas reguladas, desincrustando al mismo tiempo el interior del equipo.",
+        id: "swipe_peracetic",
+        name: "Peracetic",
+        tagline: "Desinfectante biodegradable a base de ácido peracético DWM (1 L)",
+        description: "SWIPE Peracetic es un desinfectante biodegradable de rápida acción, formulado a base de ácido peracético (14 - 16%). Desarrollado específicamente para la higienización en la industria alimenticia, cuenta con la aprobación de la FDA y el USDA, y está clasificado como sustancia GRAS y registro NSF, lo que certifica su total seguridad para el contacto directo con alimentos.",
         benefits: [
-          "Limpieza profunda y abrillantado de vajillas, vasos y charolas de pacientes en un solo ciclo.",
-          "Fórmula de baja espuma que optimiza la presión mecánica de lavado de la máquina.",
-          "Doble acción: limpia la vajilla y desincrusta tuberías y resistencias de la lavadora.",
-          "Actúa eficazmente a menos de 50 °C, reduciendo el consumo de energía en calderas."
+          "Inocuidad Total en Alimentos: Es el producto ideal para la desinfección directa de frutas, verduras, hortalizas con o sin cáscara, así como carnes, aves, pescados y mariscos. Su principal ventaja clínica es que no imparte sabor, color, ni olor al producto final, y se descompone en materiales inocuos sin dejar ningún tipo de residuo tóxico.",
+          "Eficiencia Absoluta en Entornos Críticos: Elimina de raíz bacterias, virus, levaduras, hongos y esporas de equipos, utensilios y mesas de preparación. Mantiene su total eficacia incluso en condiciones adversas: resiste alta dureza de agua y es completamente funcional a bajas temperaturas (hasta 4°C), por lo que es perfecto para sanitizar las cámaras frías del hospital.",
+          "Rendimiento y Control Presupuestal: Su nivel de ultra-concentración permite que sea funcional en diluciones extremas, yendo desde 1:120 hasta 1:1500. Esta drástica reducción en la cantidad de químico necesario por litro de agua es el pilar para sostener los ahorros financieros del 35% al 50% proyectados en el presupuesto de desinfección alimentaria."
         ],
-        usage: "Lavado mecánico de vajillas, charolas térmicas, cubiertos e instrumental de comedor en lavavajillas automáticas.",
-        dosage: "Dosificación automática de 8 ml a 12 ml por ciclo de lavado mediante inyector.",
-        dilution: "Inyección automática directa al ciclo de lavado de la máquina.",
-        phImpact: "Alcalino controlado desincrustante.",
-        safety: "Producto corrosivo en estado concentrado. Manejar con precaución. Diseñado para uso mecánico.",
-        badge: "Acción Desincrustante",
-        image: "images/crystal_dwm.png"
+        usage: "Desinfección de frutas, verduras, carnes, utensilios, mesas de preparación y cámaras frías.",
+        dosage: "Frutas y Verduras (1:1500 / 100 ppm) | Superficies y Carnes (1:750 / 200 ppm).",
+        dilution: "Sanitización de Alimentos: Diluir 0.66 ml por litro de agua (1:1500), actuar por 5-10 minutos (sin enjuague). Superficies de Contacto y Carnes: Diluir 1.33 ml por litro (1:750), aplicar 5-10 minutos, escurrir (sin enjuague).",
+        phImpact: "Ácido orgánico biodegradable.",
+        safety: "Evitar contacto prolongado con piel y ojos usando EPP. Trabajar en ambientes ventilados. No aplicar directamente sobre metales suaves como aluminio o cobre.",
+        badge: "DWM 1 L / FDA & NSF",
+        image: "images/Peracetic.png"
+      },
+      {
+        id: "swipol_gastronomia",
+        name: "Swipol",
+        tagline: "Desinfectante germicida de grado alimenticio y quirúrgico DWM (1 L)",
+        description: "SWIPOL es un desinfectante germicida y limpiador líquido que ostenta una doble clasificación de grado alimenticio y nivel quirúrgico, formulado a base de cuaternarios de amonio de última generación. Para asegurar un control logístico estricto en el almacén de dietología, integra el descriptor técnico DWM en la etiqueta frontal y marcador de volumen de 1 L.",
+        benefits: [
+          "Inocuidad Alimentaria Total: Su fórmula es completamente incolora e inodora, ideal para cumplir con las más estrictas normas de higiene internacional en la preparación de dietas, eliminando una amplia gama de bacterias, hongos y levaduras incluso en presencia de tierra orgánica.",
+          "Alta Tolerancia en Entornos Exigentes: Mantiene sus propiedades desinfectantes intactas tanto en altas como en bajas temperaturas, y cuenta con una alta tolerancia frente a cargas de proteínas y agua dura, escenarios constantes en el procesamiento de alimentos.",
+          "Cumplimiento Normativo y Rendimiento: Su extrema concentración le permite alcanzar diluciones precisas que cumplen con los estándares de la FDA para plantas de alimentos. Esta alta capacidad de rendimiento es el factor clave para generar ahorros del 35% al 50% en los presupuestos de sanitización diaria de la cocina."
+        ],
+        usage: "Desinfección de superficies, botes de basura, interior de refrigeradores, mesas de trabajo y trapeado de pisos de cocina.",
+        dosage: "Superficies en Contacto Directo (8.3 ml/L) | Desinfección General (Dilución 1:20) | Trapeado de Pisos (Dilución 1:120).",
+        dilution: "Contacto Directo: Diluir 8.3 ml por litro de agua (se requiere enjuague posterior con agua potable). Desinfección General: Diluir 25 ml en medio litro de agua (1:20), actuar por 30s. Pisos: Diluir 83.3 ml en 10 litros de agua (1:120).",
+        phImpact: "Neutro, seguro para cerámica y superficies.",
+        safety: "Biodegradabilidad certificada del 95.70%. Evitar contacto directo con los ojos. Almacenar en envase original.",
+        badge: "DWM 1 L / Quirúrgico & Alim.",
+        image: "images/swipol.png"
       }
     ]
   },

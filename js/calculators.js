@@ -278,10 +278,11 @@ const CALCULATORS = {
             <div class="calc-input-group">
               <label class="calc-label">Seleccionar Tarea en Dietología/Cocina</label>
               <select id="gas-area" class="calc-input calc-select">
-                <option value="grease">Campanas, Parrillas y Hornos (Cochambre)</option>
-                <option value="dish">Lavado de Charolas y Vajillas de Pacientes</option>
-                <option value="fruits">Desinfección de Ensaladas, Frutas y Verduras</option>
-                <option value="surfaces">Mesas de Trabajo, Rebanadoras y Utensilios</option>
+                <option value="swipe">Limpieza y Desengrase General (Swipe)</option>
+                <option value="grease">Remoción de Cochambre Pesado (Grease)</option>
+                <option value="crystal">Lavado Manual de Loza y Utensilios (Crystal)</option>
+                <option value="peracetic">Sanitización de Alimentos (Peracetic)</option>
+                <option value="swipol">Desinfección de Superficies y Pisos (Swipol)</option>
               </select>
             </div>
             
@@ -294,44 +295,54 @@ const CALCULATORS = {
       document.getElementById(containerId).innerHTML = html;
 
       const protocols = {
+        swipe: {
+          product: "Swipe (Desengrasante Multiusos A1)",
+          dilution: "1:100 (Gral.) a 1:12 (Mesas)",
+          steps: [
+            "Preparar la dilución de Swipe en agua (1:100 para limpieza ligera, 1:12 para equipos de acero).",
+            "Rociar o aplicar directamente en las superficies o equipos de acero inoxidable.",
+            "Frotar firmemente con una esponja o paño limpio para remover acumulaciones de aceites y grasas.",
+            "Enjuagar con agua potable. No deja residuos químicos ni cáusticos libres."
+          ]
+        },
         grease: {
-          product: "SWIPE original (Desengrasante)",
-          dilution: "1:4 (Cochambre Pesado) a 1:12 (Limpieza)",
+          product: "Grease (Quitacochambre Gel DWM)",
+          dilution: "Concentrado (Uso Directo)",
           steps: [
-            "Apagar y dejar enfriar planchas, campanas o parrillas.",
-            "Rociar la solución SWIPE 1:4 uniformemente sobre la grasa.",
-            "Dejar reposar entre 5 y 10 minutos (sin que se seque).",
-            "Tallar ligeramente con fibra verde y enjuagar con agua potable."
+            "Usar obligatoriamente guantes de hule para la manipulación.",
+            "Aplicar una cantidad suficiente del gel con brocha de plástico sobre la superficie tibia o fría.",
+            "Dejar actuar el gel de 5 a 30 minutos (evita escurrimientos gracias a su textura en gel).",
+            "Remover el cochambre carbonizado con fibra suave y enjuagar con abundante agua potable."
           ]
         },
-        dish: {
-          product: "Crystal DWM (Lavavajillas Mecánico)",
-          dilution: "8 a 12 ml por ciclo (Inyección automática)",
+        crystal: {
+          product: "Crystal (Lavaloza Manual Biodegradable)",
+          dilution: "10 ml a 15 ml por litro de agua",
           steps: [
-            "Escamochar charolas retirando los residuos de comida gruesos.",
-            "Colocar vajilla y charolas térmicas en racks sin encimar.",
-            "El sistema inyectará la dosis exacta de Crystal DWM.",
-            "Retirar del rack al secarse. Escurrimiento acelerado automático."
+            "Diluir de 10 ml (lavado regular) a 15 ml (grasa pesada) de Crystal por cada litro de agua.",
+            "Sumergir loza, cristalería, cubiertos o sartenes en la solución preparada.",
+            "Frotar con una esponja para cortar la grasa. Su pH neutro protege las manos.",
+            "Enjuagar con abundante agua. Elimina bacterias y el opaco efecto de gota."
           ]
         },
-        fruits: {
-          product: "Veggiefruit Wash (Sanitizante Alimentos)",
-          dilution: "1:100 (10 ml por litro de agua purificada)",
+        peracetic: {
+          product: "Peracetic (Ácido Peracético FDA / GRAS)",
+          dilution: "1:1500 (100 ppm) a 1:750 (200 ppm)",
           steps: [
-            "Lavar las verduras con agua potable para remover suciedad de tierra.",
-            "Sumergir totalmente en solución Veggiefruit Wash 1:100.",
-            "Mantener sumergido durante 1 minuto completo para desinfectar.",
-            "Escurrir y enjuagar con agua purificada antes de servir."
+            "Para desinfectar alimentos, diluir 0.66 ml de Peracetic por litro de agua (1:1500 / 100 ppm).",
+            "Sumergir frutas y verduras de 5 a 10 minutos. No requiere enjuague posterior.",
+            "Para desinfectar carnes y utensilios, diluir 1.33 ml por litro de agua (1:750 / 200 ppm).",
+            "Aplicar por 5-10 minutos sobre carnes o mesas de preparación, escurrir sin enjuagar."
           ]
         },
-        surfaces: {
-          product: "SWIPE original (Mesas y Charolas)",
-          dilution: "1:100 (Mantenimiento) a 1:12 (Contacto)",
+        swipol: {
+          product: "Swipol (Desinfectante Grado Quirúrgico DWM)",
+          dilution: "8.3 ml/L (Contacto) a 1:120 (Pisos)",
           steps: [
-            "Limpiar restos sólidos e impurezas de las mesas de trabajo.",
-            "Rociar la solución de SWIPE directamente en la superficie.",
-            "Frotar firmemente con paño limpio y seco para retirar aceites.",
-            "Garantiza una superficie libre de bacterias de transmisión alimenticia."
+            "Para áreas de contacto directo con alimentos, diluir 8.3 ml por litro (enjuagar posterior con agua potable).",
+            "Para desinfección general de refrigeradores, estufas o estantes, diluir en proporción 1:20 (25 ml en medio litro).",
+            "Rociar sobre las superficies y dejar actuar por 30 segundos.",
+            "Para trapeado de pisos de cocina y comedor, diluir 83.3 ml en 10 litros de agua (1:120)."
           ]
         }
       };

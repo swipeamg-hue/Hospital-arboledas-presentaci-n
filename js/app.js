@@ -1228,17 +1228,17 @@ function updateGastronomiaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>Certificación Grado Alimenticio NSF A1</h4>
-            <p>Avalado oficialmente por el registro NSF (Categoría A1) como desengrasante seguro para usarse en áreas de preparación de alimentos, mesas de trabajo, charolas y cocinas del hospital.</p>
+            <h4>Poder Desengrasante Integral</h4>
+            <p>Emulsiona de manera rápida y efectiva aceites y grasas tanto animales como vegetales acumulados en la cocina, sin dañar, manchar o corroer equipos de acero inoxidable, plásticos o superficies metálicas.</p>
           </div>
         </div>
         <div class="gastronomia-feature-card">
           <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1.5-3-1 1-1.5 1.62-1.5 3a2.5 2.5 0 0 0 .5 2.5z" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z" stroke-linecap="round"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>Desengrase de Campanas y Parrillas</h4>
-            <p>Su dilución pesada (1:4) elimina de raíz las grasas quemadas y el cochambre acumulado en campanas extractoras, parrillas y superficies de acero inoxidable en la cocina hospitalaria.</p>
+            <h4>Seguridad Sanitaria Absoluta</h4>
+            <p>Su fórmula no contiene cáusticos libres, no es tóxica ni inflamable. Al ser categoría A1, garantiza que la limpieza profunda de áreas de alimentos y cuartos limpios se realice sin riesgo de contaminación química, requiriendo únicamente un enjuague final con agua potable.</p>
           </div>
         </div>
         <div class="gastronomia-feature-card">
@@ -1246,8 +1246,8 @@ function updateGastronomiaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>Diluciones Versátiles y Rendimiento</h4>
-            <p>Mantenimiento diario de mesas y áreas generales (1:100). Limpieza de pisos y azulejos (1:12). Remoción de cochambre pesado (1:4). Rinde hasta 100 litros de solución útil por litro.</p>
+            <h4>Rendimiento y Ahorro Financiero</h4>
+            <p>Su extrema concentración permite trabajar con amplias tasas de dilución en agua. Esta versatilidad para abarcar desde la limpieza ligera de pisos hasta la remoción de grasa pesada con un solo producto es la base para asegurar ahorros operativos del 35% al 50% en el presupuesto de intendencia del área de nutrición.</p>
           </div>
         </div>
         <div class="gastronomia-feature-card">
@@ -1255,81 +1255,129 @@ function updateGastronomiaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>Seguridad Total en Zonas de Alimentos</h4>
-            <p>Sin cáusticos libres, no inflamable y no corrosivo. No daña el acero inoxidable ni libera vapores tóxicos, protegiendo al personal y garantizando la inocuidad.</p>
+            <h4>Guía de Uso Rápido</h4>
+            <p><strong>Limpieza General (Dilución 1:100):</strong> Mezclar 1 parte de producto por 100 de agua para la higiene diaria de pisos, paredes, vidrios y plásticos de la cocina. <br><strong>Acero Inoxidable (Dilución 1:12):</strong> Lavado de equipos de preparación, mesas de trabajo y tanques. <br><strong>Remoción de Grasa Pesada (Dilución 1:4):</strong> Remover grasas espesas. Aplicar sobre la superficie tibia para óptimos resultados.</p>
           </div>
         </div>
       `;
-    } else if (product.id === "veggiefruit_wash") {
+    } else if (product.id === "swipe_grease") {
       featuresHtml = `
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Rendimiento Altamente Concentrado</h4>
-            <p>Gran economía operativa: se diluye en proporción 1:100 (10 ml de producto por cada litro de agua). Un solo litro de concentrado rinde hasta 100 litros de solución sanitizante.</p>
-          </div>
-        </div>
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Lavado y Sanitización de Dietas</h4>
-            <p>Jabón líquido biodegradable de grado alimenticio formulado para lavar y desinfectar frutas, verduras y vegetales que integran el plan de nutrición de los pacientes.</p>
-          </div>
-        </div>
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22 4 12 14.01 9 11.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Cero Alteración de Sabor o Aroma</h4>
-            <p>Fórmula inodora e incolora que no altera el sabor, frescura ni color natural de los alimentos. Su pH neutro evita resequedad en las manos del personal de dietología.</p>
-          </div>
-        </div>
-      `;
-    } else if (product.id === "crystal_dwm") {
-      featuresHtml = `
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Dosificación Automática Controlada</h4>
-            <p>Dosificación exacta por inyector de 8 ml a 12 ml de producto por ciclo de lavado. Ahorro extraordinario de insumos en equipos automáticos de alta eficiencia.</p>
-          </div>
-        </div>
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="4" y1="10" x2="20" y2="10"/><circle cx="8" cy="7" r="1"/><circle cx="12" cy="7" r="1"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Lavado de Charolas y Vajillas</h4>
-            <p>Detergente líquido de espuma controlada ideal para lavavajillas industriales. Garantiza el brillo y la asepsia absoluta de loza, charolas de pacientes y cubiertos.</p>
-          </div>
-        </div>
-        <div class="gastronomia-feature-card">
-          <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="gastronomia-feature-text">
-            <h4>Acción Desincrustante e Higiene</h4>
-            <p>Limpia la loza y previene la formación de sarro en el interior del equipo. Funciona de manera excelente a &lt;50 °C, reduciendo significativamente el consumo de gas.</p>
-          </div>
-        </div>
         <div class="gastronomia-feature-card">
           <div class="gastronomia-feature-icon-container">
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>Protección de Boquillas y Tuberías</h4>
-            <p>Evita incrustaciones calcáreas en las boquillas de aspersión y líneas de agua dura, protegiendo las bombas recirculadoras del lavavajillas.</p>
+            <h4>Poder Desengrasante de Impacto Profundo</h4>
+            <p>Su gran capacidad humectante le permite penetrar y eliminar rápidamente la capa superior del cochambre carbonizado, actuando de forma simultánea en las diferentes capas de grasa acumulada. Es la herramienta definitiva para la restauración de parrillas, hornos, quemadores, planchas y sartenes en el área de preparación de dietas.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Máxima Adherencia y Rentabilidad Operativa</h4>
+            <p>Su composición física en gel proporciona una adherencia altamente efectiva sobre las superficies, evitando escurrimientos. Esto prolonga el tiempo de acción química e incrementa en gran medida el rendimiento del producto. Esta nula pérdida de químico por escurrimiento es vital para garantizar los ahorros financieros del 35% al 50% proyectados para el mantenimiento pesado de la cocina.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Cumplimiento Ecológico</h4>
+            <p>A pesar de su fuerza industrial, mantiene un perfil biodegradable que respalda los objetivos de sustentabilidad del hospital. Además, integra el descriptor DWM en su etiqueta para control en el almacén de dietología.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Guía de Uso Rápido y Precauciones</h4>
+            <p><strong>Protocolo de Aplicación Segura:</strong> Uso estrictamente OBLIGATORIO de guantes de hule. Aplicar con brocha de cerdas plásticas. Nunca usar sobre superficies calientes para evitar vapores tóxicos. <br><strong>Tiempo de Acción:</strong> Dejar actuar el gel de 5 a 30 minutos. Remover con fibra suave y enjuagar con agua abundante. <br><span style="color: #ff5a5a; font-weight: 600;">⚠️ NO utilizar sobre aluminio, cromo o superficies pintadas/esmaltadas sin antes realizar una prueba de compatibilidad.</span></p>
           </div>
         </div>
       `;
-    } else if (product.id === "hand_soap_gastronomia") {
+    } else if (product.id === "swipe_crystal") {
+      featuresHtml = `
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22 4 12 14.01 9 11.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Higiene Alimentaria y Cero Residuos</h4>
+            <p>Corta la grasa pesada en utensilios de cocina, loza, cristalería, sartenes y cubiertos, eliminando el opaco "efecto de gota" en los vasos y dejando las tarjas completamente libres de residuos. Además, su fórmula va más allá de la limpieza al eliminar una amplia gama de bacterias, hongos y levaduras.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Protección al Personal Médico-Dietético</h4>
+            <p>A diferencia de los detergentes industriales agresivos, su fórmula suave, recomendada por dermatólogos, mantiene las manos del personal suaves y con un agradable aroma a limón tras las rutinas intensivas de lavado manual.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Máximo Rendimiento Financiero</h4>
+            <p>La altísima concentración del químico permite que un solo litro de SWIPE CRYSTAL rinda hasta 100 litros de detergente lavaloza. Esta asombrosa tasa de dilución es el factor central para garantizar que se cumpla la meta de ahorro financiero del 35% al 50% en los consumibles diarios de la cocina.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Guía de Uso Rápido y Diluciones</h4>
+            <p><strong>Lavado Regular de Loza:</strong> Diluir 10 ml de producto en un litro de agua para preparar la solución lavaloza estándar. <br><strong>Grasa Severa e Incrustada:</strong> Si se trata de sartenes, charolas u ollas institucionales con cargas muy pesadas de grasa, incrementar la dosis a 15 ml disueltos por cada litro de agua.</p>
+          </div>
+        </div>
+      `;
+    } else if (product.id === "swipe_peracetic") {
+      featuresHtml = `
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Inocuidad Total en Alimentos</h4>
+            <p>Desinfección directa de frutas, verduras, hortalizas con o sin cáscara, así como carnes, aves, pescados y mariscos. No imparte sabor, color, ni olor al producto final, y se descompone en materiales inocuos sin dejar ningún tipo de residuo tóxico. Cumple FDA, USDA, GRAS y NSF.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Eficiencia Absoluta en Entornos Críticos</h4>
+            <p>Elimina de raíz bacterias, virus, levaduras, hongos y esporas de equipos, utensilios y mesas de preparación. Mantiene su total eficacia incluso en condiciones adversas: resiste alta dureza de agua y es completamente funcional a bajas temperaturas (hasta 4°C), por lo que es perfecto para sanitizar las cámaras frías del hospital.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Rendimiento y Control Presupuestal</h4>
+            <p>Su nivel de ultra-concentración permite que sea funcional en diluciones extremas (1:120 a 1:1500). Esta drástica reducción en la cantidad de químico necesario por litro de agua es el pilar para sostener los ahorros financieros del 35% al 50% proyectados en desinfección alimentaria.</p>
+          </div>
+        </div>
+        <div class="gastronomia-feature-card">
+          <div class="gastronomia-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="gastronomia-feature-text">
+            <h4>Guía de Uso Rápido y Precauciones</h4>
+            <p><strong>Sanitización de Frutas y Verduras (100 ppm):</strong> Diluir 0.66 ml de producto por cada litro de agua (1:1500). Dejar en contacto de 5 a 10 min. No requiere enjuague posterior. <br><strong>Superficies y Carnes (200 ppm):</strong> Diluir 1.33 ml por litro de agua (1:750). Aplicar de 5 a 10 minutos y escurrir. No requiere enjuague. <br><span style="color: #ff5a5a; font-weight: 600;">⚠️ Usar EPP. Trabajar en ambientes ventilados y no aplicar sobre cobre, aluminio o metales suaves. Envase marcador de volumen de 1 L.</span></p>
+          </div>
+        </div>
+      `;
+    } else if (product.id === "swipol_gastronomia") {
       featuresHtml = `
         <div class="gastronomia-feature-card">
           <div class="gastronomia-feature-icon-container">
@@ -1337,16 +1385,16 @@ function updateGastronomiaDisplay(product) {
           </div>
           <div class="gastronomia-feature-text">
             <h4>Inocuidad Alimentaria Total</h4>
-            <p>Fórmula 100% inodora y libre de colorantes. Elimina por completo el riesgo de contaminación cruzada o transferencia de aromas a las dietas clínicas.</p>
+            <p>Su fórmula es completamente incolora e inodora, ideal para cumplir con las más estrictas normas de higiene internacional en la preparación de dietas, eliminando una amplia gama de bacterias, hongos y levaduras incluso en presencia de tierra orgánica.</p>
           </div>
         </div>
         <div class="gastronomia-feature-card">
           <div class="gastronomia-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22 4 12 14.01 9 11.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>Poderoso Germicida de Amplio Espectro</h4>
-            <p>Elimina eficazmente bacterias patógenas típicas como Salmonella, E. coli y S. aureus en las manos de chefs, dietistas y personal manipulador de alimentos.</p>
+            <h4>Alta Tolerancia en Entornos Exigentes</h4>
+            <p>Mantiene sus propiedades desinfectantes intactas tanto en altas como en bajas temperaturas, y cuenta con una alta tolerancia frente a cargas de proteínas y agua dura, escenarios constantes en el procesamiento de alimentos.</p>
           </div>
         </div>
         <div class="gastronomia-feature-card">
@@ -1354,8 +1402,8 @@ function updateGastronomiaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>pH Balanceado y Protección Dérmica</h4>
-            <p>pH balanceado (5.0 a 6.0) enriquecido con humectantes. Protege las manos del personal de cocina contra la resequedad provocada por el lavado repetitivo.</p>
+            <h4>Cumplimiento Normativo y Rendimiento</h4>
+            <p>Su extrema concentración le permite alcanzar diluciones precisas que cumplen con los estándares de la FDA para plantas de alimentos. Esta alta capacidad de rendimiento es el factor clave para generar los ahorros financieros proyectados del 35% al 50% en los presupuestos de sanitización diaria.</p>
           </div>
         </div>
         <div class="gastronomia-feature-card">
@@ -1363,13 +1411,12 @@ function updateGastronomiaDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="gastronomia-feature-text">
-            <h4>Higiene Controlada y Dosificación</h4>
-            <p>Para uso directo en dispensadores Swipe. Dosificar 1.5 ml, frotar firmemente uñas, dedos y antebrazo durante 40-60 segundos antes de enjuagar.</p>
+            <h4>Guía de Uso Rápido y Diluciones</h4>
+            <p><strong>Superficies en Contacto Directo con Alimentos (200 ppm):</strong> Utilizar 8.3 ml de SWIPOL por cada litro de agua. Se requiere un enjuague con agua potable posterior a su uso. <br><strong>Desinfección General de Cocina (1:20):</strong> Diluir 25 ml en medio litro de agua. Rociar y actuar 30s. <br><strong>Trapeado de Pisos y Comedores (1:120):</strong> Utilizar 83.3 ml del producto en cubeta con 10 litros de agua.</p>
           </div>
         </div>
       `;
     }
-
     featuresColumn.innerHTML = featuresHtml;
 
     // Restaurar opacidades con animaciones suaves
