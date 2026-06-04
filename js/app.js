@@ -288,6 +288,8 @@ function getProductIconSvg(productId) {
     fruit_wash: `<svg class="product-icon-svg" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z" stroke-linecap="round"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
     surface_food: `<svg class="product-icon-svg" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
     swipe_concentrate: `<svg class="product-icon-svg" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+    brite_gel: `<svg class="product-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+    blue_genie: `<svg class="product-icon-svg" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
     eco_doser: `<svg class="product-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><path d="M12 8v8M8 12h8"/></svg>`,
     audit_service: `<svg class="product-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20V10M18 20V4M6 20v-4" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
     demo_alberca: `<svg class="product-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z" stroke-linecap="round"/></svg>`,
@@ -1465,11 +1467,20 @@ function updateMantenimientoDisplay(product) {
       featuresHtml = `
         <div class="mantenimiento-feature-card">
           <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Desincrustación Ácida Instantánea (Brite)</h4>
-            <p>Poderoso desincrustante ácido que elimina de raíz los carbonatos de calcio y magnesio (sarro) y las manchas de óxido en inodoros y mingitorios.</p>
+            <h4>Higiene Clínica Inmediata</h4>
+            <p>Inhibe eficazmente el desarrollo de bacterias provenientes del agua y materias fecales, lo que impide de forma directa la formación de olores desagradables producidos por estos microorganismos en los baños del hospital.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Remoción de Incrustaciones Severas</h4>
+            <p>Diseñado para disolver y quitar las manchas y el sarro fuertemente adherido bajo el anillo de la taza del inodoro, causado por los residuos calcáreos del agua.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
@@ -1477,17 +1488,8 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Dosificación y Métodos de Uso</h4>
-            <p>Aplicar concentrado de forma directa sobre sarro incrustado en porcelana. Dejar actuar 3-5 minutos y tallar. Diluir hasta 1:5 en azulejos.</p>
-          </div>
-        </div>
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Acción Desinfectante y Antiolor</h4>
-            <p>Elimina las bacterias provenientes del agua y materia orgánica, suprimiendo los malos olores. Seguro para porcelana y tuberías de drenaje.</p>
+            <h4>Rentabilidad y Eficiencia de Dilución</h4>
+            <p>Para el mantenimiento continuo, su fórmula concentrada permite una alta dilución. Esta capacidad de maximizar el rendimiento del producto es el motor para alcanzar ahorros financieros sostenidos de entre el 35% y el 50% en el presupuesto de limpieza de las áreas sanitarias.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
@@ -1495,8 +1497,125 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Precauciones Críticas de Seguridad</h4>
-            <p style="color: #ff5a5a; font-weight: 600;">Por su naturaleza ácida, NUNCA debe mezclarse con cloro u otros químicos. Utilizar guantes de hule y gafas protectoras durante su aplicación.</p>
+            <h4>Guía de Uso Rápido y Precauciones</h4>
+            <p><strong>Mantenimiento Diario (Dilución 1:4):</strong> Mezclar 1 parte de SWIPE BRITE por 4 partes de agua en la botella aplicadora. Aplicar en la taza, frotar con el aplicador especial y enjuagar para mantener el sanitario desinfectado y desodorizado. <br><strong>Limpieza Profunda de Sarro (Concentrado):</strong> En casos de sarro severo o antiguo, quitar el agua del W.C., aplicar el producto concentrado directamente bajo el borde, tallar y dejar remojar por 15 minutos antes de enjuagar. <br><span style="color: #ff5a5a; font-weight: 600;">⚠️ Se recomienda el uso de guantes para el personal de intendencia y, por seguridad química, nunca debe mezclarse con cloro o cualquier otro producto.</span></p>
+          </div>
+        </div>
+      `;
+    } else if (product.id === "brite_gel") {
+      featuresHtml = `
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Máxima Adherencia y Remoción</h4>
+            <p>Su consistencia en gel le permite adherirse prolongadamente a las paredes de la taza, disolviendo de manera altamente efectiva el sarro incrustado y las manchas calcáreas que provienen del agua.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Erradicación Clínica de Olores</h4>
+            <p>Actúa como un desinfectante sumamente eficaz al inhibir el desarrollo de bacterias derivadas del agua y materias fecales, previniendo desde el origen la formación de olores desagradables en las áreas sanitarias.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Alta Rentabilidad Operativa</h4>
+            <p>Aunque tiene el poder para limpiezas profundas en estado puro, su fórmula concentrada permite diluirse para las rutinas de mantenimiento diario. Esta flexibilidad y alto rendimiento son fundamentales para lograr ahorros financieros del 35% al 50% en los insumos de esta área crítica.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Guía de Uso Rápido y Precauciones</h4>
+            <p><strong>Mantenimiento Diario (Dilución 1:4):</strong> Para mantener los inodoros brillantes y desodorizados todos los días, diluir 1 parte de SWIPE BRITE GEL por 4 partes de agua en el bote aplicador y frotar. <br><strong>Desincrustación Severa (Concentrado):</strong> Para problemas serios de sarro, quitar el agua del W.C., aplicar el gel concentrado bajo el borde del anillo, dejar remojar por 15 minutos y frotar con una fibra verde (no de alambre) antes de enjuagar. <br><span style="color: #ff5a5a; font-weight: 600;">⚠️ Por seguridad del personal, se recomienda el uso de guantes y nunca debe mezclarse con cloro o cualquier otro producto químico.</span></p>
+          </div>
+        </div>
+      `;
+    } else if (product.id === "hand_soap") {
+      featuresHtml = `
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Barrera de Control de Infecciones</h4>
+            <p>Es una herramienta vital en los baños para prevenir infecciones causadas por falta de higiene cruzada, ya que elimina una amplia gama de bacterias, hongos y levaduras. Su eficacia está probada contra patógenos críticos como S. aureus, E. coli, Salmonella y Candida.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Protección Dermatológica Continua</h4>
+            <p>Su pH balanceado de 5 a 6 está en perfecta armonía con la química natural de la piel. Esto asegura que sea un producto sumamente seguro y no irritante, permitiendo el lavado frecuente sin lastimar las manos del personal o los pacientes.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Rentabilidad y Eficiencia Operativa</h4>
+            <p>Aunque el producto brinda un nivel clínico de protección, su integración con los despachadores institucionales SWIPE permite un control exacto de la dosis. Esta optimización del consumible es clave para respaldar los ahorros financieros proyectados del 35% al 50% en el abastecimiento de los módulos sanitarios.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Guía de Uso Rápido y Protocolo</h4>
+            <p><strong>Protocolo de Desinfección:</strong> El producto debe usarse en su estado concentrado. Aplicar una cantidad razonable desde el despachador SWIPE, frotar firmemente por espacio de un minuto y enjuagar con agua. <br><strong>Refuerzo Clínico Estricto:</strong> Cuando la naturaleza del entorno requiera un nivel de desinfección más riguroso, la operación de lavado puede repetirse por máxima seguridad.</p>
+          </div>
+        </div>
+      `;
+    } else if (product.id === "blue_genie") {
+      featuresHtml = `
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke-linecap="round"/><path d="M12 6v6l4 2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Triple Acción Continua</h4>
+            <p>En cada descarga, el sistema proporciona de manera automática poder desinfectante (inhibiendo el crecimiento bacteriano), poder desodorante (eliminando olores desagradables desde el interior del tanque) y poder desensarrante (evitando la acumulación de depósitos calcáreos tanto en el tanque como en la taza).</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Percepción Visual de Higiene</h4>
+            <p>Al activarse, el producto tiñe el agua de un color azul claro. Esto ofrece a pacientes, personal médico y visitantes un indicador visual de que el inodoro está siendo activamente sanitizado y desodorizado, aumentando la percepción de limpieza en la clínica.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Rendimiento Extraordinario y Ahorro</h4>
+            <p>Su envase original permite que se dosifique automáticamente, manteniendo el W.C. en óptimas condiciones durante un periodo de 2 a 3 meses (aproximadamente 900 descargas). Esta drástica reducción en la necesidad de mano de obra para limpieza manual y la longevidad del cartucho son argumentos centrales para respaldar ahorros financieros del 35% al 50% en el mantenimiento de las áreas de sanitarios.</p>
+          </div>
+        </div>
+        <div class="mantenimiento-feature-card">
+          <div class="mantenimiento-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="mantenimiento-feature-text">
+            <h4>Guía de Uso Rápido e Instalación</h4>
+            <p><strong>Instalación Sencilla:</strong> Después de lavar el inodoro de manera regular, realizar una descarga y colocar el SWIPE Blue Genie verticalmente en una esquina del tanque de agua, asegurando que no interfiera con el flotador. <br><strong>Activación:</strong> Esperar un par de minutos a que el tanque se llene nuevamente de agua y accionar la descarga. El agua tomará un tono azul claro, indicando que el producto está operando correctamente. <br><strong>Reemplazo:</strong> Proceder a cambiar el envase únicamente cuando se observe que el agua ya no se pinta de color azul. <br><strong>Presentación:</strong> Envase dosificador con peso neto de 250 gr.</p>
           </div>
         </div>
       `;
@@ -1507,17 +1626,17 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Bioseguridad en Sanitarios Públicos</h4>
-            <p>Formulado con cuaternarios de amonio de quinta generación. Sanitiza en profundidad pisos, paredes, lavabos, grifos y cambiadores de bebés en baños.</p>
+            <h4>Erradicación de Patógenos Críticos</h4>
+            <p>Ha demostrado una eficacia bactericida, viricida y fungicida de amplio espectro, eliminando bacterias, hongos y levaduras como E. coli, Staphylococcus spp y Pseudomona aeroginosa en áreas propensas a la contaminación cruzada como inodoros, lavabos y pisos de los baños.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
           <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22 4 12 14.01 9 11.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Fórmula Incolora e Inodora</h4>
-            <p>Elimina virus y bacterias causantes de gastroenteritis e infecciones cutáneas de manera discreta y sin aromas invasivos o molestos en áreas comunes.</p>
+            <h4>Eficacia Ante Cargas Orgánicas</h4>
+            <p>A diferencia de desinfectantes comunes, SWIPOL mantiene sus propiedades desinfectantes y su alta tolerancia incluso en presencia de tierra orgánica y agua dura, escenarios comunes en los módulos sanitarios.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
@@ -1525,95 +1644,17 @@ function updateMantenimientoDisplay(product) {
             <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>Rendimiento y Dosificación Hospitalaria</h4>
-            <p>Trapeado diario de pisos (dilución 1:200). Desinfección de mamparas y grifos de alto contacto (1:100). No requiere enjuague en dilución común.</p>
+            <h4>Versatilidad y Eficiencia Financiera</h4>
+            <p>Si se desea un ambiente perfumado en los baños, puede combinarse con cualquier aroma de SWIPE SURE THING sin perder su poder desinfectante. Su extrema capacidad de concentración permite diluciones muy altas, siendo la base técnica para garantizar ahorros del 35% al 50% en el presupuesto destinado a la desinfección diaria.</p>
           </div>
         </div>
         <div class="mantenimiento-feature-card">
           <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div class="mantenimiento-feature-text">
-            <h4>pH Neutro Seguro en Cerámicas</h4>
-            <p>Completamente neutro (pH 7.0) que protege las juntas de azulejos, recubrimientos finos y grifería de la corrosión. Dermatológicamente seguro.</p>
-          </div>
-        </div>
-      `;
-    } else if (product.id === "sure_thing") {
-      featuresHtml = `
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Dosificación y Máximo Rendimiento</h4>
-            <p>Líquido concentrado de alta eficiencia. Gotas puras en botes de basura o diluir 30 a 60 gotas en atomizador con medio litro de agua para esparcir en áreas amplias.</p>
-          </div>
-        </div>
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM12 6v6l4 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Uso Hospitalario (Sanitarios y Espera)</h4>
-            <p>Desodorante y neutralizador biodegradable. Ideal para sanitarios públicos, áreas de vestidores, oficinas y salas de espera, liberando un aroma premium persistente.</p>
-          </div>
-        </div>
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Neutralización Real de Olores de Raíz</h4>
-            <p>Contiene agentes degradadores que rompen químicamente las moléculas causantes de la humedad y el sudor en vez de solo enmascararlos con perfume.</p>
-          </div>
-        </div>
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Sinergia con Swipol y Seguridad</h4>
-            <p>Compatible para mezclarse en la misma dilución con el desinfectante Swipol (limpieza y aromatización en un paso). Líquido flamable, alejar del calor.</p>
-          </div>
-        </div>
-      `;
-    } else if (product.id === "hand_soap") {
-      featuresHtml = `
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Dosificación y Rendimiento Óptimo</h4>
-            <p>Uso directo concentrado sin dilución. Se dosifica 1.5 ml en las manos mediante dispensadores Swipe rellenables para evitar el desperdicio de insumos.</p>
-          </div>
-        </div>
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Higiene y Asepsia Pública</h4>
-            <p>Jabón antiséptico líquido de manos con agradable aroma. Limpia y elimina bacterias patógenas, previniendo infecciones de transmisión cruzada en sanitarios.</p>
-          </div>
-        </div>
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Protección Cutánea Avanzada</h4>
-            <p>pH balanceado de 5.0 a 6.0 enriquecido con glicerina. Protege la barrera lipídica de la piel, evitando la resequedad provocada por lavados frecuentes.</p>
-          </div>
-        </div>
-        <div class="mantenimiento-feature-card">
-          <div class="mantenimiento-feature-icon-container">
-            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="mantenimiento-feature-text">
-            <h4>Seguridad de Uso y Aplicación</h4>
-            <p>Exclusivamente para uso externo. Evitar el contacto con los ojos. Frotar enérgicamente por 40-60 segundos cubriendo uñas y dedos antes de enjuagar.</p>
+            <h4>Guía de Uso Rápido y Diluciones</h4>
+            <p><strong>Desinfección de Inodoros, Lavabos y Manijas (Rociado):</strong> Para el saneamiento de superficies de alto contacto en el baño, diluir en proporción 1:20 (25 ml de SWIPOL en medio litro de agua). Aplicar con la pistola rociadora, dejar actuar durante 30 segundos y secar. <br><strong>Trapeado de Pisos en Módulos Sanitarios:</strong> Utilizar una concentración de 1:120 (83.3 ml de producto en una cubeta con 10 litros de agua) para asegurar la desinfección total del piso. <br><strong>Tapetes Sanitarios:</strong> Para las entradas de zonas aisladas que requieran tapetes, diluir 25 ml de SWIPOL en 1.5 litros de agua (concentración 1:60).</p>
           </div>
         </div>
       `;

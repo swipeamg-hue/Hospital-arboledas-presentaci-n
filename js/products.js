@@ -294,10 +294,6 @@ const PRODUCTS_DATA = {
         description: "Detergente líquido de espuma controlada diseñado para lavadoras automáticas de charolas y loza hospitalaria. Asegura un lavado impecable a temperaturas reguladas, desincrustando al mismo tiempo el interior del equipo.",
         benefits: [
           "Limpieza profunda y abrillantado de vajillas, vasos y charolas de pacientes en un solo ciclo.",
-          "Fórmula de baja espuma que optimiza la presión mecánica de lavado de la máquina.",
-          "Doble acción: limpia la vajilla y desincrusta tuberías y resistencias de la lavadora.",
-          "Actúa eficazmente a menos de 50 °C, reduciendo el consumo de energía en calderas."
-        ],
         usage: "Lavado mecánico de vajillas, charolas térmicas, cubiertos e instrumental de comedor en lavavajillas automáticas.",
         dosage: "Dosificación automática de 8 ml a 12 ml por ciclo de lavado mediante inyector.",
         dilution: "Inyección automática directa al ciclo de lavado de la máquina.",
@@ -311,83 +307,97 @@ const PRODUCTS_DATA = {
   mantenimiento: {
     title: "Sanitarios & Baños",
     accentColor: "var(--color-mantenimiento)",
-    slogan: "Protocolos de desinfección agresiva para baños comunes e institucionales y control ambiental de olores.",
+    slogan: "Protocolos de desinfección agresiva para sanitarios comunes, vestidores y baños de visitas con control absoluto de olores orgánicos.",
     products: [
       {
         id: "swipe_concentrate",
-        name: "Brite (Desincrustante Ácido)",
-        tagline: "Limpiador ácido desincrustante, desinfectante y desodorizante de sanitarios",
-        description: "Brite es un limpiador desincrustante ácido biodegradable de alto rendimiento para inodoros y mingitorios. Elimina de raíz las calcificaciones de sarro, manchas de óxido de agua dura y destruye las bacterias que generan malos olores en la porcelana.",
+        name: "Brite",
+        tagline: "Limpiador líquido de tipo ácido desincrustante y desinfectante",
+        description: "SWIPE BRITE es un limpiador líquido de tipo ácido, altamente concentrado, formulado específicamente para limpiar, desinfectar y desodorizar inodoros y mingitorios de manera rápida y segura. Su fórmula de acción rápida es 100% activa, produce poca espuma y cuenta con una comprobada biodegradabilidad del 96.64%, cumpliendo con los estándares ecológicos de las instalaciones hospitalarias. Es inofensivo para las tuberías y fosas sépticas, además de ser seguro para el esmalte de cualquier color de porcelana.",
         benefits: [
-          "Remoción de sarro, óxido y depósitos minerales en inodoros y mingitorios de manera instantánea.",
-          "Acción germicida que elimina bacterias causantes de infecciones en sanitarios de alto tráfico público.",
-          "Evita los malos olores al atacar la flora bacteriana causante de la descomposición orgánica.",
-          "Fórmula biodegradable segura para tuberías de PVC, conexiones metálicas y fosas sépticas."
+          "Higiene Clínica Inmediata: Inhibe eficazmente el desarrollo de bacterias provenientes del agua y materias fecales, lo que impide de forma directa la formación de olores desagradables producidos por estos microorganismos en los baños del hospital.",
+          "Remoción de Incrustaciones Severas: Diseñado para disolver y quitar las manchas y el sarro fuertemente adherido bajo el anillo de la taza del inodoro, causado por los residuos calcáreos del agua.",
+          "Rentabilidad y Eficiencia de Dilución: Para el mantenimiento continuo, su fórmula concentrada permite una alta dilución. Esta capacidad de maximizar el rendimiento del producto es el motor para alcanzar ahorros financieros sostenidos de entre el 35% y el 50% en el presupuesto de limpieza de las áreas sanitarias."
         ],
-        usage: "Desincrustación profunda, desinfección y limpieza de inodoros, mingitorios y mamparas en baños públicos.",
-        dosage: "Aplicar directo para sarro incrustado | Diluir hasta 1:5 en agua para limpieza de azulejos sanitarios.",
-        dilution: "Directo sobre las paredes de la taza con aplicador de fibra, dejar actuar de 3 a 5 minutos, tallar y enjuagar.",
+        usage: "Limpieza, desinfección y desodorización de inodoros y mingitorios en áreas sanitarias hospitalarias.",
+        dosage: "Mantenimiento Diario (Dilución 1:4) | Limpieza Profunda de Sarro (Concentrado).",
+        dilution: "Mantenimiento Diario: Diluir 1 parte de Brite por 4 de agua en botella aplicadora, aplicar en la taza, frotar con aplicador especial y enjuagar. Limpieza Profunda: Quitar el agua del W.C., aplicar producto concentrado directamente bajo el borde, tallar y remojar por 15 minutos antes de enjuagar.",
         phImpact: "Ácido activo desincrustante.",
-        safety: "NUNCA mezclar con cloro u otros limpiadores químicos. Usar guantes y lentes de protección.",
-        badge: "Desincrustante Ácido",
+        safety: "Se recomienda el uso de guantes para el personal de intendencia. Nunca debe mezclarse con cloro o cualquier otro producto.",
+        badge: "Biodeg. 96.64%",
         image: "images/swipe_brite.png"
       },
       {
-        id: "sure_thing",
-        name: "Swipe Sure Thing",
-        tagline: "Neutralizador químico y desodorante biodegradable de olores ambientales",
-        description: "Swipe Sure Thing es el neutralizador de olores concentrado premium. Su tecnología descompone activamente las moléculas orgánicas causantes de la humedad, sudor y encierro en baños públicos y salas de espera, liberando un agradable aroma de larga duración.",
+        id: "brite_gel",
+        name: "Brite Gel",
+        tagline: "Limpiador desincrustante y desodorizante de tipo ácido en formato gel",
+        description: "SWIPE BRITE GEL es un limpiador de tipo ácido, altamente concentrado en formato gel, formulado para limpiar, desinfectar y desodorizar inodoros y mingitorios. Cuenta con una fórmula 100% activa de acción rápida y una biodegradabilidad comprobada del 96.64%, lo que asegura el cumplimiento de las normativas ambientales del hospital. Es totalmente inofensivo para tuberías o fosas sépticas y seguro para el esmalte de porcelana de cualquier color.",
         benefits: [
-          "Neutralización real de raíz: descompone compuestos orgánicos volátiles en vez de solo perfumar.",
-          "Compatible con Swipol: puede mezclarse directamente con el desinfectante para limpiar y aromatizar en un paso.",
-          "Aromas premium disponibles (menta, floral, canela, vainilla) para ambientar salas de espera hospitalarias.",
-          "Alta concentración: unas gotas puras desodorizan áreas pequeñas, rindiendo ampliamente por aspersión."
+          "Máxima Adherencia y Remoción: Su consistencia en gel le permite adherirse prolongadamente a las paredes de la taza, disolviendo de manera altamente efectiva el sarro incrustado y las manchas calcáreas que provienen del agua.",
+          "Erradicación Clínica de Olores: Actúa como un desinfectante sumamente eficaz al inhibir el desarrollo de bacterias derivadas del agua y materias fecales, previniendo desde el origen la formación de olores desagradables en las áreas sanitarias.",
+          "Alta Rentabilidad Operativa: Aunque tiene el poder para limpiezas profundas en estado puro, su fórmula concentrada permite diluirse para las rutinas de mantenimiento diario. Esta flexibilidad y alto rendimiento son fundamentales para lograr ahorros financieros del 35% al 50% en los insumos de esta área crítica."
         ],
-        usage: "Desodorización y aromatización de salas de espera, sanitarios, vestidores, oficinas y pasillos hospitalarios.",
-        dosage: "Gotas puras en áreas localizadas | Aspersión (30-60 gotas por 500 ml de agua en atomizador).",
-        dilution: "Directo en gotas, o diluido en agua en atomizador. Combinable con Swipol.",
-        phImpact: "Ligeramente alcalino.",
-        safety: "Líquido inflamable. Almacenar adecuadamente alejado de fuentes de calor. Mantener cerrado.",
-        badge: "Neutralizador de Olores",
-        image: "images/sure_thing.png"
-      },
-      {
-        id: "swipol_mantenimiento",
-        name: "Swipol (Sanitarios y Pisos)",
-        tagline: "Desinfectante germicida multiusos para pisos y paredes en baños",
-        description: "Desinfectante con cuaternarios de amonio de quinta generación formulado para el lavado y sanitización diaria de pisos, paredes, lavabos y grifos en baños comunes. Asegura la bioseguridad contra bacterias causantes de gastroenteritis e infecciones de piel.",
-        benefits: [
-          "Desinfección profunda de mamparas, griferías, cambiadores de bebés y pisos de baños públicos.",
-          "Elimina bacterias como Escherichia coli y levaduras causantes de infecciones cutáneas.",
-          "Totalmente inoloro e incoloro, ideal para áreas donde no se desean fragancias cargadas.",
-          "pH neutro que no daña los recubrimientos cerámicos, juntas de azulejos ni el brillo natural de pisos."
-        ],
-        usage: "Desinfección diaria de pisos de baño, mamparas, grifos, lavabos, cambiadores y botes de basura.",
-        dosage: "Lavado de pisos (1:200) | Desinfección profunda de alto contacto (1:100) en mamparas y manijas.",
-        dilution: "Diluir en agua. Rociar o trapear, dejar actuar por 2 minutos. No requiere enjuague.",
-        phImpact: "Completamente neutro (pH 7.0), no mancha ni corroe.",
-        safety: "Seguro para la piel en dilución recomendada. No inflamable.",
-        badge: "Desinfectante Multiusos",
-        image: "images/swipol.png"
+        usage: "Desincrustación de sarro y desodorización en inodoros y mingitorios con alta adherencia vertical.",
+        dosage: "Mantenimiento Diario (Dilución 1:4) | Desincrustación Severa (Concentrado).",
+        dilution: "Mantenimiento Diario: Diluir 1 parte de Brite Gel por 4 de agua en el bote aplicador y frotar. Desincrustación Severa: Quitar el agua del W.C., aplicar el gel concentrado bajo el borde del anillo, dejar remojar por 15 minutos y frotar con una fibra verde (no de alambre) antes de enjuagar.",
+        phImpact: "Ácido activo en gel desincrustante.",
+        safety: "Se recomienda el uso de guantes para el personal de intendencia. Nunca debe mezclarse con cloro o cualquier otro producto químico.",
+        badge: "Máxima Adherencia",
+        image: "images/Brite Gel.png"
       },
       {
         id: "hand_soap",
-        name: "Swipe Hand Soap (Baños)",
-        tagline: "Jabón líquido germicida antibacterial y suavizante para baños públicos",
-        description: "Jabón líquido antiséptico de manos con aroma agradable, formulado para la higiene diaria en los sanitarios públicos del hospital. Limpia y elimina bacterias eficazmente mientras cuida la piel de visitantes y familiares.",
+        name: "Swipe Hand Soap",
+        tagline: "Jabón líquido germicida y antiséptico para desinfección estricta de manos",
+        description: "SWIPE Hand Soap es un avanzado jabón líquido germicida, formulado con ingredientes de la más alta calidad y diseñado para la desinfección estricta de las manos. Respalda los compromisos de sustentabilidad del hospital al contar con una biodegradabilidad comprobada del 96.77% y ostentar certificación de grado alimenticio.",
         benefits: [
-          "Acción germicida que previene la transmisión cruzada de patógenos en áreas públicas.",
-          "Aroma agradable y espuma cremosa que brinda una excelente experiencia de aseo.",
-          "pH balanceado con glicerina que protege la piel del usuario, evitando la resequedad.",
-          "Economía de uso: ideal para despachadores rellenables de alto tráfico."
+          "Barrera de Control de Infecciones: Es una herramienta vital en los baños para prevenir infecciones causadas por falta de higiene cruzada, ya que elimina una amplia gama de bacterias, hongos y levaduras. Su eficacia está probada contra patógenos críticos como S. aureus, E. coli, Salmonella y Candida.",
+          "Protección Dermatológica Continua: Su pH balanceado de 5 a 6 está en perfecta armonía con la química natural de la piel. Esto asegura que sea un producto sumamente seguro y no irritante, permitiendo el lavado frecuente sin lastimar las manos del personal o los pacientes.",
+          "Rentabilidad y Eficiencia Operativa: Aunque el producto brinda un nivel clínico de protección, su integración con los despachadores institucionales SWIPE permite un control exacto de la dosis. Esta optimización del consumible es clave para respaldar los ahorros financieros proyectados del 35% al 50% en el abastecimiento de los módulos sanitarios."
         ],
-        usage: "Lavado e higiene de manos de pacientes, familiares y visitantes en baños públicos y consultorios.",
-        dosage: "Dosificar 1.5 ml por descarga directa en las manos, frotar y enjuagar con agua.",
-        dilution: "Uso concentrado directo sin diluir. Frotar firmemente y retirar con agua.",
+        usage: "Higiene y lavado antiséptico de manos en áreas comunes, vestidores y baños del hospital.",
+        dosage: "Protocolo de Desinfección (Uso Concentrado).",
+        dilution: "Aplicar una cantidad razonable desde el despachador SWIPE, frotar firmemente por espacio de un minuto y enjuagar con agua. Repetir la operación para un nivel de desinfección más riguroso.",
         phImpact: "pH balanceado de 5.0 a 6.0 compatible con la piel.",
-        safety: "Uso externo exclusivamente. Evitar contacto directo con los ojos.",
-        badge: "Higiene Pública Aséptica",
+        safety: "Dermatológicamente seguro. Evitar contacto con los ojos. Uso externo.",
+        badge: "Grado Alimenticio",
         image: "images/hand_soap.png"
+      },
+      {
+        id: "blue_genie",
+        name: "Blue Genie",
+        tagline: "Limpiador y detergente enzimático biodegradable de activación automática",
+        description: "SWIPE Blue Genie es un innovador limpiador y detergente enzimático biodegradable, diseñado para activarse al simple contacto con el agua en el tanque del inodoro. Su fórmula mejorada cuenta con una alta concentración de surfactantes, secuestrantes y bactericidas que potencian su poder limpiador. Es un producto completamente seguro para el entorno clínico: NO es tóxico, NO es corrosivo, NO daña el medio ambiente y NO mancha la cerámica del sanitario.",
+        benefits: [
+          "Triple Acción Continua: En cada descarga, el sistema proporciona de manera automática poder desinfectante (inhibiendo el crecimiento bacteriano), poder desodorante (eliminando olores desagradables desde el interior del tanque) y poder desensarrante (evitando la acumulación de depósitos calcáreos tanto en el tanque como en la taza).",
+          "Percepción Visual de Higiene: Al activarse, el producto tiñe el agua de un color azul claro. Esto ofrece a pacientes, personal médico y visitantes un indicador visual de que el inodoro está siendo activamente sanitizado y desodorizado, aumentando la percepción de limpieza en la clínica.",
+          "Rendimiento Extraordinario y Ahorro Financiero: Su envase original permite que se dosifique automáticamente, manteniendo el W.C. en óptimas condiciones durante un periodo de 2 a 3 meses (aproximadamente 900 descargas). Esta drástica reducción en la necesidad de mano de obra para limpieza manual y la longevidad del cartucho son argumentos centrales para respaldar ahorros financieros del 35% al 50% en el mantenimiento de las áreas de sanitarios."
+        ],
+        usage: "Limpieza, desodorización y desensarre automático continuo de inodoros desde el tanque.",
+        dosage: "Envase dosificador de peso neto 250 g (Durabilidad de 2 a 3 meses / aprox. 900 descargas).",
+        dilution: "Instalación Sencilla: Colocar el envase verticalmente en una esquina del tanque de agua tras realizar una descarga, asegurando que no interfiera con el flotador. Esperar a que llene y descargar para activar (el agua tomará tono azul claro). Cambiar al perder color.",
+        phImpact: "Seguro y no corrosivo para válvulas y cerámica.",
+        safety: "Biodegradable, no tóxico, no corrosivo y no mancha la cerámica.",
+        badge: "900 Descargas",
+        image: "images/blue_genie.png"
+      },
+      {
+        id: "swipol_mantenimiento",
+        name: "Swipol",
+        tagline: "Desinfectante germicida y limpiador de grado quirúrgico de amplio espectro",
+        description: "SWIPOL es un poderoso desinfectante germicida y limpiador líquido de grado quirúrgico, formulado a base de cuaternarios de amonio de última generación. Destaca por su alta sustentabilidad al contar con una biodegradabilidad comprobada del 95.70%. Su fórmula avanzada es incolora e inodora, lo que garantiza el cumplimiento de las normativas de higiene internacional más estrictas sin causar irritación en la piel del personal.",
+        benefits: [
+          "Erradicación de Patógenos Críticos: Ha demostrado una eficacia bactericida, viricida y fungicida de amplio espectro, eliminando bacterias, hongos y levaduras como E. coli, Staphylococcus spp y Pseudomona aeroginosa en áreas propensas a la contaminación cruzada como inodoros, lavabos y pisos de los baños.",
+          "Eficacia Ante Cargas Orgánicas: A diferencia de desinfectantes comunes, SWIPOL mantiene sus propiedades desinfectantes y su alta tolerancia incluso en presencia de tierra orgánica y agua dura, escenarios comunes en los módulos sanitarios.",
+          "Versatilidad y Eficiencia Financiera: Si se desea un ambiente perfumado en los baños, puede combinarse con cualquier aroma de SWIPE SURE THING sin perder su poder desinfectante. Su extrema capacidad de concentración permite diluciones muy altas, siendo la base técnica para garantizar ahorros del 35% al 50% en el presupuesto destinado a la desinfección diaria."
+        ],
+        usage: "Desinfección de superficies de alto contacto, trapeado de pisos de baño y tapetes sanitarios.",
+        dosage: "Superficies (Dilución 1:20) | Trapeado de Pisos (Dilución 1:120) | Tapetes Sanitarios (Dilución 1:60).",
+        dilution: "Superficies: Diluir 25 ml de Swipol en medio litro de agua (1:20), aplicar con atomizador, actuar por 30s y secar. Pisos: Diluir 83.3 ml en 10 litros de agua (1:120) y trapear. Tapetes Sanitarios: Diluir 25 ml en 1.5 litros de agua (1:60).",
+        phImpact: "Incoloro e inoloro. No daña recubrimientos cerámicos ni grifería.",
+        safety: "Biodegradabilidad de 95.70%. Seguro para la piel del personal. No inflamable.",
+        badge: "Grado Quirúrgico",
+        image: "images/swipol.png"
       }
     ]
   },

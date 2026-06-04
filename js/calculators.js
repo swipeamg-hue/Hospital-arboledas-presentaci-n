@@ -384,19 +384,20 @@ const CALCULATORS = {
             <div class="calc-input-group">
               <label class="calc-label">Producto a Diluir</label>
               <select id="maint-dil" class="calc-input calc-select">
-                <option value="brite">Brite (Desincrustante Ácido - Dil. 1:5)</option>
-                <option value="swipol">Swipol (Sanitización Pisos/Lavabos - Dil. 1:100)</option>
-                <option value="surething">Sure Thing (Neutralizador Olores - Dil. 1:15)</option>
+                <option value="brite">Brite (Desincrustante - Dil. 1:4)</option>
+                <option value="brite_gel">Brite Gel (Gel Desincrustante - Dil. 1:4)</option>
+                <option value="swipol_superficies">Swipol (Superficies - Dil. 1:20)</option>
+                <option value="swipol_pisos">Swipol (Pisos y Baños - Dil. 1:120)</option>
               </select>
             </div>
             
             <div class="calc-result-box" style="border-color: rgba(138, 63, 252, 0.15); display: grid; grid-template-columns: 50% 50%; gap: 1rem; align-items: center;">
               <div>
-                <span class="calc-result-value" id="maint-res-swipe" style="color: var(--color-mantenimiento)">83 ml</span>
+                <span class="calc-result-value" id="maint-res-swipe" style="color: var(--color-mantenimiento)">100 ml</span>
                 <span class="calc-result-label" style="font-size:0.65rem">Producto Swipe</span>
               </div>
               <div style="border-left: 1px solid rgba(255,255,255,0.08)">
-                <span class="calc-result-value" id="maint-res-water" style="color: var(--color-glass-text)">417 ml</span>
+                <span class="calc-result-value" id="maint-res-water" style="color: var(--color-glass-text)">400 ml</span>
                 <span class="calc-result-label" style="font-size:0.65rem">Agua limpia</span>
               </div>
             </div>
@@ -404,14 +405,14 @@ const CALCULATORS = {
         </div>
       `;
       document.getElementById(containerId).innerHTML = html;
-
+ 
       const update = () => {
         const vol = parseFloat(document.getElementById("maint-vol").value) || 0;
         const prod = document.getElementById("maint-dil").value;
         
-        let ratio = 5; // brite (1:5)
-        if (prod === "swipol") ratio = 100;
-        if (prod === "surething") ratio = 15;
+        let ratio = 4; // brite / brite_gel (1:4)
+        if (prod === "swipol_superficies") ratio = 20;
+        if (prod === "swipol_pisos") ratio = 120;
 
         const totalParts = ratio + 1;
         const swipeMl = vol / totalParts;
