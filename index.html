@@ -83,94 +83,41 @@
           </div>
 
           <div class="dashboard-grid">
-            <!-- Panel de Información y Spotlight de Swipol (Izquierda) -->
+            <!-- Columna Izquierda: Selector de Productos (info-panel) -->
             <div class="info-panel">
               <div class="info-title-group">
-                <span class="info-area-badge" style="color: var(--color-alberca)">Productos Estrella</span>
-                <h3 class="info-title" style="font-size: 2.5rem; color: #fff; font-family: var(--font-title); font-weight: 800; margin-top: 0.5rem; margin-bottom: 0.5rem;">Swipol / Peracetic</h3>
-                <p class="info-slogan" style="border-left: 2px solid var(--color-alberca); padding-left: 1rem; font-size: 0.95rem; line-height: 1.5;">Desinfección de grado quirúrgico de contacto y esterilización química de superficies críticas e instrumental médico en áreas de alto riesgo.</p>
+                <span class="info-area-badge" style="color: var(--color-alberca)">Línea Quirúrgica</span>
+                <h3 class="info-title" style="font-size: 2.3rem; color: #fff; font-family: var(--font-title); font-weight: 800; margin-top: 0.5rem; margin-bottom: 0.5rem;">Quirófanos & UCI</h3>
+                <p class="info-slogan" style="border-left: 2px solid var(--color-alberca); padding-left: 1rem; font-size: 0.95rem; line-height: 1.5; color: var(--color-glass-text); text-align: justify; margin-top: 0.5rem; margin-bottom: 1.5rem;">
+                  Desinfección de grado quirúrgico de contacto y esterilización química de superficies críticas e instrumental médico en áreas de alto riesgo.
+                </p>
               </div>
-              
-              <!-- Contenedor del Producto (Swipol) con su imagen -->
-              <div class="product-spotlight-container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(15, 15, 25, 0.45); border: 1px solid var(--color-glass-border); padding: 2rem; border-radius: 16px; margin-top: 0.5rem; position: relative; overflow: hidden; box-shadow: var(--shadow-premium);">
-                <div class="product-spotlight-glow" style="position: absolute; width: 220px; height: 220px; background: var(--color-alberca-glow); filter: blur(60px); opacity: 0.25; z-index: 1;"></div>
-                
-                <img src="https://raw.githubusercontent.com/swipeamg-hue/Club-de-Golf-Las-Lomas/0f670cdd5d6681bbd487b315482a5fb478331f4b/images/swipol.png" onerror="this.onerror=null; this.src='images/swipol.png';" alt="Swipe Swipol" style="max-width: 95%; max-height: 380px; object-fit: contain; z-index: 2; filter: drop-shadow(0 16px 32px rgba(0,0,0,0.6)); transition: transform var(--transition-fast);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-              </div>
-            </div>
 
-            <!-- Panel de Información Técnica de Swipol (Derecha) -->
-            <div class="catalog-panel">
-              <div class="catalog-title-bar">
-                <h3 class="catalog-title" style="color: var(--color-alberca); font-family: var(--font-title); font-weight: 700; font-size: 1.4rem;">Fichas de Bioseguridad</h3>
-                <span class="catalog-subtitle" style="font-size: 0.85rem; color: var(--color-text-muted);">Protocolo Quirúrgico</span>
-              </div>
-              
-              <div class="swipol-features-grid" style="display: flex; flex-direction: column; gap: 1rem; overflow-y: auto; max-height: calc(100vh - 240px); padding-right: 0.5rem;">
-                
-                <!-- Tarjeta 1 -->
-                <div class="feature-card" style="background: var(--color-dark-card); border: 1px solid var(--color-glass-border); border-left: 4px solid var(--color-alberca); border-radius: 12px; padding: 1.2rem; display: grid; grid-template-columns: 40px 1fr; gap: 1rem; box-shadow: 0 6px 18px rgba(0,0,0,0.1); transition: var(--transition-fast);" onmouseover="this.style.transform='translateY(-2px)'; this.style.borderColor='rgba(0, 242, 254, 0.2)';" onmouseout="this.style.transform='none'; this.style.borderColor='var(--color-glass-border)';">
-                  <div class="feature-icon-container" style="width: 40px; height: 40px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.12); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--color-alberca);">
-                    <svg style="width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2" viewBox="0 0 24 24">
-                      <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"/><path d="M12 6c-2.5 0-4 1.5-4 4 0 4 3 5 3 7.5S9.5 20 7 20"/>
-                    </svg>
+              <!-- Selector de Productos -->
+              <div class="alberca-products-selector" id="alberca-products-selector">
+
+                <!-- Producto 1: Swipol -->
+                <div class="alberca-product-tab active" data-product-id="swipol_quirurgico">
+                  <div class="product-tab-img-container">
+                    <img src="images/swipol.png" onerror="this.onerror=null; this.src='images/swipe_concentrado.png';" alt="Swipol">
                   </div>
-                  <div class="feature-text">
-                    <h4 style="font-family: var(--font-title); font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 0.3rem;">Acción Viricida en 30 Segundos (Swipol)</h4>
-                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--color-glass-text); text-align: justify; margin: 0;">Cuaternario de amonio de quinta generación formulado para una desinfección rápida. Elimina virus envueltos, bacterias multirresistentes y levaduras en tiempo récord en superficies de alto contacto.</p>
+                  <div class="product-tab-info">
+                    <span class="product-tab-badge">Desinfectante Quirúrgico</span>
+                    <h4 class="product-tab-name">Swipol</h4>
                   </div>
+                  <div class="product-tab-indicator"></div>
                 </div>
 
-                <!-- Tarjeta 2 -->
-                <div class="feature-card" style="background: var(--color-dark-card); border: 1px solid var(--color-glass-border); border-left: 4px solid var(--color-alberca); border-radius: 12px; padding: 1.2rem; display: grid; grid-template-columns: 40px 1fr; gap: 1rem; box-shadow: 0 6px 18px rgba(0,0,0,0.1); transition: var(--transition-fast);" onmouseover="this.style.transform='translateY(-2px)'; this.style.borderColor='rgba(0, 242, 254, 0.2)';" onmouseout="this.style.transform='none'; this.style.borderColor='var(--color-glass-border)';">
-                  <div class="feature-icon-container" style="width: 40px; height: 40px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.12); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--color-alberca);">
-                    <svg style="width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2" viewBox="0 0 24 24">
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                    </svg>
+                <!-- Producto 2: Peracetic -->
+                <div class="alberca-product-tab" data-product-id="peracetic_esterilizante">
+                  <div class="product-tab-img-container">
+                    <img src="images/Peracetic.png" onerror="this.onerror=null; this.src='images/swipe_concentrado.png';" alt="Peracetic">
                   </div>
-                  <div class="feature-text">
-                    <h4 style="font-family: var(--font-title); font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 0.3rem;">Esterilización de Superficies y Equipamiento</h4>
-                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--color-glass-text); text-align: justify; margin: 0;">Garantiza la eliminación total de patógenos en mesas quirúrgicas, lámparas scialíticas, monitores y respiradores, creando una barrera de bioseguridad persistente sin comprometer los componentes delicados.</p>
+                  <div class="product-tab-info">
+                    <span class="product-tab-badge">Esterilizante Esporicida</span>
+                    <h4 class="product-tab-name">Peracetic</h4>
                   </div>
-                </div>
-
-                <!-- Tarjeta 3 -->
-                <div class="feature-card" style="background: var(--color-dark-card); border: 1px solid var(--color-glass-border); border-left: 4px solid var(--color-alberca); border-radius: 12px; padding: 1.2rem; display: grid; grid-template-columns: 40px 1fr; gap: 1rem; box-shadow: 0 6px 18px rgba(0,0,0,0.1); transition: var(--transition-fast);" onmouseover="this.style.transform='translateY(-2px)'; this.style.borderColor='rgba(0, 242, 254, 0.2)';" onmouseout="this.style.transform='none'; this.style.borderColor='var(--color-glass-border)';">
-                  <div class="feature-icon-container" style="width: 40px; height: 40px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.12); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--color-alberca);">
-                    <svg style="width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2" viewBox="0 0 24 24">
-                      <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
-                    </svg>
-                  </div>
-                  <div class="feature-text">
-                    <h4 style="font-family: var(--font-title); font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 0.3rem;">Acción Esporicida y Alto Espectro (Peracetic)</h4>
-                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--color-glass-text); text-align: justify; margin: 0;">Nuestra solución a base de ácido peracético actúa rompiendo las paredes celulares de esporas de Clostridium difficile y mycobacterias, asegurando una desinfección de nivel esterilizante en frío.</p>
-                  </div>
-                </div>
-
-                <!-- Tarjeta 4 -->
-                <div class="feature-card" style="background: var(--color-dark-card); border: 1px solid var(--color-glass-border); border-left: 4px solid var(--color-alberca); border-radius: 12px; padding: 1.2rem; display: grid; grid-template-columns: 40px 1fr; gap: 1rem; box-shadow: 0 6px 18px rgba(0,0,0,0.1); transition: var(--transition-fast);" onmouseover="this.style.transform='translateY(-2px)'; this.style.borderColor='rgba(0, 242, 254, 0.2)';" onmouseout="this.style.transform='none'; this.style.borderColor='var(--color-glass-border)';">
-                  <div class="feature-icon-container" style="width: 40px; height: 40px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.12); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--color-alberca);">
-                    <svg style="width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2" viewBox="0 0 24 24">
-                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                    </svg>
-                  </div>
-                  <div class="feature-text">
-                    <h4 style="font-family: var(--font-title); font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 0.3rem;">Prevención Activa de Infecciones Nosocomiales</h4>
-                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--color-glass-text); text-align: justify; margin: 0;">Diseñado específicamente para mitigar riesgos biológicos e infecciones del sitio quirúrgico (ISQ) causadas por la persistencia de bacterias patógenas en áreas de cuidado crítico.</p>
-                  </div>
-                </div>
-
-                <!-- Tarjeta 5 -->
-                <div class="feature-card" style="background: var(--color-dark-card); border: 1px solid var(--color-glass-border); border-left: 4px solid var(--color-alberca); border-radius: 12px; padding: 1.2rem; display: grid; grid-template-columns: 40px 1fr; gap: 1rem; box-shadow: 0 6px 18px rgba(0,0,0,0.1); transition: var(--transition-fast);" onmouseover="this.style.transform='translateY(-2px)'; this.style.borderColor='rgba(0, 242, 254, 0.2)';" onmouseout="this.style.transform='none'; this.style.borderColor='var(--color-glass-border)';">
-                  <div class="feature-icon-container" style="width: 40px; height: 40px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.12); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--color-alberca);">
-                    <svg style="width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2.5" viewBox="0 0 24 24">
-                      <path d="M4.5 16.5c-1.5 1.5-2.5 3.5-2.5 5.5h20c0-2-1-4-2.5-5.5"/><path d="M12 2v14M8 5l4-3 4 3"/>
-                    </svg>
-                  </div>
-                  <div class="feature-text">
-                    <h4 style="font-family: var(--font-title); font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 0.3rem;">Fórmula Segura y No Corrosiva</h4>
-                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--color-glass-text); text-align: justify; margin: 0;">Química moderna que no deteriora ni opaca el acero quirúrgico ni plásticos técnicos de los monitores de signos vitales, libre de humos tóxicos o aromas penetrantes.</p>
-                  </div>
+                  <div class="product-tab-indicator"></div>
                 </div>
 
               </div>
@@ -180,11 +127,85 @@
                 <div id="calc-container-alberca"></div>
                 <div id="catalog-grid-alberca"></div>
               </div>
+            </div>
 
+            <!-- Columna Derecha: Información Técnica Dinámica (catalog-panel) -->
+            <div class="catalog-panel">
+              <div class="catalog-title-bar">
+                <h3 class="catalog-title" style="color: var(--color-alberca); font-family: var(--font-title); font-weight: 700; font-size: 1.4rem;">Información del Producto</h3>
+                <span class="catalog-subtitle" style="font-size: 0.85rem; color: var(--color-text-muted);">Fichas de Bioseguridad</span>
+              </div>
+
+              <div class="alberca-dynamic-display">
+                <!-- Columna de Spotlight (Imagen del Producto) -->
+                <div class="alberca-spotlight-column">
+                  <div class="alberca-spotlight-card" id="alberca-spotlight-card">
+                    <div class="alberca-spotlight-glow"></div>
+                    <img id="alberca-spotlight-img" src="images/swipol.png" onerror="this.onerror=null; this.src='images/swipe_concentrado.png';" alt="Swipol">
+                    <!-- Contenedor para SVGs cuando el producto no tiene imagen dedicada -->
+                    <div id="alberca-spotlight-svg-container" style="display: none; z-index: 2;"></div>
+                  </div>
+                  <button class="btn-add-quote" id="alberca-add-to-quote-btn" onclick="addToQuoteCart('swipol_quirurgico', 'alberca')">
+                    <svg style="width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2;" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Agregar a Cotización
+                  </button>
+                </div>
+
+                <!-- Columna de Características Técnicas -->
+                <div class="alberca-features-column" id="alberca-features-column">
+                  <!-- Renderizado por defecto del Producto 1 (Swipol) -->
+
+                  <!-- Ficha 1 -->
+                  <div class="alberca-feature-card">
+                    <div class="alberca-feature-icon-container">
+                      <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="alberca-feature-text">
+                      <h4>Acción Viricida y Bactericida en 30 Segundos</h4>
+                      <p>Su cuaternario de amonio de quinta generación actúa en tiempo récord, eliminando virus envueltos, bacterias multirresistentes (como MRSA), hongos y levaduras. Ideal para los tiempos de rotación rápidos entre cirugías.</p>
+                    </div>
+                  </div>
+
+                  <!-- Ficha 2 -->
+                  <div class="alberca-feature-card">
+                    <div class="alberca-feature-icon-container">
+                      <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+                    </div>
+                    <div class="alberca-feature-text">
+                      <h4>Seguridad Total para el Entorno Crítico</h4>
+                      <p>Fórmula incolora e inodora, cero vapores o aromas químicos irritantes. Seguro para el personal médico y para los pacientes bajo anestesia en UCI. No es irritante para la piel.</p>
+                    </div>
+                  </div>
+
+                  <!-- Ficha 3 -->
+                  <div class="alberca-feature-card">
+                    <div class="alberca-feature-icon-container">
+                      <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <div class="alberca-feature-text">
+                      <h4>Rendimiento y Ahorro Financiero</h4>
+                      <p>Su altísima concentración permite diluciones de hasta 1:200 para superficies generales y 1:100 para áreas de alta carga biológica, siendo la base para alcanzar ahorros del 35% al 50% en bioseguridad quirúrgica.</p>
+                    </div>
+                  </div>
+
+                  <!-- Ficha 4 -->
+                  <div class="alberca-feature-card">
+                    <div class="alberca-feature-icon-container">
+                      <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="alberca-feature-text">
+                      <h4>Guía de Uso Rápido</h4>
+                      <p><strong>Superficies Generales (1:200):</strong> Aplicar con atomizador, frotar y dejar secar. Sin enjuague. <strong>Grado Quirúrgico (1:100):</strong> Para áreas de alta carga biológica. <strong>Pisos (1:120):</strong> Trapear regularmente. <strong>Nebulización (1:60):</strong> Sanitización ambiental profunda.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
 
       <!-- COLUMNA 2: LAVANDERÍA CLÍNICA -->
       <section class="area-column col-spa" data-area="spa" id="col-spa" style="--col-index: 1;">

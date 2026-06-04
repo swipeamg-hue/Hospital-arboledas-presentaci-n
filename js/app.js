@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initProductDrawer();
   initQuoteSystem();
   renderCatalogProducts();
+  initAlbercaProductSwitcher();
   initSpaProductSwitcher();
   initGymProductSwitcher();
   initGastronomiaProductSwitcher();
@@ -564,7 +565,212 @@ function submitQuoteRequest() {
 }
 
 /**
- * 5. CONTROLADOR INTERACTIVO DE SPA & WELLNESS
+ * 5. CONTROLADOR INTERACTIVO DE QUIRÓFANOS & UCI
+ */
+function initAlbercaProductSwitcher() {
+  const tabs = document.querySelectorAll(".alberca-product-tab");
+  const selector = document.getElementById("alberca-products-selector");
+  if (!tabs.length || !selector) return;
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", function (e) {
+      e.stopPropagation(); // Evitar cerrar o activar columnas del acordeón
+      
+      const productId = this.getAttribute("data-product-id");
+      if (!productId) return;
+
+      // Cambiar clase active en las pestañas
+      tabs.forEach((t) => t.classList.remove("active"));
+      this.classList.add("active");
+
+      // Buscar el producto en PRODUCTS_DATA
+      const product = PRODUCTS_DATA.alberca.products.find((p) => p.id === productId);
+      if (!product) return;
+
+      // Actualizar el panel derecho
+      updateAlbercaDisplay(product);
+    });
+  });
+
+  // Inicializar dinámicamente con el primer producto activo
+  const activeTab = selector.querySelector(".alberca-product-tab.active");
+  if (activeTab) {
+    const initialId = activeTab.getAttribute("data-product-id");
+    const initialProduct = PRODUCTS_DATA.alberca.products.find((p) => p.id === initialId);
+    if (initialProduct) updateAlbercaDisplay(initialProduct);
+  }
+}
+
+function updateAlbercaDisplay(product) {
+  const spotlightCard = document.getElementById("alberca-spotlight-card");
+  const imgEl = document.getElementById("alberca-spotlight-img");
+  const svgContainer = document.getElementById("alberca-spotlight-svg-container");
+  const quoteBtn = document.getElementById("alberca-add-to-quote-btn");
+  const featuresColumn = document.getElementById("alberca-features-column");
+
+  if (!spotlightCard || !featuresColumn) return;
+
+  // Añadir un pequeño efecto de fade-out temporal para la transición
+  featuresColumn.style.opacity = "0";
+  featuresColumn.style.transform = "translateY(10px)";
+  featuresColumn.style.transition = "all 0.3s ease";
+  
+  spotlightCard.style.opacity = "0.5";
+  spotlightCard.style.transform = "scale(0.98)";
+
+  setTimeout(() => {
+    // 1. Actualizar imagen o SVG en el spotlight
+    if (product.image) {
+      imgEl.src = product.image;
+      imgEl.style.display = "block";
+      svgContainer.style.display = "none";
+    } else {
+      imgEl.style.display = "none";
+      const iconSvg = getProductIconSvg(product.id);
+      svgContainer.innerHTML = iconSvg;
+      const svgInner = svgContainer.querySelector("svg");
+      if (svgInner) {
+        svgInner.style.width = "120px";
+        svgInner.style.height = "120px";
+        svgInner.style.strokeWidth = "1.2";
+      }
+      svgContainer.style.display = "block";
+    }
+
+    // 2. Actualizar botón de cotización
+    if (quoteBtn) {
+      quoteBtn.setAttribute("onclick", `addToQuoteCart('${product.id}', 'alberca')`);
+    }
+
+    // 3. Generar las características técnicas dinámicas
+    let featuresHtml = "";
+
+    if (product.id === "swipol_quirurgico") {
+      featuresHtml = `
+        <div class="alberca-feature-card">
+          <div class="alberca-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="alberca-feature-text">
+            <h4>Acción Viricida y Bactericida en 30 Segundos</h4>
+            <p>Su cuaternario de amonio de quinta generación actúa en tiempo récord, eliminando virus envueltos, bacterias multirresistentes (como MRSA), hongos y levaduras. Ideal para los tiempos de rotación rápidos que se requieren entre cirugías.</p>
+          </div>
+        </div>
+        <div class="alberca-feature-card">
+          <div class="alberca-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+          </div>
+          <div class="alberca-feature-text">
+            <h4>Seguridad Total para el Entorno Crítico</h4>
+            <p>Fórmula incolora e inodora, cero vapores o aromas químicos irritantes. Seguro para el personal médico y para los pacientes bajo anestesia en UCI. No es irritante para la piel ni compromete el bienestar del paciente.</p>
+          </div>
+        </div>
+        <div class="alberca-feature-card">
+          <div class="alberca-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" stroke-linecap="round"/></svg>
+          </div>
+          <div class="alberca-feature-text">
+            <h4>Compatibilidad con Equipo Médico de Alta Tecnología</h4>
+            <p>Alta compatibilidad con plásticos técnicos, acrílicos, pantallas táctiles de monitores, ventiladores, bombas de infusión y acero inoxidable quirúrgico, sin deteriorar ni opacar las superficies.</p>
+          </div>
+        </div>
+        <div class="alberca-feature-card">
+          <div class="alberca-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="alberca-feature-text">
+            <h4>Guía de Uso Rápido y Diluciones</h4>
+            <p><strong>Superficies Generales (1:200):</strong> Aplicar con atomizador, frotar y dejar secar. Sin enjuague. <br><strong>Grado Quirúrgico - Alta Carga (1:100):</strong> Para áreas de riesgo biológico elevado. <br><strong>Pisos de Quirófano (1:120):</strong> Trapear regularmente. <br><strong>Nebulización Ambiental (1:60):</strong> Sanitización profunda del espacio. <br><span style="color: #05e6b4; font-weight: 600;">✓ Biodegradabilidad certificada 95.70%. No mezclar con jabones aniónicos o cloro.</span></p>
+          </div>
+        </div>
+      `;
+    } else if (product.id === "peracetic_esterilizante") {
+      featuresHtml = `
+        <div class="alberca-feature-card">
+          <div class="alberca-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="alberca-feature-text">
+            <h4>Esterilización de Amplio Espectro</h4>
+            <p>Elimina de manera contundente todo tipo de microorganismos patógenos, incluyendo bacterias, virus, levaduras, hongos y esporas. Altamente recomendado para la desinfección profunda de equipo médico y superficies críticas del quirófano.</p>
+          </div>
+        </div>
+        <div class="alberca-feature-card">
+          <div class="alberca-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z" stroke-linecap="round"/></svg>
+          </div>
+          <div class="alberca-feature-text">
+            <h4>Esterilización en Frío de Instrumental Termosensible</h4>
+            <p>Permite la esterilización de endoscopios, citoscopios y laparoscopios por simple inmersión, sin requerir autoclaves u otros sistemas de alto costo energético. Protocolos validados para instrumental delicado.</p>
+          </div>
+        </div>
+        <div class="alberca-feature-card">
+          <div class="alberca-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round"/></svg>
+          </div>
+          <div class="alberca-feature-text">
+            <h4>Fórmula Biodegradable e Inocua</h4>
+            <p>Se descompone en agua, oxígeno y ácido acético, sin dejar ningún tipo de residuo tóxico o peligroso en los instrumentos, en el ambiente del quirófano ni en el sistema de drenaje del hospital. Cumple los más altos estándares ecológicos.</p>
+          </div>
+        </div>
+        <div class="alberca-feature-card">
+          <div class="alberca-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="alberca-feature-text">
+            <h4>Guía de Uso Rápido y Precauciones</h4>
+            <p><strong>Esterilización de Instrumental (Inmersión):</strong> Sumergir el equipo completamente en la solución diluida durante el tiempo recomendado por el fabricante del instrumento. <br><strong>Desinfección Superficial de Quirófanos (1:50):</strong> Diluir en agua desmineralizada y aplicar con rociador en toda el área quirúrgica. <br><span style="color: #ff5a5a; font-weight: 600;">⚠️ Obligatorio usar EPP completo (guantes, lentes y mascarilla). Trabajar en áreas ventiladas. No usar sobre aluminio o cobre.</span></p>
+          </div>
+        </div>
+      `;
+    } else {
+      // Fallback dinámico genérico
+      featuresHtml = `
+        <div class="alberca-feature-card">
+          <div class="alberca-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <div class="alberca-feature-text">
+            <h4>Descripción del Producto</h4>
+            <p>${product.description}</p>
+          </div>
+        </div>
+        <div class="alberca-feature-card">
+          <div class="alberca-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="alberca-feature-text">
+            <h4>Beneficios Clave</h4>
+            <ul style="font-size: 0.85rem; line-height: 1.5; color: var(--color-glass-text); padding-left: 1.2rem; margin: 0.3rem 0 0 0;">
+              ${product.benefits.map(b => `<li style="margin-bottom: 0.3rem;">${b}</li>`).join("")}
+            </ul>
+          </div>
+        </div>
+        <div class="alberca-feature-card">
+          <div class="alberca-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div class="alberca-feature-text">
+            <h4>Seguridad y Manejo</h4>
+            <p><strong>Manejo Seguro:</strong> ${product.safety}<br><strong>Impacto en pH:</strong> ${product.phImpact || 'Neutro.'}</p>
+          </div>
+        </div>
+      `;
+    }
+
+    featuresColumn.innerHTML = featuresHtml;
+
+    // Restaurar opacidades con animaciones suaves
+    featuresColumn.style.opacity = "1";
+    featuresColumn.style.transform = "translateY(0)";
+    
+    spotlightCard.style.opacity = "1";
+    spotlightCard.style.transform = "scale(1)";
+  }, 150);
+}
+
+/**
+ * 6. CONTROLADOR INTERACTIVO DE SPA & WELLNESS
  */
 function initSpaProductSwitcher() {
   const tabs = document.querySelectorAll(".spa-product-tab");

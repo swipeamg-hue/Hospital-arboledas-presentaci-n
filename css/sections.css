@@ -2120,17 +2120,269 @@
   filter: brightness(1.15);
 }
 
-/* Efectos responsivos en la visualización del mantenimiento */
+/* =====================================================
+   QUIRÓFANOS & UCI (ALBERCA) - SWITCHER INTERACTIVO
+   ===================================================== */
+
+.btn-add-quote {
+  background: var(--color-alberca);
+  border: none;
+  color: #000;
+  padding: 0.85rem 1.8rem;
+  border-radius: 10px;
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  box-shadow: 0 4px 15px rgba(0, 242, 254, 0.25);
+  width: 100%;
+}
+
+.btn-add-quote:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 242, 254, 0.4);
+  filter: brightness(1.15);
+}
+
+.alberca-products-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  overflow-y: auto;
+  max-height: calc(100vh - 340px);
+  padding-right: 0.4rem;
+}
+
+.alberca-products-selector::-webkit-scrollbar {
+  width: 5px;
+}
+
+.alberca-products-selector::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+}
+
+.alberca-products-selector::-webkit-scrollbar-thumb {
+  background: rgba(0, 242, 254, 0.15);
+  border-radius: 10px;
+}
+
+.alberca-product-tab {
+  display: grid;
+  grid-template-columns: 72px 1fr 12px;
+  gap: 1rem;
+  align-items: center;
+  background: var(--color-dark-card);
+  border: 1px solid var(--color-glass-border);
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.alberca-product-tab::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 242, 254, 0.03), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.alberca-product-tab:hover::before,
+.alberca-product-tab.active::before {
+  opacity: 1;
+}
+
+.alberca-product-tab:hover {
+  border-color: rgba(0, 242, 254, 0.25);
+  transform: translateX(4px);
+  background: rgba(26, 26, 38, 0.7);
+}
+
+.alberca-product-tab.active {
+  border-color: var(--color-alberca);
+  background: rgba(0, 242, 254, 0.04);
+  box-shadow: 0 4px 20px rgba(0, 242, 254, 0.1);
+}
+
+.product-tab-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+.alberca-product-tab.active .product-tab-indicator {
+  background: var(--color-alberca);
+  box-shadow: 0 0 10px var(--color-alberca), 0 0 20px var(--color-alberca);
+}
+
+/* Panel de visualización dinámico del producto seleccionado */
+.alberca-dynamic-display {
+  display: grid;
+  grid-template-columns: 42% 58%;
+  gap: 2rem;
+  height: 100%;
+}
+
+.alberca-spotlight-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.alberca-spotlight-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 15, 25, 0.45);
+  border: 1px solid var(--color-glass-border);
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-premium);
+  min-height: 420px;
+  transition: all 0.5s ease;
+}
+
+.alberca-spotlight-glow {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  background: var(--color-alberca-glow);
+  filter: blur(70px);
+  opacity: 0.25;
+  z-index: 1;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.alberca-spotlight-card img {
+  max-width: 95%;
+  max-height: 340px;
+  object-fit: contain;
+  z-index: 2;
+  filter: drop-shadow(0 16px 32px rgba(0,0,0,0.6));
+  transition: transform var(--transition-fast);
+}
+
+.alberca-spotlight-card img:hover {
+  transform: scale(1.03);
+}
+
+.alberca-spotlight-card svg {
+  width: 100px;
+  height: 100px;
+  stroke: var(--color-alberca);
+  stroke-width: 1.2;
+  fill: none;
+  z-index: 2;
+  filter: drop-shadow(0 0 15px var(--color-alberca-glow));
+  transition: transform 0.5s ease;
+}
+
+.alberca-spotlight-card:hover svg {
+  transform: scale(1.08) rotate(5deg);
+}
+
+.alberca-features-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+  max-height: calc(100vh - 240px);
+  padding-right: 0.5rem;
+}
+
+.alberca-features-column::-webkit-scrollbar {
+  width: 6px;
+}
+
+.alberca-features-column::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+}
+
+.alberca-features-column::-webkit-scrollbar-thumb {
+  background: rgba(0, 242, 254, 0.15);
+  border-radius: 10px;
+}
+
+.alberca-features-column::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 242, 254, 0.3);
+}
+
+.alberca-feature-card {
+  background: var(--color-dark-card);
+  border: 1px solid var(--color-glass-border);
+  border-left: 4px solid var(--color-alberca);
+  border-radius: 12px;
+  padding: 1.2rem;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: var(--transition-fast);
+}
+
+.alberca-feature-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 242, 254, 0.2);
+  background: rgba(26, 26, 38, 0.7);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.alberca-feature-icon-container {
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 242, 254, 0.05);
+  border: 1px solid rgba(0, 242, 254, 0.12);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-alberca);
+  flex-shrink: 0;
+}
+
+.alberca-feature-text h4 {
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.alberca-feature-text p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--color-glass-text);
+  text-align: justify;
+  margin: 0;
+}
+
+/* Efectos responsivos en la visualización de Quirófanos */
 @media (max-width: 1200px) {
-  .mantenimiento-dynamic-display {
+  .alberca-dynamic-display {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  .mantenimiento-spotlight-card {
+  .alberca-spotlight-card {
     min-height: auto;
     padding: 1.5rem;
   }
-  .mantenimiento-features-column {
+  .alberca-features-column {
     max-height: none;
   }
 }

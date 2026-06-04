@@ -9,41 +9,42 @@ const PRODUCTS_DATA = {
     slogan: "Desinfección de grado quirúrgico, esterilización en frío y control de infecciones nosocomiales en áreas de alto riesgo.",
     products: [
       {
-        id: "alguicida_max",
+        id: "swipol_quirurgico",
         name: "Swipol (Desinfectante Quirúrgico)",
         tagline: "Desinfectante viricida y bactericida de grado quirúrgico en 30 segundos",
-        description: "Swipol es la herramienta definitiva para la desinfección de contacto de superficies críticas en quirófanos, UCI y urgencias. Su fórmula con cuaternario de amonio de quinta generación elimina virus envueltos, bacterias multirresistentes y hongos sin dejar residuos corrosivos ni generar vapores irritantes.",
+        description: "SWIPOL es un desinfectante germicida y limpiador líquido concentrado, clasificado con grado alimenticio y quirúrgico. Su avanzada formulación a base de cuaternario de amonio de última generación está diseñada para eliminar bacterias, hongos, levaduras y virus, manteniendo una alta efectividad incluso ante la presencia de tierra orgánica. Su fórmula es incolora e inodora, garantizando el cumplimiento de las más estrictas normas de higiene internacional sin causar irritación en la piel del personal ni molestias respiratorias en pacientes bajo anestesia. Además, es un producto certificado como biodegradable con un 95.70% de eficiencia.",
         benefits: [
-          "Eliminación de virus y bacterias en 30 segundos, ideal para tiempos de rotación rápidos entre cirugías.",
-          "Cero vapores o aromas químicos irritantes: seguro para el personal médico y pacientes bajo anestesia.",
-          "Alta compatibilidad con plásticos técnicos, acrílicos y pantallas de monitores y ventiladores.",
-          "Acción germicida residual que evita la proliferación de patógenos intrahospitalarios comunes."
+          "Acción Viricida y Bactericida en 30 Segundos: Su cuaternario de amonio de quinta generación actúa en tiempo récord, eliminando virus envueltos, bacterias multirresistentes (como MRSA), hongos y levaduras. Ideal para los tiempos de rotación rápidos que se requieren entre cirugías.",
+          "Seguridad Total para el Entorno Crítico: Fórmula incolora e inodora, cero vapores o aromas químicos irritantes. Seguro para el personal médico y para los pacientes bajo anestesia en UCI. No es irritante para la piel.",
+          "Compatibilidad con Equipo Médico de Alta Tecnología: Alta compatibilidad con plásticos técnicos, acrílicos, pantallas táctiles de monitores, ventiladores, bombas de infusión y acero inoxidable quirúrgico, sin deteriorar ni opacas las superficies.",
+          "Acción Germicida Residual y Ahorro Financiero: Su altísima concentración permite diluciones de hasta 1:200 para superficies generales y 1:100 para áreas de alta carga biológica. Esta eficiencia de rendimiento es la base para alcanzar ahorros financieros sostenidos del 35% al 50% en el presupuesto de bioseguridad quirúrgica."
         ],
-        usage: "Desinfección de equipos médicos, lámparas, mesas quirúrgicas, camillas, monitores y superficies de contacto frecuente.",
-        dosage: "Normal (1:200) para superficies generales | Grado quirúrgico (1:100) para áreas de alta carga biológica.",
-        dilution: "Dilución en agua. Aplicar con atomizador o paño limpio, frotar y dejar secar. No requiere enjuague.",
-        phImpact: "Neutro y estable en superficies.",
-        safety: "Totalmente seguro en dilución. No mezclar con jabones aniónicos o cloro.",
+        usage: "Desinfección de equipos médicos, lámparas scialíticas, mesas quirúrgicas, camillas, monitores, ventiladores y todas las superficies de contacto frecuente en quirófanos, UCI y urgencias.",
+        dosage: "Superficies Generales (Dilución 1:200) | Grado Quirúrgico / Alta Carga Biológica (Dilución 1:100) | Trapeado de Pisos (Dilución 1:120) | Nebulización Ambiental (Dilución 1:60).",
+        dilution: "Aplicar con atomizador en toda la superficie, frotar y dejar secar completamente. No requiere enjuague posterior. Para nebulización, utilizar con nebulizador y solución 1:60.",
+        phImpact: "Neutro. No daña recubrimientos, acero inoxidable ni plásticos técnicos.",
+        safety: "Biodegradabilidad certificada del 95.70%. Incoloro e inodoro. No irritante para la piel. No inflamable. No mezclar con jabones aniónicos o cloro.",
         badge: "Viricida en 30 Segundos",
         image: "images/swipol.png"
       },
       {
-        id: "shock_cloro",
+        id: "peracetic_esterilizante",
         name: "Peracetic (Esterilizante en Frío)",
         tagline: "Ácido peracético estabilizado para desinfección de nivel esterilizante",
-        description: "Desinfectante esporicida y esterilizante químico a base de ácido peracético. Diseñado especialmente para la esterilización en frío de instrumental termosensible y desinfección de alto nivel en áreas críticas de cirugía y terapia intensiva, eliminando bacterias, micobacterias, hongos y esporas.",
+        description: "SWIPE Peracetic es un poderoso desinfectante y esterilizante de rápida acción formulado a base de ácido peracético (14 - 16%). Dada su altísima efectividad y amplio espectro, es un producto fundamental en la industria hospitalaria para lograr un nivel superior de sanitización y garantizar la total asepsia de los entornos críticos. Su fórmula biodegradable asegura que, tras su acción germicida, se descomponga en materiales completamente inocuos, sin dejar ningún tipo de residuo tóxico en el ambiente clínico.",
         benefits: [
-          "Acción esporicida garantizada: elimina bacterias formadoras de esporas como Clostridium difficile.",
-          "Esterilización rápida por inmersión de instrumental quirúrgico no autoclavable.",
-          "Fórmula biodegradable: se descompone en agua, oxígeno y ácido acético sin dejar residuos tóxicos.",
-          "Evita la corrosión del acero inoxidable y juntas plásticas bajo los protocolos recomendados."
+          "Esterilización de Amplio Espectro: Elimina de manera contundente todo tipo de microorganismos patógenos, incluyendo bacterias, virus, levaduras, hongos y esporas. Altamente recomendado para la desinfección profunda de equipo médico y superficies críticas del quirófano.",
+          "Esterilización en Frío de Instrumental Termosensible: Permite la esterilización de endoscopios, citoscopios y laparoscopios por simple inmersión, sin requerir autoclaves u otros sistemas de alto costo energético.",
+          "Acción Germicida Residual Prolongada: Mantiene su poder desinfectante activo durante varias horas en solución, proporcionando una ventana de acción confiable para tratar múltiples instrumentos en secuencia.",
+          "Fórmula Biodegradable e Inocua: Se descompone en agua, oxígeno y ácido acético, sin dejar ningún tipo de residuo tóxico o peligroso en los instrumentos, en el ambiente del quirófano ni en el sistema de drenaje del hospital."
         ],
-        usage: "Esterilización de endoscopios, instrumental quirúrgico termosensible y desinfección de alto nivel en superficies quirúrgicas.",
-        dosage: "Inmersión (según manual de instrumental) | Desinfección profunda (1:50) en superficies clínicas.",
-        dilution: "Dilución en agua desmineralizada para inmersión de instrumental o rociado directo en quirófanos.",
-        phImpact: "Ácido activo desinfectante.",
-        safety: "Utilizar equipo de protección personal (guantes, lentes). Evitar contacto con la piel. Usar en áreas ventiladas.",
-        badge: "Esterilizante Esporicida"
+        usage: "Esterilización de endoscopios, instrumental quirúrgico termosensible y desinfección de alto nivel (DAL) en superficies quirúrgicas y de UCI.",
+        dosage: "Esterilización de Instrumental (Inmersión) | Desinfección Superficial de Quirófanos (Dilución 1:50).",
+        dilution: "Instrumental Termosensible: Sumergir el equipo completamente en la solución diluida durante el tiempo recomendado por el fabricante del instrumento. Superficies: Diluir en agua desmineralizada y aplicar con rociador en toda el área quirúrgica.",
+        phImpact: "Ácido activo desinfectante. No usar sobre metales suaves como aluminio o cobre.",
+        safety: "Utilizar equipo de protección personal completo (guantes, lentes de seguridad y mascarilla). Evitar contacto con la piel y ojos. Trabajar en áreas ventiladas. Almacenar en lugar fresco y oscuro.",
+        badge: "Esterilizante Esporicida",
+        image: "images/Peracetic.png"
       }
     ]
   },
