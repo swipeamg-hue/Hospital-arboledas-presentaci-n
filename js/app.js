@@ -723,6 +723,45 @@ function updateAlbercaDisplay(product) {
           </div>
         </div>
       `;
+    } else if (product.id === "swipe_quirofanos") {
+      featuresHtml = `
+        <div class="alberca-feature-card">
+          <div class="alberca-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="alberca-feature-text">
+            <h4>Limpieza de Superficies Clínicas</h4>
+            <p>Emulsiona de forma rápida y efectiva la suciedad y materia orgánica acumulada en mesas de operaciones, camillas, tripiés y mobiliario de Quirófanos y UCI, sin dañar ni rayar los materiales.</p>
+          </div>
+        </div>
+        <div class="alberca-feature-card">
+          <div class="alberca-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+          </div>
+          <div class="alberca-feature-text">
+            <h4>Preparación Óptima para Desinfección</h4>
+            <p>Elimina de raíz la capa de materia orgánica, grasa corporal y polvo que sirve de refugio a los patógenos, permitiendo que los sanitizantes posteriores alcancen el 100% de efectividad germicida.</p>
+          </div>
+        </div>
+        <div class="alberca-feature-card">
+          <div class="alberca-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round"/></svg>
+          </div>
+          <div class="alberca-feature-text">
+            <h4>Sustentabilidad y Ahorro Financiero</h4>
+            <p>Su ultra-concentración permite diluciones extremas en agua, reduciendo drásticamente el costo por litro de solución y garantizando ahorros del 35% al 50% en insumos de limpieza.</p>
+          </div>
+        </div>
+        <div class="alberca-feature-card">
+          <div class="alberca-feature-icon-container">
+            <svg class="feature-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="13" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="alberca-feature-text">
+            <h4>Guía de Uso Rápido y Aplicación</h4>
+            <p><strong>Mantenimiento General (1:100):</strong> Diluir 1 parte de SWIPE por 100 de agua. Ideal para limpieza diaria de pisos epóxicos, paredes y vidrios. <br><strong>Lavado de Acero Inoxidable (1:12):</strong> Diluir 1 parte por 12 de agua para lavar mesas quirúrgicas, tripiés y equipos de acero. <br><span style="color: #05e6b4; font-weight: 600;">✓ Diluir preferentemente con la Pistola Rociadora SWIPE para obtener la dilución exacta sin mermas.</span></p>
+          </div>
+        </div>
+      `;
     } else {
       // Fallback dinámico genérico
       featuresHtml = `

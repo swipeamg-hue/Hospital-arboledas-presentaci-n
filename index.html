@@ -93,7 +93,7 @@
                 </p>
               </div>
 
-              <!-- Selector de Productos -->
+              <!-- Selector de Contenedores de Producto (Quirófanos) -->
               <div class="alberca-products-selector" id="alberca-products-selector">
 
                 <!-- Producto 1: Swipol -->
@@ -120,9 +120,21 @@
                   <div class="product-tab-indicator"></div>
                 </div>
 
+                <!-- Producto 3: Swipe -->
+                <div class="alberca-product-tab" data-product-id="swipe_quirofanos">
+                  <div class="product-tab-img-container">
+                    <img src="images/swipe_concentrado.png" onerror="this.onerror=null; this.src='images/swipe_concentrado.png';" alt="Swipe">
+                  </div>
+                  <div class="product-tab-info">
+                    <span class="product-tab-badge">Limpiador Multiusos</span>
+                    <h4 class="product-tab-name">Swipe</h4>
+                  </div>
+                  <div class="product-tab-indicator"></div>
+                </div>
+
               </div>
 
-              <!-- Elementos de control ocultos para mantener la compatibilidad con el render dinámico de JS -->
+              <!-- Elementos de control ocultos -->
               <div style="display: none;">
                 <div id="calc-container-alberca"></div>
                 <div id="catalog-grid-alberca"></div>
@@ -140,12 +152,11 @@
                 <!-- Columna de Spotlight (Imagen del Producto) -->
                 <div class="alberca-spotlight-column">
                   <div class="alberca-spotlight-card" id="alberca-spotlight-card">
-                    <div class="alberca-spotlight-glow"></div>
+                    <div class="alberca-spotlight-glow" style="background: var(--color-alberca-glow);"></div>
                     <img id="alberca-spotlight-img" src="images/swipol.png" onerror="this.onerror=null; this.src='images/swipe_concentrado.png';" alt="Swipol">
-                    <!-- Contenedor para SVGs cuando el producto no tiene imagen dedicada -->
                     <div id="alberca-spotlight-svg-container" style="display: none; z-index: 2;"></div>
                   </div>
-                  <button class="btn-add-quote" id="alberca-add-to-quote-btn" onclick="addToQuoteCart('swipol_quirurgico', 'alberca')">
+                  <button class="mantenimiento-add-to-quote-btn" id="alberca-add-to-quote-btn" onclick="addToQuoteCart('swipol_quirurgico', 'alberca')" style="background: var(--color-alberca); color: #000; box-shadow: 0 4px 15px rgba(0,242,254,0.25);">
                     <svg style="width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2;" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     Agregar a Cotización
                   </button>
@@ -153,7 +164,7 @@
 
                 <!-- Columna de Características Técnicas -->
                 <div class="alberca-features-column" id="alberca-features-column">
-                  <!-- Renderizado por defecto del Producto 1 (Swipol) -->
+                  <!-- Renderizado por defecto: Swipol -->
 
                   <!-- Ficha 1 -->
                   <div class="alberca-feature-card">
@@ -162,7 +173,7 @@
                     </div>
                     <div class="alberca-feature-text">
                       <h4>Acción Viricida y Bactericida en 30 Segundos</h4>
-                      <p>Su cuaternario de amonio de quinta generación actúa en tiempo récord, eliminando virus envueltos, bacterias multirresistentes (como MRSA), hongos y levaduras. Ideal para los tiempos de rotación rápidos entre cirugías.</p>
+                      <p>Su cuaternario de amonio de quinta generación actúa en tiempo récord, eliminando virus envueltos, bacterias multirresistentes (como MRSA), hongos y levaduras. Ideal para los tiempos de rotación rápidos que se requieren entre cirugías.</p>
                     </div>
                   </div>
 
@@ -173,7 +184,7 @@
                     </div>
                     <div class="alberca-feature-text">
                       <h4>Seguridad Total para el Entorno Crítico</h4>
-                      <p>Fórmula incolora e inodora, cero vapores o aromas químicos irritantes. Seguro para el personal médico y para los pacientes bajo anestesia en UCI. No es irritante para la piel.</p>
+                      <p>Fórmula incolora e inodora, cero vapores o aromas químicos irritantes. Seguro para el personal médico y para los pacientes bajo anestesia en UCI. No es irritante para la piel ni compromete el bienestar del paciente.</p>
                     </div>
                   </div>
 

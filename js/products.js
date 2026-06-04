@@ -45,6 +45,24 @@ const PRODUCTS_DATA = {
         safety: "Utilizar equipo de protección personal completo (guantes, lentes de seguridad y mascarilla). Evitar contacto con la piel y ojos. Trabajar en áreas ventiladas. Almacenar en lugar fresco y oscuro.",
         badge: "Esterilizante Esporicida",
         image: "images/Peracetic.png"
+      },
+      {
+        id: "swipe_quirofanos",
+        name: "Swipe (Limpiador Multiusos)",
+        tagline: "Limpiador y desengrasante multiusos de uso general en áreas críticas",
+        description: "SWIPE es un limpiador y desengrasante líquido de uso general, formulado para ser altamente concentrado y versátil, con una biodegradabilidad superior al 99% (avalada por la U.A.N.L.). Es el limpiador base ideal para el entorno clínico, ya que no contiene cáusticos libres, no es tóxico ni corrosivo. Actúa como el paso previo esencial para la remoción de mugre y materia orgánica en áreas críticas, asegurando que los desinfectantes de grado quirúrgico posteriores alcancen el 100% de efectividad.",
+        benefits: [
+          "Limpieza de Superficies Clínicas: Emulsiona de forma rápida y efectiva la suciedad acumulada en mesas de operaciones, camillas, tripiés y mobiliario de Quirófanos y UCI, sin dañar ni rayar los materiales.",
+          "Preparación Óptima para Desinfección: Elimina de raíz la capa de materia orgánica y polvo que sirve de refugio a los patógenos, preparando el área para la acción germicida posterior de SWIPOL o SWIPE Peracetic.",
+          "Sustentabilidad y Ahorro Financiero: Su alta concentración permite diluciones extremas en agua, reduciendo el costo por litro de solución y garantizando ahorros financieros de entre el 35% y el 50% en el presupuesto operativo."
+        ],
+        usage: "Limpieza y remoción de suciedad general en superficies de contacto, pisos epóxicos, paredes y equipos de acero inoxidable en quirófanos y UCI.",
+        dosage: "Mantenimiento General de UCI (Dilución 1:100) | Lavado de Acero Inoxidable (Dilución 1:12).",
+        dilution: "Mantenimiento General: Diluir 1 parte de producto por 100 partes de agua. Lavado de Acero Inoxidable: Diluir 1 parte por 12 de agua. Se debe utilizar la Pistola Rociadora SWIPE para obtener la dilución exacta y evitar mermas en el presupuesto.",
+        phImpact: "Neutro, libre de residuos opacos o cáusticos.",
+        safety: "Biodegradabilidad superior al 99% (U.A.N.L.). Registro NSF grado alimenticio. No es tóxico, corrosivo ni inflamable.",
+        badge: "Paso 1: Limpieza",
+        image: "images/swipe_concentrado.png"
       }
     ]
   },
